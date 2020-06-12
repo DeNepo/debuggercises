@@ -131,7 +131,7 @@ const generateReviews = (virDir, isNested, parentPath = '') => {
 
   const tableOfContents = generateTableOfContents(virDir);
 
-  const title = (isNested ? '[../REVIEW.md](../REVIEW.md)\n\n' : '')
+  const title = (isNested ? '[../REVIEW.md](../REVIEW.md)\n\n' : '[../README.md](../README.md)\n\n')
     + tableOfContents;
 
   const fileSections = !virDir.report.files
