@@ -22,34 +22,34 @@ function describeIt(value) {
   return result;
 }
 
-const result1 = describeIt(1);
-const isTrue1 = result1 === 'truthy number';
-console.assert(isTrue1, 'Test 1');
+const _1_expect = 'truthy number';
+const _1_actual = describeIt(1);
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const result2 = describeIt(-1);
-const isTrue2 = result2 === 'truthy number';
-console.assert(isTrue2, 'Test 2');
+const _2_expect = 'truthy number';
+const _2_actual = describeIt(-1);
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const result3 = describeIt(true);
-const isTrue3 = result3 === 'truthy not-number';
-console.assert(isTrue3, 'Test 3');
+const _3_expect = 'truthy not-number';
+const _3_actual = describeIt(true);
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const result4 = describeIt('hello');
-const isTrue4 = result4 === 'truthy not-number';
-console.assert(isTrue4, 'Test 4');
+const _4_expect = 'truthy not-number';
+const _4_actual = describeIt('hello');
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const result5 = describeIt(0);
-const isTrue5 = result5 === 'falsy number';
-console.assert(isTrue5, 'Test 5');
+const _5_expect = 'falsy number';
+const _5_actual = describeIt(0);
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const result6 = describeIt(NaN);
-const isTrue6 = result6 === 'falsy number';
-console.assert(isTrue6, 'Test 6');
+const _6_expect = 'falsy number';
+const _6_actual = describeIt(NaN);
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const result7 = describeIt(null);
-const isTrue7 = result7 === 'falsy not-number';
-console.assert(isTrue7, 'Test 7');
+const _7_expect = 'falsy not-number';
+const _7_actual = describeIt(null);
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const result8 = describeIt(false);
-const isTrue8 = result8 === 'falsy not-number';
-console.assert(isTrue8, 'Test 8');
+const _8_expect = 'falsy not-number';
+const _8_actual = describeIt(false);
+console.assert(_8_actual === _8_expect, 'Test 8');

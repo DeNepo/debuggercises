@@ -16,38 +16,38 @@ function sameness(val1, val2) {
   return result;
 }
 
-const result1 = sameness(1, 1);
-const isTrue1 = result1 === 'strictly equal';
-console.assert(isTrue1, 'Test 1');
+const _1_expect = 'strictly equal';
+const _1_actual = sameness(1, 1);
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const result2 = sameness('hello', 'hello');
-const isTrue2 = result2 === 'strictly equal';
-console.assert(isTrue2, 'Test 2');
+const _2_expect = 'strictly equal';
+const _2_actual = sameness('hello', 'hello');
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const result3 = sameness(null, null);
-const isTrue3 = result3 === 'strictly equal';
-console.assert(isTrue3, 'Test 3');
+const _3_expect = 'strictly equal';
+const _3_actual = sameness(null, null);
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const result4 = sameness(12, 21);
-const isTrue4 = result4 === 'same type';
-console.assert(isTrue4, 'Test 4');
+const _4_expect = 'same type';
+const _4_actual = sameness(12, 21);
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const result5 = sameness(true, false);
-const isTrue5 = result5 === 'same type';
-console.assert(isTrue5, 'Test 5');
+const _5_expect = 'same type';
+const _5_actual = sameness(true, false);
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const result6 = sameness('hello', 'goodbye');
-const isTrue6 = result6 === 'same type';
-console.assert(isTrue6, 'Test 6');
+const _6_expect = 'same type';
+const _6_actual = sameness('hello', 'goodbye');
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const result7 = sameness(null, true);
-const isTrue7 = result7 === 'totally different';
-console.assert(isTrue7, 'Test 7');
+const _7_expect = 'totally different';
+const _7_actual = sameness(null, true);
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const result8 = sameness(':(', 0);
-const isTrue8 = result8 === 'totally different';
-console.assert(isTrue8, 'Test 8');
+const _8_expect = 'totally different';
+const _8_actual = sameness(':(', 0);
+console.assert(_8_actual === _8_expect, 'Test 8');
 
-const result9 = sameness(false, -1);
-const isTrue9 = result9 === 'totally different';
-console.assert(isTrue9, 'Test 9');
+const _9_expect = 'totally different';
+const _9_actual = sameness(false, -1);
+console.assert(_9_actual === _9_expect, 'Test 9');

@@ -6,38 +6,38 @@ function and(left, right) {
 
 }
 
-const and1 = and(0, 0);
-const isTrue1 = and1 === 0;
-console.assert(isTrue1, 'Test 1');
+const _1_expect = 0;
+const _1_actual = and(0, 0);
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const and2 = and(1, 0);
-const isTrue2 = and2 === 0;
-console.assert(isTrue2, 'Test 2');
+const _2_expect = 0;
+const _2_actual = and(1, 0);
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const and3 = and(0, 1);
-const isTrue3 = and3 === 0;
-console.assert(isTrue3, 'Test 3');
+const _3_expect = 0;
+const _3_actual = and(0, 1);
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const and4 = and(1, 1);
-const isTrue4 = and4 === 1;
-console.assert(isTrue4, 'Test 4');
+const _4_expect = 1;
+const _4_actual = and(1, 1);
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const and5 = and('', 'asdf');
-const isTrue5 = and5 === '';
-console.assert(isTrue5, 'Test 5');
+const _5_expect = '';
+const _5_actual = and('', 'asdf');
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const and6 = and('asdf', '');
-const isTrue6 = and6 === '';
-console.assert(isTrue6, 'Test 6');
+const _6_expect = '';
+const _6_actual = and('asdf', '');
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const and7 = and(true, false);
-const isTrue7 = and7 === false;
-console.assert(isTrue7, 'Test 7');
+const _7_expect = false;
+const _7_actual = and(true, false);
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const and8 = and(NaN, undefined);
-const isTrue8 = Number.isNaN(and8);
-console.assert(isTrue8, 'Test 8');
+const _8_expect = (and8);
+const _8_actual = and(NaN, undefined);
+console.assert(_8_actual === _8_expect, 'Test 8');
 
-const and9 = and(Infinity, 'asdf');
-const isTrue9 = and9 === 'asdf';
-console.assert(isTrue9, 'Test 9');
+const _9_expect = 'asdf';
+const _9_actual = and(Infinity, 'asdf');
+console.assert(_9_actual === _9_expect, 'Test 9');

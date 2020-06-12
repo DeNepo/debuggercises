@@ -25,34 +25,34 @@ function nestedConditionals(a, b, c) {
 }
 
 
-const result1 = nestedConditionals(true, true, true);
-const isTrue1 = result1 === 'a: truthy, b: truthy';
-console.assert(isTrue1, 'Test 1');
+const _1_expect = 'a: truthy, b: truthy';
+const _1_actual = nestedConditionals(true, true, true);
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const result2 = nestedConditionals(true, true, false);
-const isTrue2 = result2 === 'a: truthy, b: truthy';
-console.assert(isTrue2, 'Test 2');
+const _2_expect = 'a: truthy, b: truthy';
+const _2_actual = nestedConditionals(true, true, false);
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const result3 = nestedConditionals(true, false, true);
-const isTrue3 = result3 === 'a: truthy, b: falsy';
-console.assert(isTrue3, 'Test 3');
+const _3_expect = 'a: truthy, b: falsy';
+const _3_actual = nestedConditionals(true, false, true);
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const result4 = nestedConditionals(true, false, false);
-const isTrue4 = result4 === 'a: truthy, b: falsy';
-console.assert(isTrue4, 'Test 4');
+const _4_expect = 'a: truthy, b: falsy';
+const _4_actual = nestedConditionals(true, false, false);
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const result5 = nestedConditionals(false, true, true);
-const isTrue5 = result5 === 'a: falsy, c: truthy';
-console.assert(isTrue5, 'Test 5');
+const _5_expect = 'a: falsy, c: truthy';
+const _5_actual = nestedConditionals(false, true, true);
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const result6 = nestedConditionals(false, false, true);
-const isTrue6 = result6 === 'a: falsy, c: truthy';
-console.assert(isTrue6, 'Test 6');
+const _6_expect = 'a: falsy, c: truthy';
+const _6_actual = nestedConditionals(false, false, true);
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const result7 = nestedConditionals(false, true, false);
-const isTrue7 = result7 === 'a: falsy, c: falsy';
-console.assert(isTrue7, 'Test 7');
+const _7_expect = 'a: falsy, c: falsy';
+const _7_actual = nestedConditionals(false, true, false);
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const result8 = nestedConditionals(false, false, false);
-const isTrue8 = result8 === 'a: falsy, c: falsy';
-console.assert(isTrue8, 'Test 8');
+const _8_expect = 'a: falsy, c: falsy';
+const _8_actual = nestedConditionals(false, false, false);
+console.assert(_8_actual === _8_expect, 'Test 8');

@@ -12,34 +12,34 @@ function truthinessDecides(value) {
   return result;
 }
 
-const result1 = truthinessDecides(1);
-const isTrue1 = result1 === 'path 1: truthy';
-console.assert(isTrue1, 'Test 1: path 1');
+const _1_expect = 'path 1: truthy';
+const _1_actual = truthinessDecides(1);
+console.assert(_1_actual === _1_expect, 'Test 1: path 1');
 
-const result2 = truthinessDecides('hi!');
-const isTrue2 = result2 === 'path 1: truthy';
-console.assert(isTrue2, 'Test 2: path 1');
+const _2_expect = 'path 1: truthy';
+const _2_actual = truthinessDecides('hi!');
+console.assert(_2_actual === _2_expect, 'Test 2: path 1');
 
-const result3 = truthinessDecides(true);
-const isTrue3 = result3 === 'path 1: truthy';
-console.assert(isTrue3, 'Test 3: path 1');
+const _3_expect = 'path 1: truthy';
+const _3_actual = truthinessDecides(true);
+console.assert(_3_actual === _3_expect, 'Test 3: path 1');
 
-const result4 = truthinessDecides(0);
-const isTrue4 = result4 === 'path 2: falsy';
-console.assert(isTrue4, 'Test 4: path 2');
+const _4_expect = 'path 2: falsy';
+const _4_actual = truthinessDecides(0);
+console.assert(_4_actual === _4_expect, 'Test 4: path 2');
 
-const result5 = truthinessDecides('');
-const isTrue5 = result5 === 'path 2: falsy';
-console.assert(isTrue5, 'Test 5: path 2');
+const _5_expect = 'path 2: falsy';
+const _5_actual = truthinessDecides('');
+console.assert(_5_actual === _5_expect, 'Test 5: path 2');
 
-const result6 = truthinessDecides(false);
-const isTrue6 = result6 === 'path 2: falsy';
-console.assert(isTrue6, 'Test 6: path 2');
+const _6_expect = 'path 2: falsy';
+const _6_actual = truthinessDecides(false);
+console.assert(_6_actual === _6_expect, 'Test 6: path 2');
 
-const result7 = truthinessDecides(null);
-const isTrue7 = result7 === 'path 2: falsy';
-console.assert(isTrue7, 'Test 7: path 2');
+const _7_expect = 'path 2: falsy';
+const _7_actual = truthinessDecides(null);
+console.assert(_7_actual === _7_expect, 'Test 7: path 2');
 
-const result8 = truthinessDecides(undefined);
-const isTrue8 = result8 === 'path 2: falsy';
-console.assert(isTrue8, 'Test 8: path 2');
+const _8_expect = 'path 2: falsy';
+const _8_actual = truthinessDecides(undefined);
+console.assert(_8_actual === _8_expect, 'Test 8: path 2');

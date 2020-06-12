@@ -13,34 +13,34 @@ function impossibleElse(value) {
   return result;
 }
 
-const result1 = impossibleElse(1);
-const isTrue1 = result1 === 'path 1: truthy or falsy';
-console.assert(isTrue1, 'Test 1');
+const _1_actual = impossibleElse(1);
+const _1_expect = 'path 1: truthy or falsy';
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const result2 = impossibleElse('hi!');
-const isTrue2 = result2 === 'path 1: truthy or falsy';
-console.assert(isTrue2, 'Test 2');
+const _2_actual = impossibleElse('hi!');
+const _2_expect = 'path 1: truthy or falsy';
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const result3 = impossibleElse(true);
-const isTrue3 = result3 === 'path 1: truthy or falsy';
-console.assert(isTrue3, 'Test 3');
+const _3_actual = impossibleElse(true);
+const _3_expect = 'path 1: truthy or falsy';
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const result4 = impossibleElse(0);
-const isTrue4 = result4 === 'path 1: truthy or falsy';
-console.assert(isTrue4, 'Test 4');
+const _4_actual = impossibleElse(0);
+const _4_expect = 'path 1: truthy or falsy';
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const result5 = impossibleElse('');
-const isTrue5 = result5 === 'path 1: truthy or falsy';
-console.assert(isTrue5, 'Test 5');
+const _5_actual = impossibleElse('');
+const _5_expect = 'path 1: truthy or falsy';
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const result6 = impossibleElse(false);
-const isTrue6 = result6 === 'path 1: truthy or falsy';
-console.assert(isTrue6, 'Test 6');
+const _6_actual = impossibleElse(false);
+const _6_expect = 'path 1: truthy or falsy';
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const result7 = impossibleElse(null);
-const isTrue7 = result7 === 'path 1: truthy or falsy';
-console.assert(isTrue7, 'Test 7');
+const _7_actual = impossibleElse(null);
+const _7_expect = 'path 1: truthy or falsy';
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const result8 = impossibleElse(undefined);
-const isTrue8 = result8 === 'path 1: truthy or falsy';
-console.assert(isTrue8, 'Test 8');
+const _8_actual = impossibleElse(undefined);
+const _8_expect = 'path 1: truthy or falsy';
+console.assert(_8_actual === _8_expect, 'Test 8');

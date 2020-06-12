@@ -6,38 +6,38 @@ function or(left, right) {
 
 }
 
-const or1 = or(0, 0);
-const isTrue1 = or1 === 0;
-console.assert(isTrue1, 'Test 1');
+const _1_expect = 0;
+const _1_actual = or(0, 0);
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const or2 = or(1, 0);
-const isTrue2 = or2 === 1;
-console.assert(isTrue2, 'Test 2');
+const _2_expect = 1;
+const _2_actual = or(1, 0);
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const or3 = or(0, 1);
-const isTrue3 = or3 === 1;
-console.assert(isTrue3, 'Test 3');
+const _3_expect = 1;
+const _3_actual = or(0, 1);
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const or4 = or(1, 1);
-const isTrue4 = or4 === 1;
-console.assert(isTrue4, 'Test 4');
+const _4_expect = 1;
+const _4_actual = or(1, 1);
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const or5 = or('', 'asdf');
-const isTrue5 = or5 === 'asdf';
-console.assert(isTrue5, 'Test 5');
+const _5_expect = 'asdf';
+const _5_actual = or('', 'asdf');
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const or6 = or('asdf', '');
-const isTrue6 = or6 === 'asdf';
-console.assert(isTrue6, 'Test 6');
+const _6_expect = 'asdf';
+const _6_actual = or('asdf', '');
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const or7 = or(true, false);
-const isTrue7 = or7 === true;
-console.assert(isTrue7, 'Test 7');
+const _7_expect = true;
+const _7_actual = or(true, false);
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const or8 = or(NaN, undefined);
-const isTrue8 = or8 === undefined;
-console.assert(isTrue8, 'Test 8');
+const _8_expect = undefined;
+const _8_actual = or(NaN, undefined);
+console.assert(_8_actual === _8_expect, 'Test 8');
 
-const or9 = or(Infinity, 'asdf');
-const isTrue9 = or9 === Infinity;
-console.assert(isTrue9, 'Test 9');
+const _9_expect = Infinity;
+const _9_actual = or(Infinity, 'asdf');
+console.assert(_9_actual === _9_expect, 'Test 9');
