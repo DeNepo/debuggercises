@@ -1,0 +1,9 @@
+{
+  "title": "Debuggercises",
+  "path": "/exercises",
+  "buttons": {
+    "console": false,
+    "debugger": true,
+    "jsTutor": true
+  }
+}

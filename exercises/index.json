@@ -1,0 +1,497 @@
+{
+  "path": "/exercises",
+  "dirs": [
+    {
+      "path": "/01-variables",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/1-declaration-assignment-reassignment.js"
+            },
+            {
+              "path": "/2-reusing-variables.js"
+            },
+            {
+              "path": "/3-const-vs-let.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/1-let.js"
+            },
+            {
+              "path": "/2-let.js"
+            },
+            {
+              "path": "/3-let-or-const.js"
+            },
+            {
+              "path": "/4-let-or-const.js"
+            },
+            {
+              "path": "/5-let-or-const.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/02-primitive-types",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/boolean-undefined-null.js"
+            },
+            {
+              "path": "/number.js"
+            },
+            {
+              "path": "/string.js"
+            },
+            {
+              "path": "/typeof.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/fill-in-the-type.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/03-comparing-and-asserting",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/1-strict-equality.js"
+            },
+            {
+              "path": "/2-extra-assignment-vs-comparison.js"
+            },
+            {
+              "path": "/3-console-assert.js"
+            },
+            {
+              "path": "/4-testing-with-assert.js"
+            },
+            {
+              "path": "/extra-object-is.js"
+            },
+            {
+              "path": "/extra-strict-inequality.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/1.js"
+            },
+            {
+              "path": "/2.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/04-value-swaps",
+      "files": [
+        {
+          "path": "/1-double-swap.js"
+        },
+        {
+          "path": "/2-triple-swap.js"
+        },
+        {
+          "path": "/3-triple-swap.js"
+        },
+        {
+          "path": "/4-quadruple-swap.js"
+        },
+        {
+          "path": "/5-quadruple-swap.js"
+        },
+        {
+          "path": "/6-let-and-const.js"
+        },
+        {
+          "path": "/7-let-and-const.js"
+        }
+      ],
+      "dirs": [
+        {
+          "path": "/stepped-swap-example",
+          "files": [
+            {
+              "path": "/0-setup.js"
+            },
+            {
+              "path": "/1-store-y.js"
+            },
+            {
+              "path": "/2-reassign-a.js"
+            },
+            {
+              "path": "/3-use-stored-y.js"
+            }
+          ],
+          "isExample": true
+        }
+      ]
+    },
+    {
+      "path": "/05-functions-101",
+      "dirs": [
+        {
+          "path": "/0-examples",
+          "files": [
+            {
+              "path": "/1-declaration-vs-execution.js"
+            },
+            {
+              "path": "/2-parameters-and-arguments.js"
+            },
+            {
+              "path": "/3-return-values.js"
+            },
+            {
+              "path": "/4-tracing-execution.js"
+            },
+            {
+              "path": "/5-scope.js"
+            },
+            {
+              "path": "/6-test-cases.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/1-scrambles",
+          "files": [
+            {
+              "path": "/1-write-expected.js"
+            },
+            {
+              "path": "/2-write-arguments.js"
+            },
+            {
+              "path": "/3-write-function.js"
+            }
+          ]
+        },
+        {
+          "path": "/2-local-param-global",
+          "files": [
+            {
+              "path": "/0-example.js",
+              "isExample": true
+            },
+            {
+              "path": "/1-parameter-local.js"
+            },
+            {
+              "path": "/2-parameter-global.js"
+            },
+            {
+              "path": "/3-parameter-global.js"
+            },
+            {
+              "path": "/5-local-global.js"
+            },
+            {
+              "path": "/6-local-global.js"
+            },
+            {
+              "path": "/7-parameter-local-global.js"
+            },
+            {
+              "path": "/8-prameter-local-global.js"
+            },
+            {
+              "path": "/extra-pure-functions.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/06-explicit-coercion",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/1-string.js"
+            },
+            {
+              "path": "/2-boolean.js"
+            },
+            {
+              "path": "/3-number.js"
+            },
+            {
+              "path": "/4-about-nan.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/1.js"
+            },
+            {
+              "path": "/2.js"
+            },
+            {
+              "path": "/3.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/07-logical-operators",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/0-truthiness.js"
+            },
+            {
+              "path": "/and.js"
+            },
+            {
+              "path": "/not.js"
+            },
+            {
+              "path": "/or.js"
+            },
+            {
+              "path": "/ternary.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/and.js"
+            },
+            {
+              "path": "/not.js"
+            },
+            {
+              "path": "/or.js"
+            },
+            {
+              "path": "/ternary.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/08-block-scope",
+      "dirs": [
+        {
+          "path": "/1-missing-values",
+          "files": [
+            {
+              "path": "/1.js"
+            },
+            {
+              "path": "/2.js"
+            },
+            {
+              "path": "/3.js"
+            }
+          ]
+        },
+        {
+          "path": "/2-missing-variables",
+          "files": [
+            {
+              "path": "/1.js"
+            },
+            {
+              "path": "/2.js"
+            },
+            {
+              "path": "/3.js"
+            }
+          ]
+        },
+        {
+          "path": "/3-assign-values",
+          "files": [
+            {
+              "path": "/1.js"
+            },
+            {
+              "path": "/2.js"
+            },
+            {
+              "path": "/3.js"
+            }
+          ]
+        },
+        {
+          "path": "/4-declare-and-assign",
+          "files": [
+            {
+              "path": "/1.js"
+            },
+            {
+              "path": "/2.js"
+            },
+            {
+              "path": "/3.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/09-conditionals",
+      "dirs": [
+        {
+          "path": "/0-examples",
+          "files": [
+            {
+              "path": "/1-if-else.js"
+            },
+            {
+              "path": "/2-if-else-if-else.js"
+            },
+            {
+              "path": "/3-sequential-conditionals.js"
+            },
+            {
+              "path": "/4-nested-conditionals.js"
+            },
+            {
+              "path": "/5-unreachable-paths.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/1-execution-paths",
+          "files": [
+            {
+              "path": "/1-write-expected.js"
+            },
+            {
+              "path": "/2-write-arguments.js"
+            },
+            {
+              "path": "/3-write-function.js"
+            }
+          ]
+        },
+        {
+          "path": "/2-conditional-bodies",
+          "files": [
+            {
+              "path": "/1-write-expected.js"
+            },
+            {
+              "path": "/2-write-arguments.js"
+            },
+            {
+              "path": "/3-write-function.js"
+            }
+          ]
+        }
+      ],
+      "config": {
+        "console": false,
+        "debugger": true,
+        "flowViz": true,
+        "jsTutor": true
+      }
+    },
+    {
+      "path": "/10-functions-201",
+      "dirs": [
+        {
+          "path": "/0-examples",
+          "files": [
+            {
+              "path": "/1-documenting-functions.js"
+            },
+            {
+              "path": "/2-enforcing-types.js"
+            },
+            {
+              "path": "/3-behavior-vs-implementation.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/1-fill-in-the-blanks",
+          "files": [
+            {
+              "path": "/1-write-tests.js"
+            },
+            {
+              "path": "/2-write-tests.js"
+            },
+            {
+              "path": "/3-pass-tests.js"
+            },
+            {
+              "path": "/4-pass-tests.js"
+            },
+            {
+              "path": "/5-twins.js"
+            },
+            {
+              "path": "/6-twins.js"
+            }
+          ]
+        },
+        {
+          "path": "/2-fix-the-bugs",
+          "files": [
+            {
+              "path": "/1.js"
+            },
+            {
+              "path": "/2.js"
+            },
+            {
+              "path": "/3.js"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lastBuild": "2020-06-12T17:46:54.420Z"
+}
