@@ -2,7 +2,7 @@
 
 ## /exercises/09-conditionals/0-examples 
 
-> 6/12/2020, 9:44:15 PM 
+> 6/12/2020, 10:24:49 PM 
 
 [../REVIEW.md](../REVIEW.md)
 
@@ -46,37 +46,37 @@ function truthinessDecides(value) {
   return result;
 }
 
-const result1 = truthinessDecides(1);
-const isTrue1 = result1 === 'path 1: truthy';
-console.assert(isTrue1, 'Test 1: path 1');
+const _1_expect = 'path 1: truthy';
+const _1_actual = truthinessDecides(1);
+console.assert(_1_actual === _1_expect, 'Test 1: path 1');
 
-const result2 = truthinessDecides('hi!');
-const isTrue2 = result2 === 'path 1: truthy';
-console.assert(isTrue2, 'Test 2: path 1');
+const _2_expect = 'path 1: truthy';
+const _2_actual = truthinessDecides('hi!');
+console.assert(_2_actual === _2_expect, 'Test 2: path 1');
 
-const result3 = truthinessDecides(true);
-const isTrue3 = result3 === 'path 1: truthy';
-console.assert(isTrue3, 'Test 3: path 1');
+const _3_expect = 'path 1: truthy';
+const _3_actual = truthinessDecides(true);
+console.assert(_3_actual === _3_expect, 'Test 3: path 1');
 
-const result4 = truthinessDecides(0);
-const isTrue4 = result4 === 'path 2: falsy';
-console.assert(isTrue4, 'Test 4: path 2');
+const _4_expect = 'path 2: falsy';
+const _4_actual = truthinessDecides(0);
+console.assert(_4_actual === _4_expect, 'Test 4: path 2');
 
-const result5 = truthinessDecides('');
-const isTrue5 = result5 === 'path 2: falsy';
-console.assert(isTrue5, 'Test 5: path 2');
+const _5_expect = 'path 2: falsy';
+const _5_actual = truthinessDecides('');
+console.assert(_5_actual === _5_expect, 'Test 5: path 2');
 
-const result6 = truthinessDecides(false);
-const isTrue6 = result6 === 'path 2: falsy';
-console.assert(isTrue6, 'Test 6: path 2');
+const _6_expect = 'path 2: falsy';
+const _6_actual = truthinessDecides(false);
+console.assert(_6_actual === _6_expect, 'Test 6: path 2');
 
-const result7 = truthinessDecides(null);
-const isTrue7 = result7 === 'path 2: falsy';
-console.assert(isTrue7, 'Test 7: path 2');
+const _7_expect = 'path 2: falsy';
+const _7_actual = truthinessDecides(null);
+console.assert(_7_actual === _7_expect, 'Test 7: path 2');
 
-const result8 = truthinessDecides(undefined);
-const isTrue8 = result8 === 'path 2: falsy';
-console.assert(isTrue8, 'Test 8: path 2');
+const _8_expect = 'path 2: falsy';
+const _8_actual = truthinessDecides(undefined);
+console.assert(_8_actual === _8_expect, 'Test 8: path 2');
 
 ```
 
@@ -121,41 +121,41 @@ function sameness(val1, val2) {
   return result;
 }
 
-const result1 = sameness(1, 1);
-const isTrue1 = result1 === 'strictly equal';
-console.assert(isTrue1, 'Test 1');
+const _1_expect = 'strictly equal';
+const _1_actual = sameness(1, 1);
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const result2 = sameness('hello', 'hello');
-const isTrue2 = result2 === 'strictly equal';
-console.assert(isTrue2, 'Test 2');
+const _2_expect = 'strictly equal';
+const _2_actual = sameness('hello', 'hello');
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const result3 = sameness(null, null);
-const isTrue3 = result3 === 'strictly equal';
-console.assert(isTrue3, 'Test 3');
+const _3_expect = 'strictly equal';
+const _3_actual = sameness(null, null);
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const result4 = sameness(12, 21);
-const isTrue4 = result4 === 'same type';
-console.assert(isTrue4, 'Test 4');
+const _4_expect = 'same type';
+const _4_actual = sameness(12, 21);
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const result5 = sameness(true, false);
-const isTrue5 = result5 === 'same type';
-console.assert(isTrue5, 'Test 5');
+const _5_expect = 'same type';
+const _5_actual = sameness(true, false);
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const result6 = sameness('hello', 'goodbye');
-const isTrue6 = result6 === 'same type';
-console.assert(isTrue6, 'Test 6');
+const _6_expect = 'same type';
+const _6_actual = sameness('hello', 'goodbye');
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const result7 = sameness(null, true);
-const isTrue7 = result7 === 'totally different';
-console.assert(isTrue7, 'Test 7');
+const _7_expect = 'totally different';
+const _7_actual = sameness(null, true);
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const result8 = sameness(':(', 0);
-const isTrue8 = result8 === 'totally different';
-console.assert(isTrue8, 'Test 8');
+const _8_expect = 'totally different';
+const _8_actual = sameness(':(', 0);
+console.assert(_8_actual === _8_expect, 'Test 8');
 
-const result9 = sameness(false, -1);
-const isTrue9 = result9 === 'totally different';
-console.assert(isTrue9, 'Test 9');
+const _9_expect = 'totally different';
+const _9_actual = sameness(false, -1);
+console.assert(_9_actual === _9_expect, 'Test 9');
 
 ```
 
@@ -205,37 +205,37 @@ function describeIt(value) {
   return result;
 }
 
-const result1 = describeIt(1);
-const isTrue1 = result1 === 'truthy number';
-console.assert(isTrue1, 'Test 1');
+const _1_expect = 'truthy number';
+const _1_actual = describeIt(1);
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const result2 = describeIt(-1);
-const isTrue2 = result2 === 'truthy number';
-console.assert(isTrue2, 'Test 2');
+const _2_expect = 'truthy number';
+const _2_actual = describeIt(-1);
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const result3 = describeIt(true);
-const isTrue3 = result3 === 'truthy not-number';
-console.assert(isTrue3, 'Test 3');
+const _3_expect = 'truthy not-number';
+const _3_actual = describeIt(true);
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const result4 = describeIt('hello');
-const isTrue4 = result4 === 'truthy not-number';
-console.assert(isTrue4, 'Test 4');
+const _4_expect = 'truthy not-number';
+const _4_actual = describeIt('hello');
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const result5 = describeIt(0);
-const isTrue5 = result5 === 'falsy number';
-console.assert(isTrue5, 'Test 5');
+const _5_expect = 'falsy number';
+const _5_actual = describeIt(0);
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const result6 = describeIt(NaN);
-const isTrue6 = result6 === 'falsy number';
-console.assert(isTrue6, 'Test 6');
+const _6_expect = 'falsy number';
+const _6_actual = describeIt(NaN);
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const result7 = describeIt(null);
-const isTrue7 = result7 === 'falsy not-number';
-console.assert(isTrue7, 'Test 7');
+const _7_expect = 'falsy not-number';
+const _7_actual = describeIt(null);
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const result8 = describeIt(false);
-const isTrue8 = result8 === 'falsy not-number';
-console.assert(isTrue8, 'Test 8');
+const _8_expect = 'falsy not-number';
+const _8_actual = describeIt(false);
+console.assert(_8_actual === _8_expect, 'Test 8');
 
 ```
 
@@ -288,37 +288,37 @@ function nestedConditionals(a, b, c) {
 }
 
 
-const result1 = nestedConditionals(true, true, true);
-const isTrue1 = result1 === 'a: truthy, b: truthy';
-console.assert(isTrue1, 'Test 1');
+const _1_expect = 'a: truthy, b: truthy';
+const _1_actual = nestedConditionals(true, true, true);
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const result2 = nestedConditionals(true, true, false);
-const isTrue2 = result2 === 'a: truthy, b: truthy';
-console.assert(isTrue2, 'Test 2');
+const _2_expect = 'a: truthy, b: truthy';
+const _2_actual = nestedConditionals(true, true, false);
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const result3 = nestedConditionals(true, false, true);
-const isTrue3 = result3 === 'a: truthy, b: falsy';
-console.assert(isTrue3, 'Test 3');
+const _3_expect = 'a: truthy, b: falsy';
+const _3_actual = nestedConditionals(true, false, true);
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const result4 = nestedConditionals(true, false, false);
-const isTrue4 = result4 === 'a: truthy, b: falsy';
-console.assert(isTrue4, 'Test 4');
+const _4_expect = 'a: truthy, b: falsy';
+const _4_actual = nestedConditionals(true, false, false);
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const result5 = nestedConditionals(false, true, true);
-const isTrue5 = result5 === 'a: falsy, c: truthy';
-console.assert(isTrue5, 'Test 5');
+const _5_expect = 'a: falsy, c: truthy';
+const _5_actual = nestedConditionals(false, true, true);
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const result6 = nestedConditionals(false, false, true);
-const isTrue6 = result6 === 'a: falsy, c: truthy';
-console.assert(isTrue6, 'Test 6');
+const _6_expect = 'a: falsy, c: truthy';
+const _6_actual = nestedConditionals(false, false, true);
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const result7 = nestedConditionals(false, true, false);
-const isTrue7 = result7 === 'a: falsy, c: falsy';
-console.assert(isTrue7, 'Test 7');
+const _7_expect = 'a: falsy, c: falsy';
+const _7_actual = nestedConditionals(false, true, false);
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const result8 = nestedConditionals(false, false, false);
-const isTrue8 = result8 === 'a: falsy, c: falsy';
-console.assert(isTrue8, 'Test 8');
+const _8_expect = 'a: falsy, c: falsy';
+const _8_actual = nestedConditionals(false, false, false);
+console.assert(_8_actual === _8_expect, 'Test 8');
 
 ```
 
@@ -359,37 +359,37 @@ function impossibleElse(value) {
   return result;
 }
 
-const result1 = impossibleElse(1);
-const isTrue1 = result1 === 'path 1: truthy or falsy';
-console.assert(isTrue1, 'Test 1');
+const _1_actual = impossibleElse(1);
+const _1_expect = 'path 1: truthy or falsy';
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const result2 = impossibleElse('hi!');
-const isTrue2 = result2 === 'path 1: truthy or falsy';
-console.assert(isTrue2, 'Test 2');
+const _2_actual = impossibleElse('hi!');
+const _2_expect = 'path 1: truthy or falsy';
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const result3 = impossibleElse(true);
-const isTrue3 = result3 === 'path 1: truthy or falsy';
-console.assert(isTrue3, 'Test 3');
+const _3_actual = impossibleElse(true);
+const _3_expect = 'path 1: truthy or falsy';
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const result4 = impossibleElse(0);
-const isTrue4 = result4 === 'path 1: truthy or falsy';
-console.assert(isTrue4, 'Test 4');
+const _4_actual = impossibleElse(0);
+const _4_expect = 'path 1: truthy or falsy';
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const result5 = impossibleElse('');
-const isTrue5 = result5 === 'path 1: truthy or falsy';
-console.assert(isTrue5, 'Test 5');
+const _5_actual = impossibleElse('');
+const _5_expect = 'path 1: truthy or falsy';
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const result6 = impossibleElse(false);
-const isTrue6 = result6 === 'path 1: truthy or falsy';
-console.assert(isTrue6, 'Test 6');
+const _6_actual = impossibleElse(false);
+const _6_expect = 'path 1: truthy or falsy';
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const result7 = impossibleElse(null);
-const isTrue7 = result7 === 'path 1: truthy or falsy';
-console.assert(isTrue7, 'Test 7');
+const _7_actual = impossibleElse(null);
+const _7_expect = 'path 1: truthy or falsy';
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const result8 = impossibleElse(undefined);
-const isTrue8 = result8 === 'path 1: truthy or falsy';
-console.assert(isTrue8, 'Test 8');
+const _8_actual = impossibleElse(undefined);
+const _8_expect = 'path 1: truthy or falsy';
+console.assert(_8_actual === _8_expect, 'Test 8');
 
 ```
 

@@ -2,11 +2,11 @@
 
 ## /exercises/07-logical-operators/exercises 
 
-> 6/12/2020, 9:44:15 PM 
+> 6/12/2020, 10:24:49 PM 
 
 [../REVIEW.md](../REVIEW.md)
 
-- [/and.js](#andjs) - _fail_ 
+- [/and.js](#andjs) - _error_ 
 - [/not.js](#notjs) - _fail_ 
 - [/or.js](#orjs) - _fail_ 
 - [/ternary.js](#ternaryjs) - _fail_ 
@@ -15,7 +15,7 @@
 
 ## /and.js 
 
-> fail 
+> error 
 >
 > [review source](./and.js)
 
@@ -27,8 +27,17 @@
 - FAIL: Test 5
 - FAIL: Test 6
 - FAIL: Test 7
-- FAIL: Test 8
-- FAIL: Test 9
+UNCAUGHT: ReferenceError: and8 is not defined
+    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/and.js:37:19)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:72:1)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
 ```js
@@ -40,41 +49,41 @@ function and(left, right) {
 
 }
 
-const and1 = and(0, 0);
-const isTrue1 = and1 === 0;
-console.assert(isTrue1, 'Test 1');
+const _1_expect = 0;
+const _1_actual = and(0, 0);
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const and2 = and(1, 0);
-const isTrue2 = and2 === 0;
-console.assert(isTrue2, 'Test 2');
+const _2_expect = 0;
+const _2_actual = and(1, 0);
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const and3 = and(0, 1);
-const isTrue3 = and3 === 0;
-console.assert(isTrue3, 'Test 3');
+const _3_expect = 0;
+const _3_actual = and(0, 1);
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const and4 = and(1, 1);
-const isTrue4 = and4 === 1;
-console.assert(isTrue4, 'Test 4');
+const _4_expect = 1;
+const _4_actual = and(1, 1);
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const and5 = and('', 'asdf');
-const isTrue5 = and5 === '';
-console.assert(isTrue5, 'Test 5');
+const _5_expect = '';
+const _5_actual = and('', 'asdf');
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const and6 = and('asdf', '');
-const isTrue6 = and6 === '';
-console.assert(isTrue6, 'Test 6');
+const _6_expect = '';
+const _6_actual = and('asdf', '');
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const and7 = and(true, false);
-const isTrue7 = and7 === false;
-console.assert(isTrue7, 'Test 7');
+const _7_expect = false;
+const _7_actual = and(true, false);
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const and8 = and(NaN, undefined);
-const isTrue8 = Number.isNaN(and8);
-console.assert(isTrue8, 'Test 8');
+const _8_expect = (and8);
+const _8_actual = and(NaN, undefined);
+console.assert(_8_actual === _8_expect, 'Test 8');
 
-const and9 = and(Infinity, 'asdf');
-const isTrue9 = and9 === 'asdf';
-console.assert(isTrue9, 'Test 9');
+const _9_expect = 'asdf';
+const _9_actual = and(Infinity, 'asdf');
+console.assert(_9_actual === _9_expect, 'Test 9');
 
 ```
 
@@ -109,41 +118,41 @@ function not(value) {
 
 }
 
-const not1 = not(0);
-const isTrue1 = not1 === true;
-console.assert(isTrue1, 'Test 1');
+const _1_expect = true;
+const _1_actual = not(0);
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const not2 = not(false);
-const isTrue2 = not2 === true;
-console.assert(isTrue2, 'Test 2');
+const _2_expect = true;
+const _2_actual = not(false);
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const not3 = not(undefined);
-const isTrue3 = not3 === true;
-console.assert(isTrue3, 'Test 3');
+const _3_expect = true;
+const _3_actual = not(undefined);
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const not4 = not(null);
-const isTrue4 = not4 === true;
-console.assert(isTrue4, 'Test 4');
+const _4_expect = true;
+const _4_actual = not(null);
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const not5 = not('');
-const isTrue5 = not5 === true;
-console.assert(isTrue5, 'Test 5');
+const _5_expect = true;
+const _5_actual = not('');
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const not6 = not(NaN);
-const isTrue6 = not6 === true;
-console.assert(isTrue6, 'Test 6');
+const _6_expect = true;
+const _6_actual = not(NaN);
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const not7 = not('fdsa');
-const isTrue7 = not7 === false;
-console.assert(isTrue7, 'Test 7');
+const _7_expect = false;
+const _7_actual = not('fdsa');
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const not8 = not('true');
-const isTrue8 = not8 === false;
-console.assert(isTrue8, 'Test 8');
+const _8_expect = false;
+const _8_actual = not('true');
+console.assert(_8_actual === _8_expect, 'Test 8');
 
-const not9 = not(1);
-const isTrue9 = not9 === false;
-console.assert(isTrue9, 'Test 9');
+const _9_expect = false;
+const _9_actual = not(1);
+console.assert(_9_actual === _9_expect, 'Test 9');
 
 ```
 
@@ -178,41 +187,41 @@ function or(left, right) {
 
 }
 
-const or1 = or(0, 0);
-const isTrue1 = or1 === 0;
-console.assert(isTrue1, 'Test 1');
+const _1_expect = 0;
+const _1_actual = or(0, 0);
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const or2 = or(1, 0);
-const isTrue2 = or2 === 1;
-console.assert(isTrue2, 'Test 2');
+const _2_expect = 1;
+const _2_actual = or(1, 0);
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const or3 = or(0, 1);
-const isTrue3 = or3 === 1;
-console.assert(isTrue3, 'Test 3');
+const _3_expect = 1;
+const _3_actual = or(0, 1);
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const or4 = or(1, 1);
-const isTrue4 = or4 === 1;
-console.assert(isTrue4, 'Test 4');
+const _4_expect = 1;
+const _4_actual = or(1, 1);
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const or5 = or('', 'asdf');
-const isTrue5 = or5 === 'asdf';
-console.assert(isTrue5, 'Test 5');
+const _5_expect = 'asdf';
+const _5_actual = or('', 'asdf');
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const or6 = or('asdf', '');
-const isTrue6 = or6 === 'asdf';
-console.assert(isTrue6, 'Test 6');
+const _6_expect = 'asdf';
+const _6_actual = or('asdf', '');
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const or7 = or(true, false);
-const isTrue7 = or7 === true;
-console.assert(isTrue7, 'Test 7');
+const _7_expect = true;
+const _7_actual = or(true, false);
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const or8 = or(NaN, undefined);
-const isTrue8 = or8 === undefined;
-console.assert(isTrue8, 'Test 8');
+const _8_expect = undefined;
+const _8_actual = or(NaN, undefined);
+console.assert(_8_actual === _8_expect, 'Test 8');
 
-const or9 = or(Infinity, 'asdf');
-const isTrue9 = or9 === Infinity;
-console.assert(isTrue9, 'Test 9');
+const _9_expect = Infinity;
+const _9_actual = or(Infinity, 'asdf');
+console.assert(_9_actual === _9_expect, 'Test 9');
 
 ```
 

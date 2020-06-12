@@ -2,7 +2,7 @@
 
 ## /exercises/09-conditionals 
 
-> 6/12/2020, 9:44:15 PM 
+> 6/12/2020, 10:24:49 PM 
 
 [../REVIEW.md](../REVIEW.md)
 
@@ -14,8 +14,8 @@
   - [/5-unreachable-paths.js](./0-examples/REVIEW.md#5-unreachable-pathsjs) - _pass_ 
 - [/1-execution-paths](./1-execution-paths/REVIEW.md)
   - [/1-write-expected.js](./1-execution-paths/REVIEW.md#1-write-expectedjs) - _error_ 
-  - [/2-write-arguments.js](./1-execution-paths/REVIEW.md#2-write-argumentsjs)  
-  - [/3-write-function.js](./1-execution-paths/REVIEW.md#3-write-functionjs)  
+  - [/2-write-arguments.js](./1-execution-paths/REVIEW.md#2-write-argumentsjs) - _fail_ 
+  - [/3-write-function.js](./1-execution-paths/REVIEW.md#3-write-functionjs) - _error_ 
 - [/2-conditional-bodies](./2-conditional-bodies/REVIEW.md)
   - [/1-write-expected.js](./2-conditional-bodies/REVIEW.md#1-write-expectedjs) - _error_ 
   - [/2-write-arguments.js](./2-conditional-bodies/REVIEW.md#2-write-argumentsjs) - _error_ 

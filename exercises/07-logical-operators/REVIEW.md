@@ -2,7 +2,7 @@
 
 ## /exercises/07-logical-operators 
 
-> 6/12/2020, 9:44:15 PM 
+> 6/12/2020, 10:24:49 PM 
 
 [../REVIEW.md](../REVIEW.md)
 
@@ -13,7 +13,7 @@
   - [/or.js](./examples/REVIEW.md#orjs)  
   - [/ternary.js](./examples/REVIEW.md#ternaryjs)  
 - [/exercises](./exercises/REVIEW.md)
-  - [/and.js](./exercises/REVIEW.md#andjs) - _fail_ 
+  - [/and.js](./exercises/REVIEW.md#andjs) - _error_ 
   - [/not.js](./exercises/REVIEW.md#notjs) - _fail_ 
   - [/or.js](./exercises/REVIEW.md#orjs) - _fail_ 
   - [/ternary.js](./exercises/REVIEW.md#ternaryjs) - _fail_ 

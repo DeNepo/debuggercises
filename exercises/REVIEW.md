@@ -2,7 +2,7 @@
 
 ## /exercises 
 
-> 6/12/2020, 9:44:15 PM 
+> 6/12/2020, 10:24:49 PM 
 
 - [/01-variables](./01-variables/REVIEW.md)
   - [/examples](./01-variables/examples/REVIEW.md)
@@ -76,9 +76,9 @@
     - [/3-number.js](./06-explicit-coercion/examples/REVIEW.md#3-numberjs)  
     - [/4-about-nan.js](./06-explicit-coercion/examples/REVIEW.md#4-about-nanjs) - _fail_ 
   - [/exercises](./06-explicit-coercion/exercises/REVIEW.md)
-    - [/1.js](./06-explicit-coercion/exercises/REVIEW.md#1js) - _error_ 
-    - [/2.js](./06-explicit-coercion/exercises/REVIEW.md#2js) - _error_ 
-    - [/3.js](./06-explicit-coercion/exercises/REVIEW.md#3js) - _fail_ 
+    - [/1-write-expected.js](./06-explicit-coercion/exercises/REVIEW.md#1-write-expectedjs) - _error_ 
+    - [/2-write-arguments.js](./06-explicit-coercion/exercises/REVIEW.md#2-write-argumentsjs) - _error_ 
+    - [/3-write-function.js](./06-explicit-coercion/exercises/REVIEW.md#3-write-functionjs) - _fail_ 
 - [/07-logical-operators](./07-logical-operators/REVIEW.md)
   - [/examples](./07-logical-operators/examples/REVIEW.md)
     - [/0-truthiness.js](./07-logical-operators/examples/REVIEW.md#0-truthinessjs)  
@@ -87,7 +87,7 @@
     - [/or.js](./07-logical-operators/examples/REVIEW.md#orjs)  
     - [/ternary.js](./07-logical-operators/examples/REVIEW.md#ternaryjs)  
   - [/exercises](./07-logical-operators/exercises/REVIEW.md)
-    - [/and.js](./07-logical-operators/exercises/REVIEW.md#andjs) - _fail_ 
+    - [/and.js](./07-logical-operators/exercises/REVIEW.md#andjs) - _error_ 
     - [/not.js](./07-logical-operators/exercises/REVIEW.md#notjs) - _fail_ 
     - [/or.js](./07-logical-operators/exercises/REVIEW.md#orjs) - _fail_ 
     - [/ternary.js](./07-logical-operators/exercises/REVIEW.md#ternaryjs) - _fail_ 
@@ -117,8 +117,8 @@
     - [/5-unreachable-paths.js](./09-conditionals/0-examples/REVIEW.md#5-unreachable-pathsjs) - _pass_ 
   - [/1-execution-paths](./09-conditionals/1-execution-paths/REVIEW.md)
     - [/1-write-expected.js](./09-conditionals/1-execution-paths/REVIEW.md#1-write-expectedjs) - _error_ 
-    - [/2-write-arguments.js](./09-conditionals/1-execution-paths/REVIEW.md#2-write-argumentsjs)  
-    - [/3-write-function.js](./09-conditionals/1-execution-paths/REVIEW.md#3-write-functionjs)  
+    - [/2-write-arguments.js](./09-conditionals/1-execution-paths/REVIEW.md#2-write-argumentsjs) - _fail_ 
+    - [/3-write-function.js](./09-conditionals/1-execution-paths/REVIEW.md#3-write-functionjs) - _error_ 
   - [/2-conditional-bodies](./09-conditionals/2-conditional-bodies/REVIEW.md)
     - [/1-write-expected.js](./09-conditionals/2-conditional-bodies/REVIEW.md#1-write-expectedjs) - _error_ 
     - [/2-write-arguments.js](./09-conditionals/2-conditional-bodies/REVIEW.md#2-write-argumentsjs) - _error_ 

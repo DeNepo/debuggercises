@@ -2,25 +2,25 @@
 
 ## /exercises/06-explicit-coercion/exercises 
 
-> 6/12/2020, 9:44:15 PM 
+> 6/12/2020, 10:24:49 PM 
 
 [../REVIEW.md](../REVIEW.md)
 
-- [/1.js](#1js) - _error_ 
-- [/2.js](#2js) - _error_ 
-- [/3.js](#3js) - _fail_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _error_ 
+- [/2-write-arguments.js](#2-write-argumentsjs) - _error_ 
+- [/3-write-function.js](#3-write-functionjs) - _fail_ 
 
 ---
 
-## /1.js 
+## /1-write-expected.js 
 
 > error 
 >
-> [review source](./1.js)
+> [review source](./1-write-expected.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/1.js:14:31)
+    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/1-write-expected.js:13:19)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -45,41 +45,41 @@ function mystery(x) {
 
 // write the expected return value
 
-const returned1 = mystery(undefined);
-const isTrue1 = returned1 === _;
-console.assert(isTrue1, 'Test 1');
+const _1_expect = _;
+const _1_actual = mystery(undefined);
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const returned2 = mystery(null);
-const isTrue2 = returned2 === _;
-console.assert(isTrue2, 'Test 2');
+const _2_expect = _;
+const _2_actual = mystery(null);
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const returned3 = mystery('false');
-const isTrue3 = returned3 === _;
-console.assert(isTrue3, 'Test 3');
+const _3_expect = _;
+const _3_actual = mystery('false');
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const returned4 = mystery('');
-const isTrue4 = returned4 === _;
-console.assert(isTrue4, 'Test 4');
+const _4_expect = _;
+const _4_actual = mystery('');
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const returned5 = mystery(0);
-const isTrue5 = returned5 === _;
-console.assert(isTrue5, 'Test 5');
+const _5_expect = _;
+const _5_actual = mystery(0);
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const returned6 = mystery('  ');
-const isTrue6 = returned6 === _;
-console.assert(isTrue6, 'Test 6');
+const _6_expect = _;
+const _6_actual = mystery('  ');
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const returned7 = mystery(-1);
-const isTrue7 = returned7 === _;
-console.assert(isTrue7, 'Test 7');
+const _7_expect = _;
+const _7_actual = mystery(-1);
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const returned8 = mystery(true);
-const isTrue8 = returned8 === _;
-console.assert(isTrue8, 'Test 8');
+const _8_expect = _;
+const _8_actual = mystery(true);
+console.assert(_8_actual === _8_expect, 'Test 8');
 
-const returned9 = mystery(1);
-const isTrue9 = returned9 === _;
-console.assert(isTrue9, 'Test 9');
+const _9_expect = _;
+const _9_actual = mystery(1);
+console.assert(_9_actual === _9_expect, 'Test 9');
 
 
 ```
@@ -88,15 +88,15 @@ console.assert(isTrue9, 'Test 9');
 
 ---
 
-## /2.js 
+## /2-write-arguments.js 
 
 > error 
 >
-> [review source](./2.js)
+> [review source](./2-write-arguments.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/2.js:13:27)
+    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/2-write-arguments.js:14:27)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -121,41 +121,41 @@ function mystery(x) {
 
 // find an argument to get the expected return value
 
-const returned1 = mystery(_);
-const isTrue1 = returned1 === -1;
-console.assert(isTrue1, 'Test 1');
+const _1_expect = -1;
+const _1_actual = mystery(_);
+console.assert(Object.is(_1_actual, _1_expect), 'Test 1');
 
-const returned2 = mystery(_);
-const isTrue2 = returned2 === 0;
-console.assert(isTrue2, 'Test 2');
+const _2_expect = 0;
+const _2_actual = mystery(_);
+console.assert(Object.is(_2_actual, _2_expect), 'Test 2');
 
-const returned3 = mystery(_);
-const isTrue3 = returned3 === 1;
-console.assert(isTrue3, 'Test 3');
+const _3_expect = 1;
+const _3_actual = mystery(_);
+console.assert(Object.is(_3_actual, _3_expect), 'Test 3');
 
-const returned4 = mystery(_);
-const isTrue4 = returned4 === 0.5;
-console.assert(isTrue4, 'Test 4');
+const _4_expect = 0.5;
+const _4_actual = mystery(_);
+console.assert(Object.is(_4_actual, _4_expect), 'Test 4');
 
-const returned5 = mystery(_);
-const isTrue5 = returned5 === 1000;
-console.assert(isTrue5, 'Test 5');
+const _5_expect = 1000;
+const _5_actual = mystery(_);
+console.assert(Object.is(_5_actual, _5_expect), 'Test 5');
 
-const returned6 = mystery(_);
-const isTrue6 = Number.isNaN(returned6);
-console.assert(isTrue6, 'Test 6');
+const _6_expect = NaN;
+const _6_actual = mystery(_);
+console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
 
-const returned7 = mystery(_);
-const isTrue7 = Number.isNaN(returned7);
-console.assert(isTrue7, 'Test 7');
+const _7_expect = NaN;
+const _7_actual = mystery(_);
+console.assert(Object.is(_7_actual, _7_expect), 'Test 7');
 
-const returned8 = mystery(_);
-const isTrue8 = Number.isNaN(returned8);
-console.assert(isTrue8, 'Test 8');
+const _8_expect = NaN;
+const _8_actual = mystery(_);
+console.assert(Object.is(_8_actual, _8_expect), 'Test 8');
 
-const returned9 = mystery(_);
-const isTrue9 = Number.isNaN(returned9);
-console.assert(isTrue9, 'Test 9');
+const _9_expect = NaN;
+const _9_actual = mystery(_);
+console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
 
 
 ```
@@ -164,11 +164,11 @@ console.assert(isTrue9, 'Test 9');
 
 ---
 
-## /3.js 
+## /3-write-function.js 
 
 > fail 
 >
-> [review source](./3.js)
+> [review source](./3-write-function.js)
 
 ```txt
 - FAIL: Test 1
@@ -196,41 +196,41 @@ function mystery(x, y) {
 
 // all of the test cases are correct
 
-const returned1 = mystery('', '');
-const isTrue1 = returned1 === true;
-console.assert(isTrue1, 'Test 1');
+const _1_expect = true;
+const _1_actual = mystery('', '');
+console.assert(_1_actual === _1_expect, 'Test 1');
 
-const returned2 = mystery(false, null);
-const isTrue2 = returned2 === true;
-console.assert(isTrue2, 'Test 2');
+const _2_expect = true;
+const _2_actual = mystery(false, null);
+console.assert(_2_actual === _2_expect, 'Test 2');
 
-const returned3 = mystery('asdf', 'asdf');
-const isTrue3 = returned3 === false;
-console.assert(isTrue3, 'Test 3');
+const _3_expect = false;
+const _3_actual = mystery('asdf', 'asdf');
+console.assert(_3_actual === _3_expect, 'Test 3');
 
-const returned4 = mystery('1.0', '1');
-const isTrue4 = returned4 === true;
-console.assert(isTrue4, 'Test 4');
+const _4_expect = true;
+const _4_actual = mystery('1.0', '1');
+console.assert(_4_actual === _4_expect, 'Test 4');
 
-const returned5 = mystery(false, true);
-const isTrue5 = returned5 === false;
-console.assert(isTrue5, 'Test 5');
+const _5_expect = false;
+const _5_actual = mystery(false, true);
+console.assert(_5_actual === _5_expect, 'Test 5');
 
-const returned6 = mystery('1.5', '1');
-const isTrue6 = returned6 === false;
-console.assert(isTrue6, 'Test 6');
+const _6_expect = false;
+const _6_actual = mystery('1.5', '1');
+console.assert(_6_actual === _6_expect, 'Test 6');
 
-const returned7 = mystery('1e3', '1000');
-const isTrue7 = returned7 === true;
-console.assert(isTrue7, 'Test 7');
+const _7_expect = true;
+const _7_actual = mystery('1e3', '1000');
+console.assert(_7_actual === _7_expect, 'Test 7');
 
-const returned8 = mystery(false, '');
-const isTrue8 = returned8 === true;
-console.assert(isTrue8, 'Test 8');
+const _8_expect = true;
+const _8_actual = mystery(false, '');
+console.assert(_8_actual === _8_expect, 'Test 8');
 
-const returned9 = mystery(undefined, undefined);
-const isTrue9 = returned9 === false;
-console.assert(isTrue9, 'Test 9');
+const _9_expect = false;
+const _9_actual = mystery(undefined, undefined);
+console.assert(_9_actual === _9_expect, 'Test 9');
 
 
 ```
