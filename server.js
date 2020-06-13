@@ -54,7 +54,7 @@ const handleRequest = (req, res) => {
 
   const relPath = req.url === '/'
     ? './index.html'
-    : req.url;
+    : decodeURIComponent(req.url);
 
   const extension = String(path.extname(relPath)).toLowerCase();
   const contentType = mime[extension] || 'application/octet-stream';
