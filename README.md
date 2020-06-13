@@ -62,6 +62,7 @@ What is complex about these exercises is keeping track of the values in memory, 
 - Practice [Pair Programming](https://study.hackyourfuture.be/collaborating/pair-programming): two people, one computer.
 - Don't skip the examples!  Understanding and experimenting with working code is a very efficient way to learn programming.
 - Take a look through the [Learning From Code](https://study.hackyourfuture.be/learning/learning-from-code) guide for more study tips.
+
 [TOP](#debuggercises)
 
 ---
