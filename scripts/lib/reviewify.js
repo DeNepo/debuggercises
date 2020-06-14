@@ -82,7 +82,6 @@ const generateTableOfContents = (virDir, path, indent) => {
 
 const generateFileSectionMd = (fileReport, title, parentPath) => {
 
-  console.log(parentPath)
   const depth = parentPath.split('/').length;
 
   const divider = '---';
