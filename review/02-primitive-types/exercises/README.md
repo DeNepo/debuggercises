@@ -2,17 +2,17 @@
 
 ## /exercises/02-primitive-types/exercises 
 
-> 6/14/2020, 3:46:13 PM 
+> 6/14/2020, 5:59:56 PM 
 
 [../README.md](../README.md)
 
-- [/fill-in-the-type.js](#fill-in-the-typejs) - _error_ 
+- [/fill-in-the-type.js](#fill-in-the-typejs) - _incomplete_ 
 
 ---
 
 ## /fill-in-the-type.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../../exercises/02-primitive-types/exercises/fill-in-the-type.js)
 
@@ -21,17 +21,7 @@ LOG: -- example --
 LOG: object  null
 LOG: object  null
 LOG: -- challenge1 --
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/02-primitive-types/exercises/fill-in-the-type.js:14:13)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
+
 ```
 
 ```js

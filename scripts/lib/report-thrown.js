@@ -8,9 +8,15 @@ module.exports = (PARENT_DIR, reportMap) => {
   const reportThrown = (thrown, path, async, promise) => {
     // console.log(thrown);
 
+
+
     const thrownReport = { async, promise };
     if (thrown instanceof Error) {
-      if (thrown.stack.includes('SyntaxError:')) {
+      if (thrown && thrown.stack && thrown.stack.includes('ReferenceError: _ is not defined')) {
+        // ReferenceError: _ is not defined
+        // still a blank to fill in
+        thrownReport.status = 8;
+      } else if (thrown.stack.includes('SyntaxError:')) {
         thrownReport.status = 7;
       } else {
         thrownReport.status =

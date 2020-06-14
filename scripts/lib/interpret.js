@@ -8,6 +8,7 @@ const interpret = (value) =>
               : value === 5 ? 'error (async)' // on uncaughtException
                 : value === 6 ? 'error' // try/catch at evaluation time (synchronous errors)
                   : value === 7 ? 'error (syntax)' // syntax error
-                    : 'unknown status';
+                    : value === 8 ? 'incomplete' // ReferenceError: _ is not defined
+                      : 'unknown status';
 
 module.exports = interpret;

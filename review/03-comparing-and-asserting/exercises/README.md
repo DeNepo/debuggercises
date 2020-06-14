@@ -2,33 +2,23 @@
 
 ## /exercises/03-comparing-and-asserting/exercises 
 
-> 6/14/2020, 3:46:13 PM 
+> 6/14/2020, 5:59:56 PM 
 
 [../README.md](../README.md)
 
-- [/1.js](#1js) - _error_ 
-- [/2.js](#2js) - _error_ 
+- [/1.js](#1js) - _incomplete_ 
+- [/2.js](#2js) - _incomplete_ 
 
 ---
 
 ## /1.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../../exercises/03-comparing-and-asserting/exercises/1.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/exercises/1.js:5:26)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
+
 ```
 
 ```js
@@ -60,22 +50,12 @@ console.assert(isTrue4, 'Assertion 4');
 
 ## /2.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../../exercises/03-comparing-and-asserting/exercises/2.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/03-comparing-and-asserting/exercises/2.js:6:33)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
+
 ```
 
 ```js

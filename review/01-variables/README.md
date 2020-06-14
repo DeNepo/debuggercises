@@ -2,7 +2,7 @@
 
 ## /exercises/01-variables 
 
-> 6/14/2020, 3:46:13 PM 
+> 6/14/2020, 5:59:56 PM 
 
 [../README.md](../README.md)
 
@@ -11,9 +11,9 @@
   - [/2-reusing-variables.js](./examples/README.md#2-reusing-variablesjs)  
   - [/3-const-vs-let.js](./examples/README.md#3-const-vs-letjs) - _error_ 
 - [/exercises](./exercises/README.md)
-  - [/1-let.js](./exercises/README.md#1-letjs) - _error_ 
-  - [/2-let.js](./exercises/README.md#2-letjs) - _error_ 
-  - [/3-let-or-const.js](./exercises/README.md#3-let-or-constjs) - _error_ 
-  - [/4-let-or-const.js](./exercises/README.md#4-let-or-constjs) - _error_ 
-  - [/5-let-or-const.js](./exercises/README.md#5-let-or-constjs) - _error_ 
+  - [/1-let.js](./exercises/README.md#1-letjs) - _incomplete_ 
+  - [/2-let.js](./exercises/README.md#2-letjs) - _incomplete_ 
+  - [/3-let-or-const.js](./exercises/README.md#3-let-or-constjs) - _incomplete_ 
+  - [/4-let-or-const.js](./exercises/README.md#4-let-or-constjs) - _incomplete_ 
+  - [/5-let-or-const.js](./exercises/README.md#5-let-or-constjs) - _incomplete_ 
 

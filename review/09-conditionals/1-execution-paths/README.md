@@ -2,34 +2,24 @@
 
 ## /exercises/09-conditionals/1-execution-paths 
 
-> 6/14/2020, 3:46:13 PM 
+> 6/14/2020, 5:59:56 PM 
 
 [../README.md](../README.md)
 
-- [/1-write-expected.js](#1-write-expectedjs) - _error_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _fail_ 
-- [/3-write-function.js](#3-write-functionjs) - _error_ 
+- [/3-write-function.js](#3-write-functionjs) - _incomplete_ 
 
 ---
 
 ## /1-write-expected.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../../exercises/09-conditionals/1-execution-paths/1-write-expected.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/09-conditionals/1-execution-paths/1-write-expected.js:14:19)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
+
 ```
 
 ```js
@@ -168,22 +158,12 @@ console.assert(_8_actual === _8_expect, 'Test 8');
 
 ## /3-write-function.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../../exercises/09-conditionals/1-execution-paths/3-write-function.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at mystery (  ...  /exercises/09-conditionals/1-execution-paths/3-write-function.js:3:3)
-    at Object.<anonymous> (  ...  /exercises/09-conditionals/1-execution-paths/3-write-function.js:17:20)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1) 
+
 ```
 
 ```js

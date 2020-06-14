@@ -2,17 +2,17 @@
 
 ## /exercises/04-value-swaps 
 
-> 6/14/2020, 3:46:13 PM 
+> 6/14/2020, 5:59:56 PM 
 
 [../README.md](../README.md)
 
-- [/1-double-swap.js](#1-double-swapjs) - _error_ 
-- [/2-triple-swap.js](#2-triple-swapjs) - _error_ 
-- [/3-triple-swap.js](#3-triple-swapjs) - _error_ 
-- [/4-quadruple-swap.js](#4-quadruple-swapjs) - _error_ 
-- [/5-quadruple-swap.js](#5-quadruple-swapjs) - _error_ 
-- [/6-let-and-const.js](#6-let-and-constjs) - _error_ 
-- [/7-let-and-const.js](#7-let-and-constjs) - _error_ 
+- [/1-double-swap.js](#1-double-swapjs) - _incomplete_ 
+- [/2-triple-swap.js](#2-triple-swapjs) - _incomplete_ 
+- [/3-triple-swap.js](#3-triple-swapjs) - _incomplete_ 
+- [/4-quadruple-swap.js](#4-quadruple-swapjs) - _incomplete_ 
+- [/5-quadruple-swap.js](#5-quadruple-swapjs) - _incomplete_ 
+- [/6-let-and-const.js](#6-let-and-constjs) - _incomplete_ 
+- [/7-let-and-const.js](#7-let-and-constjs) - _incomplete_ 
 - [/stepped-swap-example](./stepped-swap-example/README.md)
   - [/0-setup.js](./stepped-swap-example/README.md#0-setupjs) - _fail_ 
   - [/1-store-y.js](./stepped-swap-example/README.md#1-store-yjs) - _fail_ 
@@ -23,24 +23,14 @@
 
 ## /1-double-swap.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../exercises/04-value-swaps/1-double-swap.js)
 
 ```txt
 - FAIL: Test 1
 - FAIL: Test 2
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/1-double-swap.js:19:26)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
+
 ```
 
 ```js
@@ -74,7 +64,7 @@ console.assert(isTrue3, 'Test 3');
 
 ## /2-triple-swap.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../exercises/04-value-swaps/2-triple-swap.js)
 
@@ -82,17 +72,7 @@ console.assert(isTrue3, 'Test 3');
 - FAIL: Test 1
 - FAIL: Test 2
 - FAIL: Test 3
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/2-triple-swap.js:23:26)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
+
 ```
 
 ```js
@@ -130,7 +110,7 @@ console.assert(isTrue4, 'Test 4');
 
 ## /3-triple-swap.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../exercises/04-value-swaps/3-triple-swap.js)
 
@@ -138,17 +118,7 @@ console.assert(isTrue4, 'Test 4');
 - FAIL: Test 1
 - FAIL: Test 2
 - FAIL: Test 3
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/3-triple-swap.js:23:26)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
+
 ```
 
 ```js
@@ -186,7 +156,7 @@ console.assert(isTrue4, 'Test 4');
 
 ## /4-quadruple-swap.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../exercises/04-value-swaps/4-quadruple-swap.js)
 
@@ -195,17 +165,7 @@ console.assert(isTrue4, 'Test 4');
 - FAIL: Test 2
 - FAIL: Test 3
 - FAIL: Test 4
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/4-quadruple-swap.js:28:26)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
+
 ```
 
 ```js
@@ -248,7 +208,7 @@ console.assert(isTrue5, 'Test 5');
 
 ## /5-quadruple-swap.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../exercises/04-value-swaps/5-quadruple-swap.js)
 
@@ -257,17 +217,7 @@ console.assert(isTrue5, 'Test 5');
 - FAIL: Test 2
 - FAIL: Test 3
 - FAIL: Test 4
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/5-quadruple-swap.js:28:26)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
+
 ```
 
 ```js
@@ -310,24 +260,14 @@ console.assert(isTrue5, 'Test 5');
 
 ## /6-let-and-const.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../exercises/04-value-swaps/6-let-and-const.js)
 
 ```txt
 - FAIL: Test 1
 - FAIL: Test 2
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/6-let-and-const.js:27:23)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
+
 ```
 
 ```js
@@ -372,7 +312,7 @@ console.assert(isTrue4, "Test 4");
 
 ## /7-let-and-const.js 
 
-> error 
+> incomplete 
 >
 > [review source](../../exercises/04-value-swaps/7-let-and-const.js)
 
@@ -380,17 +320,7 @@ console.assert(isTrue4, "Test 4");
 - FAIL: Test 1
 - FAIL: Test 2
 - FAIL: Test 3
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/04-value-swaps/7-let-and-const.js:31:23)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
+
 ```
 
 ```js
