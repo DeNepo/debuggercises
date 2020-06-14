@@ -2,7 +2,7 @@
 
 ## /exercises/10-functions-201/2-fix-the-bugs 
 
-> 6/14/2020, 4:29:53 PM 
+> 6/14/2020, 4:32:14 PM 
 
 [../README.md](../README.md)
 
@@ -98,14 +98,14 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 UNCAUGHT: TypeError: Cannot create property 'Length' on string 'carboat'
     at areNotSameLength (  ...  /exercises/10-functions-201/2-fix-the-bugs/2.js:18:19)
     at Object.<anonymous> (  ...  /exercises/10-functions-201/2-fix-the-bugs/2.js:32:19)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1) 
+    at Module._compile (internal/modules/cjs/loader.js:778:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Module.require (internal/modules/cjs/loader.js:692:17)
+    at require (internal/modules/cjs/helpers.js:25:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:12:7) 
 ```
 
 ```js

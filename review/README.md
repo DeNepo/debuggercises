@@ -2,7 +2,7 @@
 
 ## /exercises 
 
-> 6/14/2020, 4:29:53 PM 
+> 6/14/2020, 4:32:14 PM 
 
 [../README.md](../README.md)
 
@@ -28,7 +28,7 @@
 - [/03-comparing-and-asserting](./03-comparing-and-asserting/README.md)
   - [/examples](./03-comparing-and-asserting/examples/README.md)
     - [/1-strict-equality.js](./03-comparing-and-asserting/examples/README.md#1-strict-equalityjs)  
-    - [/2-extra-assignment-vs-comparison.js](./03-comparing-and-asserting/examples/README.md#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
+    - [/2-extra-assignment-vs-comparison.js](./03-comparing-and-asserting/examples/README.md#2-extra-assignment-vs-comparisonjs) - _error_ 
     - [/3-console-assert.js](./03-comparing-and-asserting/examples/README.md#3-console-assertjs) - _fail_ 
     - [/4-testing-with-assert.js](./03-comparing-and-asserting/examples/README.md#4-testing-with-assertjs) - _incomplete_ 
     - [/extra-object-is.js](./03-comparing-and-asserting/examples/README.md#extra-object-isjs)  
@@ -65,7 +65,7 @@
     - [/0-example.js](./05-functions-101/2-local-param-global/README.md#0-examplejs)  
     - [/1-parameter-local.js](./05-functions-101/2-local-param-global/README.md#1-parameter-localjs) - _incomplete_ 
     - [/2-parameter-global.js](./05-functions-101/2-local-param-global/README.md#2-parameter-globaljs) - _incomplete_ 
-    - [/3-parameter-global.js](./05-functions-101/2-local-param-global/README.md#3-parameter-globaljs) - _error_ 
+    - [/3-parameter-global.js](./05-functions-101/2-local-param-global/README.md#3-parameter-globaljs) - _incomplete_ 
     - [/5-local-global.js](./05-functions-101/2-local-param-global/README.md#5-local-globaljs) - _incomplete_ 
     - [/6-local-global.js](./05-functions-101/2-local-param-global/README.md#6-local-globaljs) - _incomplete_ 
     - [/7-parameter-local-global.js](./05-functions-101/2-local-param-global/README.md#7-parameter-local-globaljs) - _incomplete_ 
