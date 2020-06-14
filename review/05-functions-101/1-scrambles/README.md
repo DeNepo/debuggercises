@@ -2,7 +2,7 @@
 
 ## /exercises/05-functions-101/1-scrambles 
 
-> 6/14/2020, 8:05:32 PM 
+> 6/14/2020, 8:07:54 PM 
 
 [../README.md](../README.md)
 

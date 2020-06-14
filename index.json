@@ -114,32 +114,9 @@
     },
     {
       "path": "/04-value-swaps",
-      "files": [
-        {
-          "path": "/1-double-swap.js"
-        },
-        {
-          "path": "/2-triple-swap.js"
-        },
-        {
-          "path": "/3-triple-swap.js"
-        },
-        {
-          "path": "/4-quadruple-swap.js"
-        },
-        {
-          "path": "/5-quadruple-swap.js"
-        },
-        {
-          "path": "/6-let-and-const.js"
-        },
-        {
-          "path": "/7-let-and-const.js"
-        }
-      ],
       "dirs": [
         {
-          "path": "/stepped-swap-example",
+          "path": "/example-swap-in-steps",
           "files": [
             {
               "path": "/0-setup.js"
@@ -155,6 +132,32 @@
             }
           ],
           "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/1-double-swap.js"
+            },
+            {
+              "path": "/2-triple-swap.js"
+            },
+            {
+              "path": "/3-triple-swap.js"
+            },
+            {
+              "path": "/4-quadruple-swap.js"
+            },
+            {
+              "path": "/5-quadruple-swap.js"
+            },
+            {
+              "path": "/6-let-and-const.js"
+            },
+            {
+              "path": "/7-let-and-const.js"
+            }
+          ]
         }
       ]
     },
@@ -493,5 +496,5 @@
       ]
     }
   ],
-  "lastBuild": "2020-06-14T20:05:32.647Z"
+  "lastBuild": "2020-06-14T20:07:54.917Z"
 }
