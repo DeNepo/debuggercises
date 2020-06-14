@@ -2,7 +2,7 @@
 
 ## /exercises/01-variables/exercises 
 
-> 6/14/2020, 4:32:14 PM 
+> 6/14/2020, 8:05:32 PM 
 
 [../README.md](../README.md)
 
@@ -158,7 +158,7 @@ console.log(aTree);
 
 // declare a variable named turtle and assign it the name "myrtle"
 _;
-console.log(myrtle);
+console.log(turtle);
 
 // reassign aTree to "aspen"
 _;

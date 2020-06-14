@@ -25,7 +25,7 @@ console.log(aTree);
 
 // declare a variable named turtle and assign it the name "myrtle"
 _;
-console.log(myrtle);
+console.log(turtle);
 
 // reassign aTree to "aspen"
 _;
