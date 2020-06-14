@@ -106,9 +106,10 @@ When you navigate to `localhost:3000` in your browser a web page will open up th
 
 > [./review/README.md](./review/README.md)
 
+It's not enough to pass the tests once and move on!  Be sure to discuss your work with classmates, and to review your exercises over the coming months to keep your JS skills sharp.
+
 This repository comes with a script that will help you review your work, help you and your classmates support each other, and help your coaches give you feedback on your work.
 
-It's not enough to pass the tests once and move on!  Be sure to discuss your work with classmates, and to review your exercises over the coming months to keep your JS skills sharp.
 
 Every time you commit to `master` on GitHub, the your exercises will be evaluated and the results will be written into [/review](./review). Each README in this directory will include:
 
