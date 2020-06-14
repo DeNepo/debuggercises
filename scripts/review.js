@@ -50,12 +50,12 @@ process.on('exit', (exitCode) => {
     nativeConsole.log('\n--- interpreting reports ---\n');
     reportify.summarizeReports(index);
 
-    nativeConsole.log('\n--- generating REVIEW.md\'s ---\n');
+    nativeConsole.log('\n--- generating reviews\'s ---\n');
     reviewify.generateReviews(index);
 
     index.review += reviewify.renderUnsorted(index.unsortedLogs);
 
-    nativeConsole.log('\n--- writing REVIEW.md\'s ---\n');
+    nativeConsole.log('\n--- writing reviews\'s ---\n');
 
     index.reviewPath = config.reviewPath;
     try {
