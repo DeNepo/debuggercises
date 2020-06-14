@@ -14,7 +14,7 @@ const renderLogEntry = entry => {
       .map(msg => toString(msg, 4))
       .join('  ');
   }
-  if (entry.status === 5 || entry.status === 6) {
+  if (entry.status === 5 || entry.status === 6 || entry.status === 8) {
     const isAsync = entry.status === 5
       ? '(async) ' : '';
     return `${isAsync}UNCAUGHT: ${entry.stack} `;
@@ -162,7 +162,6 @@ const writeReviews = (virDir, basePath) => {
   try {
     fs.accessSync(reviewPathBase);
   } catch (err) {
-    console.log(`--- creating /review directory ---`);
     fs.mkdirSync(reviewPathBase);
   };
   const reviewPath = pathModule.join(reviewPathBase, 'README.md');

@@ -11,9 +11,7 @@ Welcome to programming!
   - [`npm run start`](#npm-run-start)
   - ['localhost:3000`](#localhost3000)
 - [How to Review](#how-to-review)
-  - [Review Files](#review-files)
-  - [`npm run review`](#npm-run-review)
-- [./review/README.md](./review/README.md)
+- [](./review/README.md)
 
 ---
 
@@ -104,17 +102,15 @@ When you navigate to `localhost:3000` in your browser a web page will open up th
 
 ---
 
-## How to Review
+## `/review`
+
+> [./review/REVIEW.md](./review/REVIEW.md)
 
 This repository comes with a built-in script that will help you review your work, help you and your classmates support each other, and help your coaches give you feedback on your work.
 
 Every time you push your work to GitHub, the review script will run so your most recent code is on display.
 
 It's not enough to pass the tests once and move on!  Be sure to discuss your work with classmates, and to review your exercises over the coming months to keep your JS skills sharp.
-
-### Review Files
-
-> [./review/REVIEW.md](./review/REVIEW.md)
 
 A new directory will be created called `/review`.  It is a shadow of your `/exercises` directory containing a review of each exercise including:
 
@@ -131,10 +127,5 @@ A new directory will be created called `/review`.  It is a shadow of your `/exer
   - any assertions, logs or errors from that file
   - a copy of the code that was evaluated
 
-### `npm run review`
-
-If you want to run the review script locally, use `$ npm run review` from the top level of this folder, the script will evaluate each .js file in this repo and report the results in a new markdown file for easy studying.
-
-You should run this script before pushing your code so you and your coaches can easily discuss your work directly from GitHub.  But you may also find it helpful to run the script at the end of each study session to have an overview of your progress for that day.
 
 [TOP](#debuggercises)
