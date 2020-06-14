@@ -11,7 +11,7 @@ Welcome to programming!
   - [`npm run start`](#npm-run-start)
   - ['localhost:3000`](#localhost3000)
 - [How to Review](#how-to-review)
-- [](./review/README.md)
+  - [`/review`](./review/README.md)
 
 ---
 
@@ -102,17 +102,15 @@ When you navigate to `localhost:3000` in your browser a web page will open up th
 
 ---
 
-## `/review`
+## How to Review
 
-> [./review/REVIEW.md](./review/REVIEW.md)
+> [./review/README.md](./review/README.md)
 
-This repository comes with a built-in script that will help you review your work, help you and your classmates support each other, and help your coaches give you feedback on your work.
-
-Every time you push your work to GitHub, the review script will run so your most recent code is on display.
+This repository comes with a script that will help you review your work, help you and your classmates support each other, and help your coaches give you feedback on your work.
 
 It's not enough to pass the tests once and move on!  Be sure to discuss your work with classmates, and to review your exercises over the coming months to keep your JS skills sharp.
 
-A new directory will be created called `/review`.  It is a shadow of your `/exercises` directory containing a review of each exercise including:
+Every time you commit to `master` on GitHub, the your exercises will be evaluated and the results will be written into [/review](./review). Each README in this directory will include:
 
 - The name of the directory
 - The date and time of the last evaluation
