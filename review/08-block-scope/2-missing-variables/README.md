@@ -2,7 +2,7 @@
 
 ## /exercises/08-block-scope/2-missing-variables 
 
-> 6/14/2020, 3:28:00 PM 
+> 6/14/2020, 3:46:13 PM 
 
 [../README.md](../README.md)
 
