@@ -2,7 +2,7 @@
 
 ## /exercises/07-logical-operators/examples 
 
-> 6/14/2020, 4:29:53 PM 
+> 6/14/2020, 4:32:14 PM 
 
 [../README.md](../README.md)
 
