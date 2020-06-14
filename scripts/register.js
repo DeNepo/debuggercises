@@ -65,11 +65,12 @@ const register = function (dirPath) {
 console.log('\n--- registering .js files in ' + removeDirname(EXERCISES_DIR) + ' ---\n');
 const preRegistered = register(EXERCISES_DIR);
 const registered = preRegistered || {
-  path: config.path
+  path: config.path,
+  reviewPath: config.reviewPath
 }
 registered.lastBuild = (new Date()).toJSON();
 // console.log(registered)
 
-console.log('\n--- writing ' + removeDirname(EXERCISES_DIR) + '/index.json ---\n');
+console.log('\n--- writing /index.json ---\n');
 const stringifiedReg = JSON.stringify(registered, null, '  ');
-fs.writeFileSync(EXERCISES_DIR + '/index.json', stringifiedReg);
+fs.writeFileSync(path.join('index.json'), stringifiedReg);

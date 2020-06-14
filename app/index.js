@@ -7,7 +7,7 @@ window.onload = async () => {
 
     document.getElementById('title').innerHTML = config.title;
 
-    fetch(`.${config.path}/index.json`)
+    fetch(`/index.json`)
       .then(res => res.json())
       .then(index => {
         const liveStudyApp = new LiveStudy(index, config);

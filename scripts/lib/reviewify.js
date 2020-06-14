@@ -1,5 +1,6 @@
 const pathModule = require('path');
 const fs = require('fs');
+const path = require('path')
 
 const interpret = require('./interpret');
 const toString = require('./to-string');
@@ -53,7 +54,7 @@ const generateTableOfContents = (virDir, path, indent) => {
           .split('.').join('')
           .split('/').join('');
         const reviewPath = path
-          ? '.' + path + '/REVIEW.md'
+          ? '.' + path + '/README.md'
           : '';
         return `${indent}- [${fileReport.path}](${reviewPath}#${anchor}) ${fileReport.status === 0 ? '' : '- _'}${interpret(fileReport.status)}${fileReport.status === 0 ? '' : '_'} \n`;
       })
@@ -65,7 +66,7 @@ const generateTableOfContents = (virDir, path, indent) => {
     ? virDir.dirs
       .map(subDir => {
         const subIndex = generateTableOfContents(subDir, path + subDir.path, indent + '  ');
-        const reviewPath = path + subDir.path + '/REVIEW.md';
+        const reviewPath = path + subDir.path + '/README.md';
         return `${indent}- [${subDir.path}](.${reviewPath})`
           + (subIndex ? '\n' + subIndex : '');
         // return `${ indent } -[${ subDir.path }](.${ reviewPath }) - ${ interpret(subDir.report.status) } `
@@ -79,13 +80,21 @@ const generateTableOfContents = (virDir, path, indent) => {
     + dirList;
 }
 
-const generateFileSectionMd = (fileReport, title) => {
+const generateFileSectionMd = (fileReport, title, parentPath) => {
+
+  console.log(parentPath)
+  const depth = parentPath.split('/').length;
 
   const divider = '---';
 
   const header = `## ${fileReport.path} `;
   const status = `> ${interpret(fileReport.status)} `;
-  const sourceLink = `> [review source](.${fileReport.path})`;
+  let dotDots = '';
+  for (let i = 1; i < depth; i++) {
+    dotDots += '../';
+  }
+  const joinedParent = path.join(dotDots, parentPath);
+  const sourceLink = `> [review source](${joinedParent}${fileReport.path})`;
 
 
   const renderedReport = fileReport.logs
@@ -131,13 +140,14 @@ const generateReviews = (virDir, isNested, parentPath = '') => {
 
   const tableOfContents = generateTableOfContents(virDir);
 
-  const title = (isNested ? '[../REVIEW.md](../REVIEW.md)\n\n' : '[../README.md](../README.md)\n\n')
+  // const title = (isNested ? '[../README.md](../README.md)\n\n' : '[../README.md](../README.md)\n\n')
+  const title = '[../README.md](../README.md)\n\n'
     + tableOfContents;
 
   const fileSections = !virDir.report.files
     ? ''
     : virDir.report.files
-      .map(fileReport => generateFileSectionMd(fileReport, virDir.title))
+      .map(fileReport => generateFileSectionMd(fileReport, virDir.title, parentPath + virDir.path))
       .reduce((body, section) => body + section + '\n', '');
 
   const newREVIEW = top
@@ -149,11 +159,18 @@ const generateReviews = (virDir, isNested, parentPath = '') => {
 };
 
 const writeReviews = (virDir, basePath) => {
-  const reviewPath = pathModule.join(basePath, virDir.path, 'REVIEW.md');
+  const reviewPathBase = pathModule.join(basePath, virDir.reviewPath || virDir.path);
+  try {
+    fs.accessSync(reviewPathBase);
+  } catch (err) {
+    console.log(`--- creating /review directory ---`);
+    fs.mkdirSync(reviewPathBase);
+  };
+  const reviewPath = pathModule.join(reviewPathBase, 'README.md');
   fs.writeFileSync(reviewPath, virDir.review);
   if (virDir.dirs) {
     virDir.dirs.forEach(subDir => {
-      writeReviews(subDir, pathModule.join(basePath, virDir.path));
+      writeReviews(subDir, pathModule.join(basePath, virDir.reviewPath || virDir.path));
     });
   };
 };

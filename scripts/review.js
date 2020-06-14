@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs');
 const config = require("../config.json");
 
 const reportify = require('./lib/reportify');
@@ -14,7 +15,7 @@ const TITLE = config.title;
 console.log('\n--- loading ' + config.path + '/index.json ---\n');
 
 // index will be modified by side-effect
-const index = require(path.join(PARENT_DIR, config.path, 'index.json'));
+const index = require(path.join(PARENT_DIR, 'index.json'));
 index.unsortedLogs = [];
 index.title = TITLE;
 
@@ -55,6 +56,15 @@ process.on('exit', (exitCode) => {
     index.review += reviewify.renderUnsorted(index.unsortedLogs);
 
     nativeConsole.log('\n--- writing REVIEW.md\'s ---\n');
+
+    index.reviewPath = config.reviewPath;
+    try {
+      fs.accessSync(path.join(PARENT_DIR, index.reviewPath));
+    } catch (err) {
+      console.log(`--- creating /review directory ---`);
+      fs.mkdirSync(path.join(PARENT_DIR, index.reviewPath));
+    };
+
     reviewify.writeReviews(index, PARENT_DIR);
 
     nativeConsole.log(`exiting with code: ${exitCode}`);
