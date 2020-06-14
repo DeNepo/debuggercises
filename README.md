@@ -116,12 +116,13 @@ Every time you commit to `master` on GitHub, the your exercises will be evaluate
 - The name of the directory
 - The date and time of the last evaluation
 - Links to all js files & sub-directories in that folder
-  - Files that threw an error will be labeled _error_
+  - Files that threw `ReferenceError: _ is not defined` will be marked _incomplete_
+  - Files that threw any other error will be labeled _error_
   - Files with `console.assert`s (and no errors!) will be labeled as _pass_ or _fail_
   - Files with no errors or `console.assert`s will not be labeled
 - A section for each .js file including
   - the name of the file
-  - the status of the file (_pass_, _fail_, _error_, or nothing)
+  - the status of the file (_incomplete_, _pass_, _fail_, _error_, or nothing)
   - a link to the most recent source code
   - any assertions, logs or errors from that file
   - a copy of the code that was evaluated
