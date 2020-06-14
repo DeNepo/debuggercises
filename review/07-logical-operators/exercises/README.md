@@ -2,11 +2,11 @@
 
 ## /exercises/07-logical-operators/exercises 
 
-> 6/14/2020, 8:03:12 PM 
+> 6/14/2020, 8:05:32 PM 
 
 [../README.md](../README.md)
 
-- [/and.js](#andjs) - _error_ 
+- [/and.js](#andjs) - _fail_ 
 - [/not.js](#notjs) - _fail_ 
 - [/or.js](#orjs) - _fail_ 
 - [/ternary.js](#ternaryjs) - _fail_ 
@@ -15,7 +15,7 @@
 
 ## /and.js 
 
-> error 
+> fail 
 >
 > [review source](../../../exercises/07-logical-operators/exercises/and.js)
 
@@ -27,17 +27,8 @@
 - FAIL: Test 5
 - FAIL: Test 6
 - FAIL: Test 7
-UNCAUGHT: ReferenceError: and8 is not defined
-    at Object.<anonymous> (  ...  /exercises/07-logical-operators/exercises/and.js:37:19)
-    at Module._compile (internal/modules/cjs/loader.js:778:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Module.require (internal/modules/cjs/loader.js:692:17)
-    at require (internal/modules/cjs/helpers.js:25:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:82:1) 
++ PASS: Test 8
+- FAIL: Test 9
 ```
 
 ```js
@@ -77,7 +68,7 @@ const _7_expect = false;
 const _7_actual = and(true, false);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
-const _8_expect = (and8);
+const _8_expect = and(8);
 const _8_actual = and(NaN, undefined);
 console.assert(_8_actual === _8_expect, 'Test 8');
 
