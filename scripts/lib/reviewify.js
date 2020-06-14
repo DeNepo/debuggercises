@@ -14,7 +14,7 @@ const renderLogEntry = entry => {
       .map(msg => toString(msg, 4))
       .join('  ');
   }
-  if (5 <= entry.status && entry.status <= 8) {
+  if (4 <= entry.status && entry.status <= 8) {
     const isAsync = entry.status === 5
       ? '(async) ' : '';
     return `${isAsync}UNCAUGHT: ${entry.stack} `;
