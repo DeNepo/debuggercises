@@ -133,7 +133,7 @@ const generateReviews = (virDir, isNested, parentPath = '') => {
 
   const top = `# ${virDir.title} \n\n`
     + `## ${parentPath + virDir.path} \n\n`
-  // + `> ${(new Date(virDir.lastEvaluation)).toLocaleString()} \n\n`;
+    + `> ${(new Date(virDir.lastEvaluation)).toLocaleString()} \n\n`;
   // + `> ${ interpret(virDir.report.status) }: ${ (new Date(virDir.lastEvaluation)).toLocaleString() } \n\n`;
 
 
