@@ -58,12 +58,8 @@ process.on('exit', (exitCode) => {
     nativeConsole.log('\n--- writing reviews\'s ---\n');
 
     index.reviewPath = config.reviewPath;
-    try {
-      fs.accessSync(path.join(PARENT_DIR, index.reviewPath));
-    } catch (err) {
-      console.log(`--- creating /review directory ---`);
-      fs.mkdirSync(path.join(PARENT_DIR, index.reviewPath));
-    };
+    fs.rmdirSync(path.join(PARENT_DIR, index.reviewPath), { recursive: true });
+    fs.mkdirSync(path.join(PARENT_DIR, index.reviewPath));
 
     reviewify.writeReviews(index, PARENT_DIR);
 

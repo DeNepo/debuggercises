@@ -1,8 +1,8 @@
 # Debuggercises 
 
-## /exercises/04-value-swaps/stepped-swap-example 
+## /exercises/04-value-swaps/example-swap-in-steps 
 
-> 6/14/2020, 8:05:32 PM 
+> 6/14/2020, 10:11:33 PM 
 
 [../README.md](../README.md)
 
@@ -17,7 +17,7 @@
 
 > fail 
 >
-> [review source](../../../exercises/04-value-swaps/stepped-swap-example/0-setup.js)
+> [review source](../../../exercises/04-value-swaps/example-swap-in-steps/0-setup.js)
 
 ```txt
 - FAIL: Test 1
@@ -57,7 +57,7 @@ console.assert(isTrue3, "Test 3");
 
 > fail 
 >
-> [review source](../../../exercises/04-value-swaps/stepped-swap-example/1-store-y.js)
+> [review source](../../../exercises/04-value-swaps/example-swap-in-steps/1-store-y.js)
 
 ```txt
 - FAIL: Test 1
@@ -98,7 +98,7 @@ console.assert(isTrue3, "Test 3");
 
 > fail 
 >
-> [review source](../../../exercises/04-value-swaps/stepped-swap-example/2-reassign-a.js)
+> [review source](../../../exercises/04-value-swaps/example-swap-in-steps/2-reassign-a.js)
 
 ```txt
 + PASS: Test 1
@@ -140,7 +140,7 @@ console.assert(isTrue3, "Test 3");
 
 > pass 
 >
-> [review source](../../../exercises/04-value-swaps/stepped-swap-example/3-use-stored-y.js)
+> [review source](../../../exercises/04-value-swaps/example-swap-in-steps/3-use-stored-y.js)
 
 ```txt
 + PASS: Test 1
