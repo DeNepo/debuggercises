@@ -6,6 +6,7 @@ Welcome to programming!
 
 - [Learning Objectives](#learning-objectives)
 - [Helpful Hints](#helpful-hints)
+  - [Read, Modify, Create](#read-modify-create)
 - [Study Links](#study-links)
 - [How to Study](#how-to-study)
   - [`npm run start`](#npm-run-start)
@@ -60,6 +61,19 @@ What is complex about these exercises is keeping track of the values in memory, 
 - Practice [Pair Programming](https://study.hackyourfuture.be/collaborating/pair-programming): two people, one computer.
 - Don't skip the examples!  Understanding and experimenting with working code is a very efficient way to learn programming.
 - Take a look through the [Learning From Code](https://study.hackyourfuture.be/learning/learning-from-code) guide for more study tips.
+
+### Read, Modify, Create
+
+Think of these three steps in your learning each time you encounter a new skill or language feature in programming.  Even experienced developers go through these steps when learning new technologies!
+
+1. __Read__: Learn to step through, predict, and understand code that other people wrote.
+1. __Modify__: Learn to change the behavior of other people's code with making small modifications.
+1. __Create__: Learn to write your own code from an empty page.
+
+
+Don't worry about making to _Create_ as fast as possible.  The more time you spend learning to _Read_ and _Modify_, the faster you'll master _Create_.
+
+The exercises in this repository focus (almost) entirely on _Read_ and _Modify_.
 
 [TOP](#debuggercises)
 
