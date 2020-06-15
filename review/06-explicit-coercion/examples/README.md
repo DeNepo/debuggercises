@@ -2,7 +2,7 @@
 
 ## /exercises/06-explicit-coercion/examples 
 
-> 6/15/2020, 10:45:02 AM 
+> 6/15/2020, 1:27:52 PM 
 
 [../README.md](../README.md)
 

@@ -17,7 +17,7 @@ const evaluate = require('./lib/evaluate');
 // create a constant variable for the parent directory
 const PARENT_DIR = path.normalize(path.join(__dirname, '..'));
 
-console.log('\n--- loading ' + config.path + '/index.json ---\n');
+console.log('\n--- loading  index.json ---\n');
 
 // index will be modified by side-effect
 const index = require(path.normalize(path.join(PARENT_DIR, 'index.json')));
