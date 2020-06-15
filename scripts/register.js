@@ -2,9 +2,9 @@ const fs = require("fs");
 const path = require("path");
 const config = require("../config.json");
 
-const EXERCISES_DIR = path.join(__dirname, '..', config.path);
+const EXERCISES_DIR = path.normalize(path.join(__dirname, '..', config.path));
 const EXAMPLE_WORDS = ['example', 'examples', 'worked', 'stepped', 'demo'];
-const PARENT_DIR = path.join(__dirname, '..');
+const PARENT_DIR = path.normalize(path.join(__dirname, '..'));
 
 try {
   fs.accessSync(EXERCISES_DIR);
@@ -26,13 +26,13 @@ const register = function (dirPath) {
         return itIs || nextPath.toLowerCase().includes(exampleWord);
       }, false);
 
-    const isDirectory = fs.statSync(path.join(dirPath, nextPath)).isDirectory();
+    const isDirectory = fs.statSync(path.normalize(path.join(dirPath, nextPath))).isDirectory();
     if (!isDirectory && path.extname(nextPath) !== '.js') continue;
 
     if (isDirectory) {
-      const subDir = register(path.join(dirPath, nextPath));
+      const subDir = register(path.normalize(path.join(dirPath, nextPath)));
       try {
-        const subConfigStr = fs.readFileSync(path.join(EXERCISES_DIR, subDir.path, 'config.json'), 'utf-8');
+        const subConfigStr = fs.readFileSync(path.normalize(path.join(EXERCISES_DIR, subDir.path, 'config.json')), 'utf-8');
         const subConfig = JSON.parse(subConfigStr);
         subDir.buttons = subConfig;
       } catch (err) { }
@@ -53,7 +53,9 @@ const register = function (dirPath) {
   };
 
   const virDir = {
-    path: '/' + dirPath.split('/').pop(),
+    path: '/' + dirPath
+      .split(path.sep).join('/')
+      .split('/').pop(),
   };
   if (files.length > 0) virDir.files = files;
   if (dirs.length > 0) virDir.dirs = dirs;
@@ -74,4 +76,4 @@ registered.lastBuild = (new Date()).toJSON();
 
 console.log('\n--- writing /index.json ---\n');
 const stringifiedReg = JSON.stringify(registered, null, '  ');
-fs.writeFileSync(path.join('index.json'), stringifiedReg);
+fs.writeFileSync(path.normalize(path.join('index.json'), stringifiedReg));

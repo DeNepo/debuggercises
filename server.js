@@ -98,6 +98,8 @@ const handleRequest = (req, res) => {
     ? './index.html'
     : decodeURIComponent(req.url);
 
+  const requestedFilePath = path.normalize(path.join(__dirname, relPath));
+
   // determining what type of file was requested (ie. .js, .html)
   const extension = String(path.extname(relPath)).toLowerCase();
   // use the object declared higher up to decide how to classify the content
@@ -145,7 +147,7 @@ const handleRequest = (req, res) => {
 
   // try to find the requested file
   //  node will call serverFile after it tries to find the file, whether it worked or not
-  fs.readFile(path.join(__dirname, relPath), serveFile);
+  fs.readFile(requestedFilePath, serveFile);
 
 };
 
