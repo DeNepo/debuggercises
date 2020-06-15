@@ -6,20 +6,20 @@ export default class LiveStudy {
   virDir = {};
   populated = {};
 
-  constructor(index, config) {
+  constructor(index) {
     this.virDir = index;
-    this.populated = LiveStudy.populate(index, index.path, config.buttons);
-    this.title = config.title;
+    this.populated = LiveStudy.populate(index, index.path, index.buttons);
+    this.title = index.title;
   }
 
-  static populate(data, path, config) {
+  static populate(data, path, buttons) {
     const copy = Object.assign({}, data);
     if (data.files) {
       copy.populated = data.files
-        .map(file => new Exercise(file.path, path, config));
+        .map(file => new Exercise(file.path, path, buttons));
     };
     if (data.dirs) {
-      copy.dirs = data.dirs.map(subDir => LiveStudy.populate(subDir, path + subDir.path, subDir.config || config));
+      copy.dirs = data.dirs.map(subDir => LiveStudy.populate(subDir, path + subDir.path, subDir.buttons || buttons));
     };
     return copy;
   }

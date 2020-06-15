@@ -431,7 +431,7 @@
           ]
         }
       ],
-      "config": {
+      "buttons": {
         "console": false,
         "debugger": true,
         "flowViz": true,
@@ -496,5 +496,12 @@
       ]
     }
   ],
-  "lastBuild": "2020-06-14T20:19:51.098Z"
+  "title": "Debuggercises",
+  "reviewPath": "/review",
+  "buttons": {
+    "console": false,
+    "debugger": true,
+    "jsTutor": true
+  },
+  "lastBuild": "2020-06-15T09:58:54.284Z"
 }

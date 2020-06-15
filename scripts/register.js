@@ -34,7 +34,7 @@ const register = function (dirPath) {
       try {
         const subConfigStr = fs.readFileSync(path.join(EXERCISES_DIR, subDir.path, 'config.json'), 'utf-8');
         const subConfig = JSON.parse(subConfigStr);
-        subDir.config = subConfig;
+        subDir.buttons = subConfig;
       } catch (err) { }
       if (subDir) {
         dirs.push(subDir);
@@ -64,10 +64,11 @@ const register = function (dirPath) {
 
 console.log('\n--- registering .js files in ' + removeDirname(EXERCISES_DIR) + ' ---\n');
 const preRegistered = register(EXERCISES_DIR);
-const registered = preRegistered || {
-  path: config.path,
-  reviewPath: config.reviewPath
-}
+const registered = Object.assign(preRegistered, {
+  title: config.title,
+  reviewPath: config.reviewPath,
+  buttons: config.buttons
+});
 registered.lastBuild = (new Date()).toJSON();
 // console.log(registered)
 
