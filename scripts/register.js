@@ -72,8 +72,7 @@ const registered = Object.assign(preRegistered, {
   buttons: config.buttons
 });
 registered.lastBuild = (new Date()).toJSON();
-// console.log(registered)
 
 console.log('\n--- writing /index.json ---\n');
 const stringifiedReg = JSON.stringify(registered, null, '  ');
-fs.writeFileSync(path.normalize(path.join('index.json'), stringifiedReg));
+fs.writeFileSync(path.normalize(path.join('index.json')), stringifiedReg);

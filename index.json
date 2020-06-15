@@ -495,5 +495,13 @@
         }
       ]
     }
-  ]
+  ],
+  "title": "Debuggercises",
+  "reviewPath": "/review",
+  "buttons": {
+    "console": false,
+    "debugger": true,
+    "jsTutor": true
+  },
+  "lastBuild": "2020-06-15T10:30:59.855Z"
 }
