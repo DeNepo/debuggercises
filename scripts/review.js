@@ -8,14 +8,14 @@ const reviewify = require('./lib/reviewify');
 const reportThrownFactory = require('./lib/report-thrown');
 const evaluate = require('./lib/evaluate');
 
-const PARENT_DIR = path.join(__dirname, '..');
+const PARENT_DIR = path.normalize(path.join(__dirname, '..'));
 const TITLE = config.title;
 
 
 console.log('\n--- loading ' + config.path + '/index.json ---\n');
 
 // index will be modified by side-effect
-const index = require(path.join(PARENT_DIR, 'index.json'));
+const index = require(path.normalize(path.join(PARENT_DIR, 'index.json')));
 index.unsortedLogs = [];
 index.title = TITLE;
 
@@ -58,8 +58,8 @@ process.on('exit', (exitCode) => {
     nativeConsole.log('\n--- writing reviews\'s ---\n');
 
     index.reviewPath = config.reviewPath;
-    fs.rmdirSync(path.join(PARENT_DIR, index.reviewPath), { recursive: true });
-    fs.mkdirSync(path.join(PARENT_DIR, index.reviewPath));
+    fs.rmdirSync(path.normalize(path.join(PARENT_DIR, index.reviewPath)), { recursive: true });
+    fs.mkdirSync(path.normalize(path.join(PARENT_DIR, index.reviewPath)));
 
     reviewify.writeReviews(index, PARENT_DIR);
 
