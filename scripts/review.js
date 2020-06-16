@@ -13,6 +13,7 @@ const consoleCatcherFactory = require('./lib/console-catcher');
 const reviewify = require('./lib/reviewify');
 const reportThrownFactory = require('./lib/report-thrown');
 const evaluate = require('./lib/evaluate');
+const { normalize } = require('path');
 
 // create a constant variable for the parent directory
 const PARENT_DIR = path.normalize(path.join(__dirname, '..'));
@@ -77,17 +78,18 @@ process.on('exit', (exitCode) => {
     // write the new markdown files!
     index.reviewPath = index.reviewPath;
 
-    const deleteFolderRecursive = (path) => {
-      if (fs.existsSync(path)) {
-        fs.readdirSync(path).forEach((subPath) => {
-          const curPath = path.normalize(path.join(absReviewPath, subPath));
-          if (fs.lstatSync(curPath).isDirectory()) { // recurse
+    const deleteFolderRecursive = function (pathToDelete) {
+      if (fs.existsSync(pathToDelete)) {
+        const files = fs.readdirSync(pathToDelete);
+        files.forEach((file) => {
+          const curPath = path.normalize(path.join(pathToDelete, file));
+          if (fs.lstatSync(curPath).isDirectory()) {
             deleteFolderRecursive(curPath);
-          } else { // delete file
+          } else {
             fs.unlinkSync(curPath);
           }
         });
-        fs.rmdirSync(path);
+        fs.rmdirSync(pathToDelete);
       }
     };
     const absReviewPath = path.normalize(path.join(PARENT_DIR, index.reviewPath));

@@ -2,7 +2,7 @@
 
 ## /exercises/05-functions-101/1-scrambles 
 
-> 6/16/2020, 3:21:17 PM 
+> 6/16/2020, 4:12:14 PM 
 
 [../README.md](../README.md)
 
@@ -28,7 +28,7 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (internal/modules/cjs/loader.js:1089:19)
     at require (internal/modules/cjs/helpers.js:73:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1)
+    at Object.<anonymous> (  ...  /scripts/review.js:129:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
@@ -104,7 +104,7 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (internal/modules/cjs/loader.js:1089:19)
     at require (internal/modules/cjs/helpers.js:73:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1)
+    at Object.<anonymous> (  ...  /scripts/review.js:129:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 

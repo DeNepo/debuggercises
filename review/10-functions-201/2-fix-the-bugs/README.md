@@ -2,7 +2,7 @@
 
 ## /exercises/10-functions-201/2-fix-the-bugs 
 
-> 6/16/2020, 3:21:17 PM 
+> 6/16/2020, 4:12:14 PM 
 
 [../README.md](../README.md)
 
@@ -105,7 +105,7 @@ UNCAUGHT: TypeError: Cannot create property 'Length' on string 'carboat'
     at Module.require (internal/modules/cjs/loader.js:1089:19)
     at require (internal/modules/cjs/helpers.js:73:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1) 
+    at Object.<anonymous> (  ...  /scripts/review.js:129:1) 
 ```
 
 ```js
