@@ -2,7 +2,7 @@
 
 ## /exercises/03-comparing-and-asserting/exercises 
 
-> 6/16/2020, 8:02:11 AM 
+> 6/16/2020, 11:22:08 AM 
 
 [../README.md](../README.md)
 
@@ -27,7 +27,7 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (internal/modules/cjs/loader.js:1089:19)
     at require (internal/modules/cjs/helpers.js:73:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:100:1)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
@@ -74,7 +74,7 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Module.require (internal/modules/cjs/loader.js:1089:19)
     at require (internal/modules/cjs/helpers.js:73:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:100:1)
+    at Object.<anonymous> (  ...  /scripts/review.js:106:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 

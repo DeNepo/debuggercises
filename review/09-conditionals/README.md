@@ -2,7 +2,7 @@
 
 ## /exercises/09-conditionals 
 
-> 6/16/2020, 8:02:11 AM 
+> 6/16/2020, 11:22:08 AM 
 
 [../README.md](../README.md)
 
