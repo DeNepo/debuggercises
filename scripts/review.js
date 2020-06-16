@@ -78,9 +78,12 @@ process.on('exit', (exitCode) => {
     index.reviewPath = index.reviewPath;
 
     const absReviewPath = path.normalize(path.join(PARENT_DIR, index.reviewPath));
+    // check if the /review folder exists
     if (fs.existsSync(absReviewPath)) {
+      // delete it if it does
       fs.rmdirSync(absReviewPath, { recursive: true });
     }
+    // create a new empty /review folder
     fs.mkdirSync(absReviewPath);
 
     reviewify.writeReviews(index, PARENT_DIR);
