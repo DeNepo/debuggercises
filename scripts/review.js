@@ -77,14 +77,21 @@ process.on('exit', (exitCode) => {
     // write the new markdown files!
     index.reviewPath = index.reviewPath;
 
+    const deleteFolderRecursive = (path) => {
+      if (fs.existsSync(path)) {
+        fs.readdirSync(path).forEach((subPath) => {
+          const curPath = path.normalize(path.join(absReviewPath, subPath));
+          if (fs.lstatSync(curPath).isDirectory()) { // recurse
+            deleteFolderRecursive(curPath);
+          } else { // delete file
+            fs.unlinkSync(curPath);
+          }
+        });
+        fs.rmdirSync(path);
+      }
+    };
     const absReviewPath = path.normalize(path.join(PARENT_DIR, index.reviewPath));
-    // check if the /review folder exists
-    if (fs.existsSync(absReviewPath)) {
-      // delete it if it does
-      fs.rmdirSync(absReviewPath, { recursive: true });
-    }
-    // create a new empty /review folder
-    fs.mkdirSync(absReviewPath);
+    deleteFolderRecursive(absReviewPath);
 
     reviewify.writeReviews(index, PARENT_DIR);
 
