@@ -34,9 +34,9 @@ const _7_expect = false;
 const _7_actual = and(true, false);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
-const _8_expect = and(8);
+const _8_expect = NaN;
 const _8_actual = and(NaN, undefined);
-console.assert(_8_actual === _8_expect, 'Test 8');
+console.assert(Object.is(_8_actual, _8_expect), 'Test 8');
 
 const _9_expect = 'asdf';
 const _9_actual = and(Infinity, 'asdf');
