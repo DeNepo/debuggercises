@@ -2,7 +2,7 @@
 
 ## /exercises/07-logical-operators/exercises 
 
-> 6/15/2020, 11:28:47 AM 
+> 6/16/2020, 8:02:11 AM 
 
 [../README.md](../README.md)
 
@@ -27,7 +27,7 @@
 - FAIL: Test 5
 - FAIL: Test 6
 - FAIL: Test 7
-+ PASS: Test 8
+- FAIL: Test 8
 - FAIL: Test 9
 ```
 
@@ -68,9 +68,9 @@ const _7_expect = false;
 const _7_actual = and(true, false);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
-const _8_expect = and(8);
+const _8_expect = NaN;
 const _8_actual = and(NaN, undefined);
-console.assert(_8_actual === _8_expect, 'Test 8');
+console.assert(Object.is(_8_actual, _8_expect), 'Test 8');
 
 const _9_expect = 'asdf';
 const _9_actual = and(Infinity, 'asdf');
