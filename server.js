@@ -28,11 +28,8 @@ const LOGS_LIMIT = 20;
 //    this number appears in the console as X. req: & X. res:
 let cycles = 0;
 
-
-try {
-  // check if the LOG_DIR folder exists
-  //  if it doesn't exist fs.accessSync will throw and error and the program will jump to the catch(err) block
-  fs.accessSync(LOG_DIR);
+// check if the LOG_DIR folder exists
+if (fs.existsSync(LOG_DIR)) {
   //  get an array of all file names in the LOG_DIR folder
   const logs = fs.readdirSync(LOG_DIR);
   //  if there are too many logs (more than LOGS_LIMIT), delete the extra ones
@@ -47,11 +44,11 @@ try {
       fs.unlinkSync(oldLog);
     };
   };
-} catch (err) {
+} else {
   console.log(`--- creating ${LOG_DIRNAME} directory ---`);
   // create the LOG_DIR folder if it didn't exist (an error was thrown)
   fs.mkdirSync(LOG_DIR);
-};
+}
 
 const log = (msg) => {
   // remove your folder's file path from any error messages

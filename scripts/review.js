@@ -76,14 +76,12 @@ process.on('exit', (exitCode) => {
 
     // write the new markdown files!
     index.reviewPath = index.reviewPath;
+
     const absReviewPath = path.normalize(path.join(PARENT_DIR, index.reviewPath));
-    try {
-      fs.accessSync(absReviewPath);
+    if (fs.existsSync(absReviewPath)) {
       fs.rmdirSync(absReviewPath, { recursive: true });
-      fs.mkdirSync(absReviewPath);
-    } catch (err) {
-      fs.mkdirSync(absReviewPath);
-    };
+    }
+    fs.mkdirSync(absReviewPath);
 
     reviewify.writeReviews(index, PARENT_DIR);
 
