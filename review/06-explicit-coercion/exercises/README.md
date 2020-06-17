@@ -2,7 +2,7 @@
 
 ## /exercises/06-explicit-coercion/exercises 
 
-> 6/16/2020, 5:30:33 PM 
+> 6/17/2020, 7:57:06 AM 
 
 [../README.md](../README.md)
 
@@ -74,7 +74,7 @@ const _7_actual = mystery(-1);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
 const _8_expect = _;
-const _8_actual = mystery(true);
+const _8_actual = mystery('true');
 console.assert(_8_actual === _8_expect, 'Test 8');
 
 const _9_expect = _;
