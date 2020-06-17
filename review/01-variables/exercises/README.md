@@ -2,7 +2,7 @@
 
 ## /exercises/01-variables/exercises 
 
-> 6/17/2020, 7:57:06 AM 
+> 6/17/2020, 12:33:42 PM 
 
 [../README.md](../README.md)
 
