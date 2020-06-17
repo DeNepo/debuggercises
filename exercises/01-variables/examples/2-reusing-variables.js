@@ -2,7 +2,7 @@
 
 // you can use values stored in one variable to assign a value to another
 
-let wood = 'oak';
+const wood = 'oak';
 console.log(wood);
 
 let furniture = wood + ' bed';
