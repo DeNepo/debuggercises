@@ -24,14 +24,14 @@ function jazz(parameter) {
   return `${local} ${parameter}`;
 }
 
-const jazzReturn1 = funk('hello');
+const jazzReturn1 = jazz('hello');
 const jazz1 = jazzReturn1 === _;
 console.assert(jazz1, 'Test 1: jazz');
 
-const jazzReturn2 = funk('boat');
+const jazzReturn2 = jazz('boat');
 const jazz2 = jazzReturn2 === _;
 console.assert(jazz2, 'Test 2: jazz');
 
-const jazzReturn3 = funk('tree');
+const jazzReturn3 = jazz('tree');
 const jazz3 = jazzReturn3 === _;
 console.assert(jazz3, 'Test 3: jazz');

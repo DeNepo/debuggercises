@@ -39,7 +39,7 @@ const _7_actual = mystery(-1);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
 const _8_expect = _;
-const _8_actual = mystery(true);
+const _8_actual = mystery('true');
 console.assert(_8_actual === _8_expect, 'Test 8');
 
 const _9_expect = _;
