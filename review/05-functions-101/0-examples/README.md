@@ -1,14 +1,8 @@
 # Debuggercises 
 
-> 6/17/2020, 3:09:57 PM 
+> 6/17/2020, 1:28:35 PM 
 
-<<<<<<< HEAD
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/0-examples 
-=======
-> 6/17/2020, 12:33:42 PM 
-
-[../README.md](../README.md)
->>>>>>> ee52e3e3edc4c7311b025faa5ba310a12f54566d
 
 - [/1-declaration-vs-execution.js](#1-declaration-vs-executionjs)  
 - [/2-parameters-and-arguments.js](#2-parameters-and-argumentsjs)  

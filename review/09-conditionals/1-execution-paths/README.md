@@ -1,24 +1,14 @@
 # Debuggercises 
 
-> 6/17/2020, 3:09:57 PM 
+> 6/17/2020, 1:28:35 PM 
 
-<<<<<<< HEAD
 ## [exercises](../../README.md)/[09-conditionals](../README.md)/1-execution-paths 
-=======
-> 6/17/2020, 12:33:42 PM 
-
-[../README.md](../README.md)
->>>>>>> ee52e3e3edc4c7311b025faa5ba310a12f54566d
 
 - [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
 - [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
 - [/3-write-arguments.js](#3-write-argumentsjs) - _fail_ 
 - [/4-write-function.js](#4-write-functionjs) - _incomplete_ 
 - [/5-write-function.js](#5-write-functionjs) - _fail_ 
-<<<<<<< HEAD
-=======
-
->>>>>>> ee52e3e3edc4c7311b025faa5ba310a12f54566d
 ---
 
 ## /1-write-expected.js 

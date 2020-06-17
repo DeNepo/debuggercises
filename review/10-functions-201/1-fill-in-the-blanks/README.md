@@ -1,14 +1,8 @@
 # Debuggercises 
 
-> 6/17/2020, 3:09:57 PM 
+> 6/17/2020, 1:28:35 PM 
 
-<<<<<<< HEAD
 ## [exercises](../../README.md)/[10-functions-201](../README.md)/1-fill-in-the-blanks 
-=======
-> 6/17/2020, 12:33:42 PM 
-
-[../README.md](../README.md)
->>>>>>> ee52e3e3edc4c7311b025faa5ba310a12f54566d
 
 - [/1-write-tests.js](#1-write-testsjs) - _incomplete_ 
 - [/2-write-tests.js](#2-write-testsjs) - _incomplete_ 

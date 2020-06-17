@@ -1,12 +1,6 @@
 # Debuggercises 
 
-<<<<<<< HEAD
-> 6/17/2020, 3:09:57 PM 
-=======
-## /exercises 
-
-> 6/17/2020, 12:33:42 PM 
->>>>>>> ee52e3e3edc4c7311b025faa5ba310a12f54566d
+> 6/17/2020, 1:28:35 PM 
 
 ## /exercises 
 
