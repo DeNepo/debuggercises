@@ -1,14 +1,11 @@
 # Debuggercises 
 
-## /exercises/03-comparing-and-asserting/exercises 
+> 6/17/2020, 3:09:57 PM 
 
-> 6/17/2020, 7:57:06 AM 
-
-[../README.md](../README.md)
+## [exercises](../../README.md)/[03-comparing-and-asserting](../README.md)/exercises 
 
 - [/1.js](#1js) - _incomplete_ 
 - [/2.js](#2js) - _incomplete_ 
-
 ---
 
 ## /1.js 

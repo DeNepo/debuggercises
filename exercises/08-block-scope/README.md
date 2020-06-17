@@ -1,12 +1,13 @@
 # Debuggercises 
 
-> 6/17/2020, 3:09:57 PM 
-
 ## [exercises](../README.md)/08-block-scope 
+
+> 6/17/2020, 2:58:31 PM 
 
 - [/1-missing-values](./1-missing-values/README.md)
   - [/1.js](./1-missing-values/README.md#1js) - _incomplete_ 
   - [/2.js](./1-missing-values/README.md#2js) - _incomplete_ 
+  - [/3.js](./1-missing-values/README.md#3js) - _incomplete_ 
 - [/2-missing-variables](./2-missing-variables/README.md)
   - [/1.js](./2-missing-variables/README.md#1js) - _incomplete_ 
   - [/2.js](./2-missing-variables/README.md#2js) - _incomplete_ 

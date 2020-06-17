@@ -1,8 +1,8 @@
 # Debuggercises 
 
-> 6/17/2020, 3:09:57 PM 
-
 ## /exercises 
+
+> 6/17/2020, 3:03:00 PM 
 
 - [/01-variables](./01-variables/README.md)
   - [/examples](./01-variables/examples/README.md)
@@ -141,3 +141,115 @@
     - [/1.js](./10-functions-201/2-fix-the-bugs/README.md#1js) - _fail_ 
     - [/2.js](./10-functions-201/2-fix-the-bugs/README.md#2js) - _error_ 
     - [/3.js](./10-functions-201/2-fix-the-bugs/README.md#3js) - _fail_ 
+---
+
+## Unsorted Logs
+
+```txt
+LOG: /exercises/01-variables
+```
+```txt
+LOG: /exercises/01-variables
+```
+```txt
+LOG: /exercises
+```
+```txt
+LOG: /exercises/02-primitive-types
+```
+```txt
+LOG: /exercises/02-primitive-types
+```
+```txt
+LOG: /exercises
+```
+```txt
+LOG: /exercises/03-comparing-and-asserting
+```
+```txt
+LOG: /exercises/03-comparing-and-asserting
+```
+```txt
+LOG: /exercises
+```
+```txt
+LOG: /exercises/04-value-swaps
+```
+```txt
+LOG: /exercises/04-value-swaps
+```
+```txt
+LOG: /exercises
+```
+```txt
+LOG: /exercises/05-functions-101
+```
+```txt
+LOG: /exercises/05-functions-101
+```
+```txt
+LOG: /exercises/05-functions-101
+```
+```txt
+LOG: /exercises
+```
+```txt
+LOG: /exercises/06-explicit-coercion
+```
+```txt
+LOG: /exercises/06-explicit-coercion
+```
+```txt
+LOG: /exercises
+```
+```txt
+LOG: /exercises/07-logical-operators
+```
+```txt
+LOG: /exercises/07-logical-operators
+```
+```txt
+LOG: /exercises
+```
+```txt
+LOG: /exercises/08-block-scope
+```
+```txt
+LOG: /exercises/08-block-scope
+```
+```txt
+LOG: /exercises/08-block-scope
+```
+```txt
+LOG: /exercises/08-block-scope
+```
+```txt
+LOG: /exercises
+```
+```txt
+LOG: /exercises/09-conditionals
+```
+```txt
+LOG: /exercises/09-conditionals
+```
+```txt
+LOG: /exercises/09-conditionals
+```
+```txt
+LOG: /exercises
+```
+```txt
+LOG: /exercises/10-functions-201
+```
+```txt
+LOG: /exercises/10-functions-201
+```
+```txt
+LOG: /exercises/10-functions-201
+```
+```txt
+LOG: /exercises
+```
+```txt
+LOG: 
+```

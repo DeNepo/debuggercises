@@ -1,10 +1,8 @@
 # Debuggercises 
 
-## /exercises/04-value-swaps/exercises 
+> 6/17/2020, 3:09:57 PM 
 
-> 6/17/2020, 7:57:06 AM 
-
-[../README.md](../README.md)
+## [exercises](../../README.md)/[04-value-swaps](../README.md)/exercises 
 
 - [/1-double-swap.js](#1-double-swapjs) - _incomplete_ 
 - [/2-triple-swap.js](#2-triple-swapjs) - _incomplete_ 
@@ -13,7 +11,6 @@
 - [/5-quadruple-swap.js](#5-quadruple-swapjs) - _incomplete_ 
 - [/6-let-and-const.js](#6-let-and-constjs) - _incomplete_ 
 - [/7-let-and-const.js](#7-let-and-constjs) - _incomplete_ 
-
 ---
 
 ## /1-double-swap.js 

@@ -1,8 +1,8 @@
 # Debuggercises 
 
-> 6/17/2020, 3:09:57 PM 
+## [exercises](../README.md)/[08-block-scope](../../README.md)/2-missing-variables 
 
-## [exercises](../../README.md)/[08-block-scope](../README.md)/4-declare-and-assign 
+> 6/17/2020, 2:58:31 PM 
 
 - [/1.js](#1js) - _incomplete_ 
 - [/2.js](#2js) - _incomplete_ 
@@ -13,11 +13,11 @@
 
 > incomplete 
 >
-> [review source](../../../exercises/08-block-scope/4-declare-and-assign/1.js)
+> [review source](../../../exercises/08-block-scope/2-missing-variables/1.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/08-block-scope/4-declare-and-assign/1.js:3:1)
+    at Object.<anonymous> (  ...  /exercises/08-block-scope/2-missing-variables/1.js:9:16)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -32,13 +32,13 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-_;
-console.assert(a === false, 'Test 1');
+const a = 3;
+let b = 3;
 {
-  _;
-  console.assert(a === null, 'Test 2');
+  const a = 5;
+  b = a;
 }
-console.assert(a === false, 'Test 3');
+console.assert(_ === 5, 'Test 1');
 
 ```
 
@@ -50,11 +50,11 @@ console.assert(a === false, 'Test 3');
 
 > incomplete 
 >
-> [review source](../../../exercises/08-block-scope/4-declare-and-assign/2.js)
+> [review source](../../../exercises/08-block-scope/2-missing-variables/2.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/08-block-scope/4-declare-and-assign/2.js:3:1)
+    at Object.<anonymous> (  ...  /exercises/08-block-scope/2-missing-variables/2.js:10:16)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -69,16 +69,15 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-_;
-console.assert(x === 'hi!', 'Test 1: x');
+let x = 'hi!';
+let y = 'hi!';
 {
-  _;
-  _;
-
-  console.assert(x === 'bye!', 'Test 2: x');
-  console.assert(y === 'hi!', 'Test 3: y');
+  x = 'hi!';
+  let y = 'bye!';
 }
-console.assert(x === 'bye!', 'Test 4: x');
+x = 'bye!';
+console.assert(_ === 'hi!', 'Test 1');
+console.assert(_ === 'bye!', 'Test 2');
 
 ```
 
@@ -90,11 +89,11 @@ console.assert(x === 'bye!', 'Test 4: x');
 
 > incomplete 
 >
-> [review source](../../../exercises/08-block-scope/4-declare-and-assign/3.js)
+> [review source](../../../exercises/08-block-scope/2-missing-variables/3.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/08-block-scope/4-declare-and-assign/3.js:3:1)
+    at Object.<anonymous> (  ...  /exercises/08-block-scope/2-missing-variables/3.js:9:16)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -109,16 +108,13 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-_;
-console.assert(m === 1, 'Test 1: m');
+let m = 0;
 {
-  _;
-  _;
-  console.assert(m === 2, 'Test 2: m');
-  console.assert(l === 3, 'Test 3: l');
+  let l = 10;
+  const m = 1;
+  l = 0;
 }
-_;
-console.assert(m === 4, 'Test 4: m');
+console.assert(_ === 0, 'Test 1');
 
 ```
 

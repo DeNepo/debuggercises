@@ -1,10 +1,8 @@
 # Debuggercises 
 
-## /exercises/10-functions-201/1-fill-in-the-blanks 
+> 6/17/2020, 3:09:57 PM 
 
-> 6/17/2020, 7:57:06 AM 
-
-[../README.md](../README.md)
+## [exercises](../../README.md)/[10-functions-201](../README.md)/1-fill-in-the-blanks 
 
 - [/1-write-tests.js](#1-write-testsjs) - _incomplete_ 
 - [/2-write-tests.js](#2-write-testsjs) - _incomplete_ 
@@ -12,7 +10,6 @@
 - [/4-pass-tests.js](#4-pass-testsjs) - _incomplete_ 
 - [/5-twins.js](#5-twinsjs) - _incomplete_ 
 - [/6-twins.js](#6-twinsjs) - _incomplete_ 
-
 ---
 
 ## /1-write-tests.js 

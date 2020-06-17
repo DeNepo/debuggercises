@@ -1,15 +1,12 @@
 # Debuggercises 
 
-## /exercises/08-block-scope/3-assign-values 
+> 6/17/2020, 3:09:57 PM 
 
-> 6/17/2020, 7:57:06 AM 
-
-[../README.md](../README.md)
+## [exercises](../../README.md)/[08-block-scope](../README.md)/3-assign-values 
 
 - [/1.js](#1js) - _incomplete_ 
 - [/2.js](#2js) - _incomplete_ 
 - [/3.js](#3js) - _incomplete_ 
-
 ---
 
 ## /1.js 

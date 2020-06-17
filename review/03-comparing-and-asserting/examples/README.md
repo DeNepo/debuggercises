@@ -1,10 +1,8 @@
 # Debuggercises 
 
-## /exercises/03-comparing-and-asserting/examples 
+> 6/17/2020, 3:09:57 PM 
 
-> 6/17/2020, 7:57:06 AM 
-
-[../README.md](../README.md)
+## [exercises](../../README.md)/[03-comparing-and-asserting](../README.md)/examples 
 
 - [/1-strict-equality.js](#1-strict-equalityjs)  
 - [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
@@ -12,7 +10,6 @@
 - [/4-testing-with-assert.js](#4-testing-with-assertjs) - _incomplete_ 
 - [/extra-object-is.js](#extra-object-isjs)  
 - [/extra-strict-inequality.js](#extra-strict-inequalityjs)  
-
 ---
 
 ## /1-strict-equality.js 

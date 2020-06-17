@@ -1,10 +1,8 @@
 # Debuggercises 
 
-## /exercises/10-functions-201 
+> 6/17/2020, 3:09:57 PM 
 
-> 6/17/2020, 7:57:06 AM 
-
-[../README.md](../README.md)
+## [exercises](../README.md)/10-functions-201 
 
 - [/0-examples](./0-examples/README.md)
   - [/1-documenting-functions.js](./0-examples/README.md#1-documenting-functionsjs)  
@@ -21,4 +19,3 @@
   - [/1.js](./2-fix-the-bugs/README.md#1js) - _fail_ 
   - [/2.js](./2-fix-the-bugs/README.md#2js) - _error_ 
   - [/3.js](./2-fix-the-bugs/README.md#3js) - _fail_ 
-

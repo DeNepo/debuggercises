@@ -1,8 +1,8 @@
 # Debuggercises 
 
-> 6/17/2020, 3:09:57 PM 
+## [exercises](../README.md)/[08-block-scope](../../README.md)/4-declare-and-assign 
 
-## [exercises](../../README.md)/[08-block-scope](../README.md)/4-declare-and-assign 
+> 6/17/2020, 2:58:31 PM 
 
 - [/1.js](#1js) - _incomplete_ 
 - [/2.js](#2js) - _incomplete_ 

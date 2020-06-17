@@ -1,15 +1,12 @@
 # Debuggercises 
 
-## /exercises/10-functions-201/2-fix-the-bugs 
+> 6/17/2020, 3:09:57 PM 
 
-> 6/17/2020, 7:57:06 AM 
-
-[../README.md](../README.md)
+## [exercises](../../README.md)/[10-functions-201](../README.md)/2-fix-the-bugs 
 
 - [/1.js](#1js) - _fail_ 
 - [/2.js](#2js) - _error_ 
 - [/3.js](#3js) - _fail_ 
-
 ---
 
 ## /1.js 

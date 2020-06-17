@@ -1,16 +1,13 @@
 # Debuggercises 
 
-## /exercises/07-logical-operators/exercises 
+> 6/17/2020, 3:09:57 PM 
 
-> 6/17/2020, 7:57:06 AM 
-
-[../README.md](../README.md)
+## [exercises](../../README.md)/[07-logical-operators](../README.md)/exercises 
 
 - [/and.js](#andjs) - _fail_ 
 - [/not.js](#notjs) - _fail_ 
 - [/or.js](#orjs) - _fail_ 
 - [/ternary.js](#ternaryjs) - _fail_ 
-
 ---
 
 ## /and.js 

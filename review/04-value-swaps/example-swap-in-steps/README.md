@@ -1,16 +1,13 @@
 # Debuggercises 
 
-## /exercises/04-value-swaps/example-swap-in-steps 
+> 6/17/2020, 3:09:57 PM 
 
-> 6/17/2020, 7:57:06 AM 
-
-[../README.md](../README.md)
+## [exercises](../../README.md)/[04-value-swaps](../README.md)/example-swap-in-steps 
 
 - [/0-setup.js](#0-setupjs) - _fail_ 
 - [/1-store-y.js](#1-store-yjs) - _fail_ 
 - [/2-reassign-a.js](#2-reassign-ajs) - _fail_ 
 - [/3-use-stored-y.js](#3-use-stored-yjs) - _pass_ 
-
 ---
 
 ## /0-setup.js 

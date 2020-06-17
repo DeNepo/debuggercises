@@ -328,9 +328,6 @@
             },
             {
               "path": "/2.js"
-            },
-            {
-              "path": "/3.js"
             }
           ]
         },
@@ -412,7 +409,13 @@
               "path": "/2-write-arguments.js"
             },
             {
-              "path": "/3-write-function.js"
+              "path": "/3-write-arguments.js"
+            },
+            {
+              "path": "/4-write-function.js"
+            },
+            {
+              "path": "/5-write-function.js"
             }
           ]
         },
@@ -503,5 +506,5 @@
     "debugger": true,
     "jsTutor": true
   },
-  "lastBuild": "2020-06-17T07:57:06.739Z"
+  "lastBuild": "2020-06-17T13:09:57.486Z"
 }

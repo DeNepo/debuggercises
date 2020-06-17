@@ -1,10 +1,8 @@
 # Debuggercises 
 
-## /exercises/05-functions-101/0-examples 
+> 6/17/2020, 3:09:57 PM 
 
-> 6/17/2020, 7:57:06 AM 
-
-[../README.md](../README.md)
+## [exercises](../../README.md)/[05-functions-101](../README.md)/0-examples 
 
 - [/1-declaration-vs-execution.js](#1-declaration-vs-executionjs)  
 - [/2-parameters-and-arguments.js](#2-parameters-and-argumentsjs)  
@@ -12,7 +10,6 @@
 - [/4-tracing-execution.js](#4-tracing-executionjs) - _pass_ 
 - [/5-scope.js](#5-scopejs)  
 - [/6-test-cases.js](#6-test-casesjs) - _pass_ 
-
 ---
 
 ## /1-declaration-vs-execution.js 

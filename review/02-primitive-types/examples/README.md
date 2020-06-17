@@ -1,16 +1,13 @@
 # Debuggercises 
 
-## /exercises/02-primitive-types/examples 
+> 6/17/2020, 3:09:57 PM 
 
-> 6/17/2020, 7:57:06 AM 
-
-[../README.md](../README.md)
+## [exercises](../../README.md)/[02-primitive-types](../README.md)/examples 
 
 - [/boolean-undefined-null.js](#boolean-undefined-nulljs)  
 - [/number.js](#numberjs)  
 - [/string.js](#stringjs)  
 - [/typeof.js](#typeofjs)  
-
 ---
 
 ## /boolean-undefined-null.js 

@@ -131,17 +131,28 @@ const generateReviews = (virDir, isNested, parentPath = '') => {
       });
   }
 
-  const top = `# ${virDir.title} \n\n`
-    + `## ${parentPath + virDir.path} \n\n`
-    + `> ${(new Date(virDir.lastEvaluation)).toLocaleString()} \n\n`;
-  // + `> ${ interpret(virDir.report.status) }: ${ (new Date(virDir.lastEvaluation)).toLocaleString() } \n\n`;
+  const dotDots = (depth) => {
+    let dots = '';
+    for (let i = depth; i > 0; i--) {
+      dots += '../'
+    }
+    return dots;
+  }
+  const parentPathsToLink = parentPath
+    .split('/')
+    .slice(1);
+  const linkifiedParentPath = parentPathsToLink
+    .map((dirName, index) => `[${dirName}](${dotDots(parentPathsToLink.length - index)}README.md)`)
+    .join('/');
+  const linkifiedPath = linkifiedParentPath + virDir.path
 
+  const top = `# ${virDir.title} \n\n`
+    + `> ${(new Date(virDir.lastEvaluation)).toLocaleString()} \n\n`
+    + `## ${linkifiedPath} \n\n`;
+  // + `> ${ interpret(virDir.report.status) }: ${ (new Date(virDir.lastEvaluation)).toLocaleString() } \n\n`;
 
   const tableOfContents = generateTableOfContents(virDir);
 
-  // const title = (isNested ? '[../README.md](../README.md)\n\n' : '[../README.md](../README.md)\n\n')
-  const title = '[../README.md](../README.md)\n\n'
-    + tableOfContents;
 
   const fileSections = !virDir.report.files
     ? ''
@@ -150,7 +161,8 @@ const generateReviews = (virDir, isNested, parentPath = '') => {
       .reduce((body, section) => body + section + '\n', '');
 
   const newREVIEW = top
-    + title + '\n'
+    // + title + '\n'
+    + tableOfContents
     + fileSections;
 
   virDir.review = newREVIEW;
