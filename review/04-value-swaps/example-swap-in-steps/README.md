@@ -2,7 +2,13 @@
 
 > 6/17/2020, 3:09:57 PM 
 
+<<<<<<< HEAD
 ## [exercises](../../README.md)/[04-value-swaps](../README.md)/example-swap-in-steps 
+=======
+> 6/17/2020, 12:33:42 PM 
+
+[../README.md](../README.md)
+>>>>>>> ee52e3e3edc4c7311b025faa5ba310a12f54566d
 
 - [/0-setup.js](#0-setupjs) - _fail_ 
 - [/1-store-y.js](#1-store-yjs) - _fail_ 

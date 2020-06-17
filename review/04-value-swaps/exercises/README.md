@@ -2,7 +2,13 @@
 
 > 6/17/2020, 3:09:57 PM 
 
+<<<<<<< HEAD
 ## [exercises](../../README.md)/[04-value-swaps](../README.md)/exercises 
+=======
+> 6/17/2020, 12:33:42 PM 
+
+[../README.md](../README.md)
+>>>>>>> ee52e3e3edc4c7311b025faa5ba310a12f54566d
 
 - [/1-double-swap.js](#1-double-swapjs) - _incomplete_ 
 - [/2-triple-swap.js](#2-triple-swapjs) - _incomplete_ 

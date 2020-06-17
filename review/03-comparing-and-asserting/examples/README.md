@@ -2,7 +2,13 @@
 
 > 6/17/2020, 3:09:57 PM 
 
+<<<<<<< HEAD
 ## [exercises](../../README.md)/[03-comparing-and-asserting](../README.md)/examples 
+=======
+> 6/17/2020, 12:33:42 PM 
+
+[../README.md](../README.md)
+>>>>>>> ee52e3e3edc4c7311b025faa5ba310a12f54566d
 
 - [/1-strict-equality.js](#1-strict-equalityjs)  
 - [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
