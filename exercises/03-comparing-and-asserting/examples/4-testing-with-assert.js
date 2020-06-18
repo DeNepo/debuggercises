@@ -25,9 +25,11 @@ console.assert(isTrue3, 'Assertion 3');
 console.log('-- practice exercises --');
 
 const comparison4 = NaN === NaN;
-const isTrue4 = comparison4 === _;
+// const isTrue4 = comparison4 === _; // exercise
+const isTrue4 = comparison4 === false; // solution
 console.assert(isTrue4, 'Assertion 4');
 
 const comparison5 = (typeof 4) === (typeof '4');
-const isTrue5 = comparison5 === _;
+// const isTrue5 = comparison5 === _; // exercise
+const isTrue5 = comparison5 === false; // solution
 console.assert(isTrue5, 'Assertion 5');
