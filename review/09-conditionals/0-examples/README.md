@@ -1,14 +1,8 @@
 # Debuggercises 
 
-> 6/17/2020, 3:09:57 PM 
+> 6/17/2020, 1:28:35 PM 
 
-<<<<<<< HEAD
 ## [exercises](../../README.md)/[09-conditionals](../README.md)/0-examples 
-=======
-> 6/17/2020, 12:33:42 PM 
-
-[../README.md](../README.md)
->>>>>>> ee52e3e3edc4c7311b025faa5ba310a12f54566d
 
 - [/1-if-else.js](#1-if-elsejs) - _pass_ 
 - [/2-if-else-if-else.js](#2-if-else-if-elsejs) - _pass_ 
