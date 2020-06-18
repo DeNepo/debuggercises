@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/17/2020, 1:28:35 PM 
+> 6/18/2020, 7:46:56 AM 
 
 ## [exercises](../../README.md)/[01-variables](../README.md)/examples 
 
@@ -72,7 +72,7 @@ LOG: oak bed frame
 
 // you can use values stored in one variable to assign a value to another
 
-let wood = 'oak';
+const wood = 'oak';
 console.log(wood);
 
 let furniture = wood + ' bed';
