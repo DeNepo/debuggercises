@@ -1,6 +1,6 @@
-# Debuggercises 
+# undefined 
 
-> 6/18/2020, 7:46:56 AM 
+> 6/19/2020, 12:10:33 AM 
 
 ## [exercises](../../README.md)/[07-logical-operators](../README.md)/exercises 
 

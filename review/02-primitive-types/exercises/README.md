@@ -1,6 +1,6 @@
-# Debuggercises 
+# undefined 
 
-> 6/18/2020, 7:46:56 AM 
+> 6/19/2020, 12:10:33 AM 
 
 ## [exercises](../../README.md)/[02-primitive-types](../README.md)/exercises 
 
@@ -26,8 +26,8 @@ UNCAUGHT: ReferenceError: _ is not defined
     at Function.Module._load (internal/modules/cjs/loader.js:937:14)
     at Module.require (internal/modules/cjs/loader.js:1089:19)
     at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
