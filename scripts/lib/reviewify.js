@@ -14,7 +14,7 @@ const renderLogEntry = entry => {
       .map(msg => toString(msg, 4))
       .join('  ');
   }
-  if (4 <= entry.status && entry.status <= 8) {
+  if (4 <= entry.status && entry.status <= 9) {
     const isAsync = entry.status === 5
       ? '(async) ' : '';
     return `${isAsync}UNCAUGHT: ${entry.stack} `;
@@ -125,7 +125,7 @@ const generateReviews = (virDir, isNested, parentPath = '') => {
   if (virDir.dirs) {
     virDir.dirs
       .forEach(subDir => {
-        subDir.title = virDir.title;
+        subDir.config = Object.assign({}, virDir.config, subDir.config);
         subDir.lastEvaluation = virDir.lastEvaluation;
         generateReviews(subDir, true, parentPath + virDir.path)
       });
@@ -157,7 +157,7 @@ const generateReviews = (virDir, isNested, parentPath = '') => {
   const fileSections = !virDir.report.files
     ? ''
     : virDir.report.files
-      .map(fileReport => generateFileSectionMd(fileReport, virDir.title, parentPath + virDir.path))
+      .map(fileReport => generateFileSectionMd(fileReport, virDir.config.title, parentPath + virDir.path))
       .reduce((body, section) => body + section + '\n', '');
 
   const newREVIEW = top
@@ -170,17 +170,18 @@ const generateReviews = (virDir, isNested, parentPath = '') => {
 };
 
 const writeReviews = (virDir, basePath) => {
-  const reviewPathBase = pathModule.join(basePath, virDir.reviewPath || virDir.path);
+  //   const reviewPathBase = pathModule.normalize(pathModule.join(basePath, virDir.config.reviewPath || virDir.path));
   try {
-    fs.accessSync(reviewPathBase);
+    fs.accessSync(basePath);
   } catch (err) {
-    fs.mkdirSync(reviewPathBase);
+    fs.mkdirSync(basePath);
   };
-  const reviewPath = pathModule.join(reviewPathBase, 'README.md');
-  fs.writeFileSync(reviewPath, virDir.review);
+  const reviewReadmePath = pathModule.normalize(pathModule.join(basePath, 'README.md'));
+  fs.writeFileSync(reviewReadmePath, virDir.review);
+
   if (virDir.dirs) {
     virDir.dirs.forEach(subDir => {
-      writeReviews(subDir, pathModule.join(basePath, virDir.reviewPath || virDir.path));
+      writeReviews(subDir, pathModule.normalize(pathModule.join(basePath, subDir.path)));
     });
   };
 };

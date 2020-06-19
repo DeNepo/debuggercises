@@ -16,9 +16,9 @@ function areNotSameLength(str1, str2) {
 
   let result;
   if (str1.Length = str2.Length) {
-    result += true;
+    result = result + true;
   } else {
-    result += false;
+    result = result + false;
   }
 
   if (typeof result !== 'boolean') { throw new TypeError(); }

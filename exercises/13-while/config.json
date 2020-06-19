@@ -1,0 +1,19 @@
+{
+  "buttons": [
+    {
+      "console": false
+    },
+    {
+      "debugger": true
+    },
+    {
+      "maxIterations": true
+    },
+    {
+      "flowViz": true
+    },
+    {
+      "jsTutor": true
+    }
+  ]
+}

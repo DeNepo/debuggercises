@@ -1,5 +1,7 @@
 'use strict';
 
+// this file shows the second line of code to write
+
 // declare & assign variables
 let a = "y";
 let b = "x";

@@ -48,7 +48,7 @@ const register = function (dirPath) {
         //   if it does, add it to the virtual directory
         const subConfigStr = fs.readFileSync(path.normalize(path.join(EXERCISES_DIR, subDir.path, 'config.json')), 'utf-8');
         const subConfig = JSON.parse(subConfigStr);
-        subDir.buttons = subConfig;
+        subDir.config = subConfig;
       } catch (err) { }
       if (subDir) {
         // add the registered sub-directory to the current virtual directory
@@ -88,13 +88,9 @@ const register = function (dirPath) {
 console.log('\n--- registering .js files in ' + removeDirname(EXERCISES_DIR) + ' ---\n');
 
 // register the /exercises directory
-const preRegistered = register(EXERCISES_DIR);
+const registered = register(EXERCISES_DIR);
 // merge the repository config into the virtual directory
-const registered = Object.assign(preRegistered, {
-  title: config.title,
-  reviewPath: config.reviewPath,
-  buttons: config.buttons
-});
+registered.config = config;
 // set the date/time of last build
 registered.lastBuild = (new Date()).toJSON();
 

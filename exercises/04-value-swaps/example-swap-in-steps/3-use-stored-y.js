@@ -1,5 +1,7 @@
 'use strict';
 
+// this file shows the final line of code, with all tests passing
+
 // declare & assign variables
 let a = "y";
 let b = "x";

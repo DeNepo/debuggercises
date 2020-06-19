@@ -7,13 +7,14 @@
 const path = require('path');
 const fs = require('fs');
 
+const config = require('../config.json');
+
 // require evaluation & reporting scripts (non-native, stored in /lib)
 const reportify = require('./lib/reportify');
 const consoleCatcherFactory = require('./lib/console-catcher');
 const reviewify = require('./lib/reviewify');
 const reportThrownFactory = require('./lib/report-thrown');
 const evaluate = require('./lib/evaluate');
-const { normalize } = require('path');
 
 // create a constant variable for the parent directory
 const PARENT_DIR = path.normalize(path.join(__dirname, '..'));
@@ -92,10 +93,12 @@ process.on('exit', (exitCode) => {
         fs.rmdirSync(pathToDelete);
       }
     };
-    const absReviewPath = path.normalize(path.join(PARENT_DIR, index.reviewPath));
+    const absReviewPath = path.normalize(path.join(PARENT_DIR, index.config.reviewPath));
     deleteFolderRecursive(absReviewPath);
 
-    reviewify.writeReviews(index, PARENT_DIR);
+    // console.log(JSON.stringify(index, null, '  '))
+
+    reviewify.writeReviews(index, absReviewPath);
 
     // done!
     nativeConsole.log(`exiting with code: ${exitCode}`);
@@ -113,7 +116,7 @@ index.lastEvaluation = (new Date()).toJSON();
 
 // actually evaluate the exercises
 //  check out /lib/evaluate.js for more details
-evaluate(reportMap, PARENT_DIR, reportThrown);
+evaluate(reportMap, PARENT_DIR, reportThrown, config.maxIterations);
 
 
 

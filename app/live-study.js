@@ -8,18 +8,18 @@ export default class LiveStudy {
 
   constructor(index) {
     this.virDir = index;
-    this.populated = LiveStudy.populate(index, index.path, index.buttons);
-    this.title = index.title;
+    this.populated = LiveStudy.populate(index, index.path, index.config);
+    this.title = index.config.title;
   }
 
-  static populate(data, path, buttons) {
+  static populate(data, path, config) {
     const copy = Object.assign({}, data);
     if (data.files) {
       copy.populated = data.files
-        .map(file => new Exercise(file.path, path, buttons));
+        .map(file => new Exercise(file.path, path, config));
     };
     if (data.dirs) {
-      copy.dirs = data.dirs.map(subDir => LiveStudy.populate(subDir, path + subDir.path, subDir.buttons || buttons));
+      copy.dirs = data.dirs.map(subDir => LiveStudy.populate(subDir, path + subDir.path, subDir.config ? Object.assign({}, config, subDir.config) : config));
     };
     return copy;
   }

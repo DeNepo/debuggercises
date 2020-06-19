@@ -7,20 +7,28 @@ export default (() => {
       rel: path,
       abs: dirPath ? dirPath + path : null
     };
-    const orderedConfigKeys = Object.keys(userConfig);
-    Object.keys(Exercise.defaultConfig)
+    this.config = Object.assign({}, Exercise.defaultConfig, userConfig);
+    console.log(this.config)
+    const defaultButtonConfig = Exercise.defaultConfig.buttons;
+    const defaultButtonConfigKeys = defaultButtonConfig
+      .reduce((keys, entry) => {
+        keys.push(Object.keys(entry)[0]);
+        return keys;
+      }, []);
+    const userButtonConfigKeys = userConfig.buttons
+      .reduce((keys, entry) => {
+        keys.push(Object.keys(entry)[0]);
+        return keys;
+      }, []);
+    defaultButtonConfigKeys
       .forEach((key) => {
-        if (!orderedConfigKeys.includes(key)) {
-          orderedConfigKeys.push(key);
+        if (!userButtonConfigKeys.includes(key)) {
+          console.log(key)
+          userConfig.buttons.push(defaultButtonConfig.find(entry => Object.keys(entry)[0] === key));
         }
       });
-    this.config = orderedConfigKeys
-      .reduce((finalConfig, key) => {
-        finalConfig[key] = Object.keys(userConfig).includes(key)
-          ? userConfig[key]
-          : Exercise.defaultConfig[key];
-        return finalConfig;
-      }, {});
+    this.config.buttons = userConfig.buttons;
+    console.log(this.config.buttons);
   }
 
   Exercise.vizTools = {
@@ -30,6 +38,17 @@ export default (() => {
     debugger: (code) => {
       const stepThrough = eval;
       const debuggered = "debugger;\n\n" + code;
+      stepThrough(debuggered);
+    },
+    maxIterations: (code, config) => {
+      console.log(config)
+      let loopNum = 0;
+      const loopDetected = code.replace(/for *\(.*\{|while *\(.*\{|do *\{/g, loopHead => {
+        const id = ++loopNum;
+        return `let _loop${id} = 0;\n${loopHead}\n  if (++_loop${id} > ${config.maxIterations}) { throw new Error('Loop exceeded ${config.maxIterations} iterations'); }\n`;
+      });
+      const stepThrough = eval;
+      const debuggered = "debugger;\n\n" + loopDetected;
       stepThrough(debuggered);
     },
     jsTutor: (code) => {
@@ -111,22 +130,24 @@ export default (() => {
     },
     tsTutor: (code) => {
       const encodedTST = encodeURIComponent(code);
-      const sanitizedJTST = Exercise.utils.sanitize(encodedTST);
-      const tsTutorURL = `http://www.pythontutor.com/visualize.html#code=${encodedTST}&cumulative=false&curInstr=0&heapPrimitives=false&mode=display&origin=opt-frontend.js&py=ts&rawInputLstJSON=%5B%5D&textReferences=false`;
+      const sanitizedTST = Exercise.utils.sanitize(encodedTST);
+      const tsTutorURL = `http://www.pythontutor.com/visualize.html#code=${sanitizedTST}&cumulative=false&curInstr=0&heapPrimitives=false&mode=display&origin=opt-frontend.js&py=ts&rawInputLstJSON=%5B%5D&textReferences=false`;
       window.open(tsTutorURL, '_blank');
     },
   };
 
-  Object.defineProperty(Exercise, 'defaultConfig', {
+  Exercise.defaultConfig = {};
+
+  Object.defineProperty(Exercise.defaultConfig, 'buttons', {
     get: () => Object.keys(Exercise.vizTools)
       .reduce((config, key) => {
         if (key === 'console' || key === 'debugger') {
-          config[key] = true;
+          config.push({ [key]: true });
         } else {
-          config[key] = false;
+          config.push({ [key]: false });
         }
         return config;
-      }, {})
+      }, [])
   });
 
   Exercise.utils = {
@@ -136,7 +157,7 @@ export default (() => {
       .replace(/%09/g, '%20%20'),
     // large code, to be initialized when needed. ie. babel
     compressToBase64: null,
-    studyWith: function (cb) {
+    studyWith: function (cb, config) {
       const studyType = cb.name;
       // xhr for a promise-free callstack in console & debugger
       const xhr = new XMLHttpRequest();
@@ -150,7 +171,7 @@ export default (() => {
         } else {
           const code = xhr.response;
           console.log(`--- ${studyType}: ${this.path.rel} ----`);
-          cb(code);
+          cb(code, config);
         }
       }
       xhr.onerror = function (err) {
@@ -182,12 +203,17 @@ export default (() => {
     nameEl.innerHTML = this.path.rel + ' : ';
     container.appendChild(nameEl);
 
-    for (let vizTool in this.config) {
-      if (this.config[vizTool] && typeof Exercise.vizTools[vizTool] === 'function') {
+    for (let vizTool of this.config.buttons) {
+      const name = Object.keys(vizTool)[0];
+      const include = Object.values(vizTool)[0];
+      if (include && typeof Exercise.vizTools[name] === 'function') {
         const vizToolButton = document.createElement('button');
         vizToolButton.style = 'padding-right: .5em';
-        vizToolButton.innerHTML = vizTool;
-        vizToolButton.onclick = () => Exercise.utils.studyWith.call(this, Exercise.vizTools[vizTool]);
+        vizToolButton.innerHTML = name;
+        if (name === 'maxIterations') {
+          vizToolButton.innerHTML += ': ' + this.config.maxIterations;
+        }
+        vizToolButton.onclick = () => Exercise.utils.studyWith.call(this, Exercise.vizTools[name], this.config);
         container.appendChild(vizToolButton);
       }
     }

@@ -434,11 +434,21 @@
           ]
         }
       ],
-      "buttons": {
-        "console": false,
-        "debugger": true,
-        "flowViz": true,
-        "jsTutor": true
+      "config": {
+        "buttons": [
+          {
+            "console": false
+          },
+          {
+            "debugger": true
+          },
+          {
+            "flowViz": true
+          },
+          {
+            "jsTutor": true
+          }
+        ]
       }
     },
     {
@@ -497,18 +507,176 @@
           ]
         }
       ]
+    },
+    {
+      "path": "/11-increment-and-decrement",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/postfix-decrement.js"
+            },
+            {
+              "path": "/postfix-increment.js"
+            },
+            {
+              "path": "/prefix-decrement.js"
+            },
+            {
+              "path": "/prefix-increment.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/1.js"
+            },
+            {
+              "path": "/2.js"
+            },
+            {
+              "path": "/3.js"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/13-while",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/while-infinite.js"
+            },
+            {
+              "path": "/while.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/1-write-tests.js"
+            },
+            {
+              "path": "/2-fix-the-bugs.js"
+            },
+            {
+              "path": "/3-pass-tests.js"
+            },
+            {
+              "path": "/4-pass-tests.js"
+            }
+          ]
+        }
+      ],
+      "config": {
+        "buttons": [
+          {
+            "console": false
+          },
+          {
+            "debugger": true
+          },
+          {
+            "maxIterations": true
+          },
+          {
+            "flowViz": true
+          },
+          {
+            "jsTutor": true
+          }
+        ]
+      }
+    },
+    {
+      "path": "/14-for",
+      "dirs": [
+        {
+          "path": "/examples",
+          "files": [
+            {
+              "path": "/for-infinite.js"
+            },
+            {
+              "path": "/for-many-lines.js"
+            },
+            {
+              "path": "/for-one-line.js"
+            }
+          ],
+          "isExample": true
+        },
+        {
+          "path": "/exercises",
+          "files": [
+            {
+              "path": "/1-write-tests.js"
+            },
+            {
+              "path": "/3-refactor.js"
+            },
+            {
+              "path": "/4-refactor.js"
+            },
+            {
+              "path": "/5-fix-the-bugs.js"
+            },
+            {
+              "path": "/6-pass-tests.js"
+            },
+            {
+              "path": "/7-pass-tests.js"
+            }
+          ]
+        }
+      ],
+      "config": {
+        "buttons": [
+          {
+            "console": false
+          },
+          {
+            "debugger": true
+          },
+          {
+            "maxIterations": true
+          },
+          {
+            "flowViz": true
+          },
+          {
+            "jsTutor": true
+          }
+        ]
+      }
     }
   ],
-  "title": "Debuggercises",
-  "reviewPath": "/review",
-  "buttons": {
-    "console": false,
-    "debugger": true,
-    "jsTutor": true
+  "config": {
+    "title": "Debuggercises",
+    "path": "/exercises",
+    "reviewPath": "/review",
+    "maxIterations": 50,
+    "buttons": [
+      {
+        "console": false
+      },
+      {
+        "debugger": true
+      },
+      {
+        "jsTutor": true
+      }
+    ]
   },
-<<<<<<< HEAD
-  "lastBuild": "2020-06-17T16:49:35.612Z"
-=======
-  "lastBuild": "2020-06-17T13:28:35.718Z"
->>>>>>> bb633fbdddbf37f5912ea2acf44054fac004b5bb
+  "lastBuild": "2020-06-19T00:03:59.390Z"
 }

@@ -1,6 +1,6 @@
-# Debuggercises 
+# undefined 
 
-> 6/17/2020, 1:28:35 PM 
+> 6/19/2020, 2:03:11 AM 
 
 ## [exercises](../../README.md)/[01-variables](../README.md)/examples 
 
@@ -72,7 +72,7 @@ LOG: oak bed frame
 
 // you can use values stored in one variable to assign a value to another
 
-let wood = 'oak';
+const wood = 'oak';
 console.log(wood);
 
 let furniture = wood + ' bed';
@@ -104,8 +104,8 @@ UNCAUGHT: TypeError: Assignment to constant variable.
     at Function.Module._load (internal/modules/cjs/loader.js:937:14)
     at Module.require (internal/modules/cjs/loader.js:1089:19)
     at require (internal/modules/cjs/helpers.js:73:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:116:1)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30) 
 ```
 
