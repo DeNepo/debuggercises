@@ -1,6 +1,10 @@
 # undefined 
 
+<<<<<<< HEAD
 > 6/19/2020, 2:42:04 AM 
+=======
+> 6/19/2020, 12:10:33 AM 
+>>>>>>> 5cfc9b596b6a6c2d834f2aad7084eaaa006511ee
 
 ## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/exercises 
 
