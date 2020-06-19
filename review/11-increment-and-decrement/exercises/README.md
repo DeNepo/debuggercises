@@ -2,7 +2,7 @@
 
 > 6/19/2020, 2:42:04 AM 
 
-## [exercises](../../README.md)/[08-block-scope](../README.md)/3-assign-values 
+## [exercises](../../README.md)/[11-increment-and-decrement](../README.md)/exercises 
 
 - [/1.js](#1js) - _incomplete_ 
 - [/2.js](#2js) - _incomplete_ 
@@ -13,11 +13,11 @@
 
 > incomplete 
 >
-> [review source](../../../exercises/08-block-scope/3-assign-values/1.js)
+> [review source](../../../exercises/11-increment-and-decrement/exercises/1.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/08-block-scope/3-assign-values/1.js:3:11)
+    at Object.<anonymous> (  ...  /exercises/11-increment-and-decrement/exercises/1.js:6:22)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -32,13 +32,25 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-const a = _;
-console.assert(a === '12', 'Test 1');
-{
-  const a = _;
-  console.assert(a === true, 'Test 2');
-}
-console.assert(a === '12', 'Test 3');
+let x = 0;
+
+let y = ++x;
+console.assert(x === _, 'Test 1 x');
+console.assert(y === _, 'Test 1 y');
+
+x = y--;
+console.assert(x === _, 'Test 2 x');
+console.assert(y === _, 'Test 2 y');
+
+let z = x++;
+console.assert(x === _, 'Test 3 x');
+console.assert(y === _, 'Test 3 y');
+console.assert(z === _, 'Test 3 z');
+
+y = --x;
+console.assert(x === _, 'Test 4 x');
+console.assert(y === _, 'Test 4 y');
+console.assert(z === _, 'Test 4 z');
 
 ```
 
@@ -50,11 +62,11 @@ console.assert(a === '12', 'Test 3');
 
 > incomplete 
 >
-> [review source](../../../exercises/08-block-scope/3-assign-values/2.js)
+> [review source](../../../exercises/11-increment-and-decrement/exercises/2.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/08-block-scope/3-assign-values/2.js:3:9)
+    at Object.<anonymous> (  ...  /exercises/11-increment-and-decrement/exercises/2.js:6:22)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -69,16 +81,25 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-let x = _;
-console.assert(x === null, 'Test 1: x');
-{
-  x = _;
-  const y = _;
+let x = 0;
 
-  console.assert(x === false, 'Test 2: x');
-  console.assert(y === null, 'Test 3: y');
-}
-console.assert(x === false, 'Test 4: x');
+let y = x--;
+console.assert(x === _, 'Test 1 x');
+console.assert(y === _, 'Test 1 y');
+
+x = ++y;
+console.assert(x === _, 'Test 2 x');
+console.assert(y === _, 'Test 2 y');
+
+let z = y++;
+console.assert(x === _, 'Test 3 x');
+console.assert(y === _, 'Test 3 y');
+console.assert(z === _, 'Test 3 z');
+
+x = --z;
+console.assert(x === _, 'Test 4 x');
+console.assert(y === _, 'Test 4 y');
+console.assert(z === _, 'Test 4 z');
 
 ```
 
@@ -90,11 +111,13 @@ console.assert(x === false, 'Test 4: x');
 
 > incomplete 
 >
-> [review source](../../../exercises/08-block-scope/3-assign-values/3.js)
+> [review source](../../../exercises/11-increment-and-decrement/exercises/3.js)
 
 ```txt
++ PASS: Test 1 x
++ PASS: Test 1 y
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/08-block-scope/3-assign-values/3.js:3:9)
+    at Object.<anonymous> (  ...  /exercises/11-increment-and-decrement/exercises/3.js:9:1)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -109,17 +132,25 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-let m = _;
-console.assert(m === 'tall', 'Test 1: m');
-{
-  let l = _;
-  const m = _;
-  l = _;
-  console.assert(m === 'short', 'Test 2: m');
-  console.assert(l === 'mini', 'Test 3: l');
-}
-m = _;
-console.assert(m === 'medium', 'Test 4: m');
+let x = 0;
+
+let y = x--;
+console.assert(x === -1, 'Test 1 x');
+console.assert(y === 0, 'Test 1 y');
+
+x = _;
+console.assert(x === 0, 'Test 2 x');
+console.assert(y === -1, 'Test 2 y');
+
+let z = _;
+console.assert(x === 1, 'Test 3 x');
+console.assert(y === -1, 'Test 3 y');
+console.assert(z === 0, 'Test 3 z');
+
+_ = --z;
+console.assert(x === 1, 'Test 4 x');
+console.assert(y === -1, 'Test 4 y');
+console.assert(z === -1, 'Test 4 z');
 
 ```
 

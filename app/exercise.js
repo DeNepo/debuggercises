@@ -8,7 +8,6 @@ export default (() => {
       abs: dirPath ? dirPath + path : null
     };
     this.config = Object.assign({}, Exercise.defaultConfig, userConfig);
-    console.log(this.config)
     const defaultButtonConfig = Exercise.defaultConfig.buttons;
     const defaultButtonConfigKeys = defaultButtonConfig
       .reduce((keys, entry) => {
@@ -23,12 +22,10 @@ export default (() => {
     defaultButtonConfigKeys
       .forEach((key) => {
         if (!userButtonConfigKeys.includes(key)) {
-          console.log(key)
           userConfig.buttons.push(defaultButtonConfig.find(entry => Object.keys(entry)[0] === key));
         }
       });
     this.config.buttons = userConfig.buttons;
-    console.log(this.config.buttons);
   }
 
   Exercise.vizTools = {
@@ -40,15 +37,30 @@ export default (() => {
       const debuggered = "debugger;\n\n" + code;
       stepThrough(debuggered);
     },
-    maxIterations: (code, config) => {
-      console.log(config)
+    maxIterations: async (code, config) => {
+      try {
+        js_beautify('');
+      } catch (err) {
+        try {
+          await import('./utils/js-beautify.min.js');
+        } catch (err) { };
+      };
+
       let loopNum = 0;
       const loopDetected = code.replace(/for *\(.*\{|while *\(.*\{|do *\{/g, loopHead => {
+        console.log(loopHead)
         const id = ++loopNum;
         return `let _loop${id} = 0;\n${loopHead}\n  if (++_loop${id} > ${config.maxIterations}) { throw new Error('Loop exceeded ${config.maxIterations} iterations'); }\n`;
       });
+      let formatted = loopDetected;
+      try {
+        formatted = js_beautify(loopDetected, {
+          indent_size: '  ',
+          "brace_style": "collapse,preserve-inline",
+        });
+      } catch (err) { };
       const stepThrough = eval;
-      const debuggered = "debugger;\n\n" + loopDetected;
+      const debuggered = "debugger;\n\n" + formatted;
       stepThrough(debuggered);
     },
     jsTutor: (code) => {

@@ -1,6 +1,6 @@
-# Debuggercises 
+# undefined 
 
-> 6/18/2020, 7:46:56 AM 
+> 6/19/2020, 2:42:04 AM 
 
 ## /exercises 
 
@@ -141,3 +141,34 @@
     - [/1.js](./10-functions-201/2-fix-the-bugs/README.md#1js) - _fail_ 
     - [/2.js](./10-functions-201/2-fix-the-bugs/README.md#2js) - _error_ 
     - [/3.js](./10-functions-201/2-fix-the-bugs/README.md#3js) - _fail_ 
+- [/11-increment-and-decrement](./11-increment-and-decrement/README.md)
+  - [/examples](./11-increment-and-decrement/examples/README.md)
+    - [/postfix-decrement.js](./11-increment-and-decrement/examples/README.md#postfix-decrementjs)  
+    - [/postfix-increment.js](./11-increment-and-decrement/examples/README.md#postfix-incrementjs)  
+    - [/prefix-decrement.js](./11-increment-and-decrement/examples/README.md#prefix-decrementjs)  
+    - [/prefix-increment.js](./11-increment-and-decrement/examples/README.md#prefix-incrementjs)  
+  - [/exercises](./11-increment-and-decrement/exercises/README.md)
+    - [/1.js](./11-increment-and-decrement/exercises/README.md#1js) - _incomplete_ 
+    - [/2.js](./11-increment-and-decrement/exercises/README.md#2js) - _incomplete_ 
+    - [/3.js](./11-increment-and-decrement/exercises/README.md#3js) - _incomplete_ 
+- [/13-while](./13-while/README.md)
+  - [/examples](./13-while/examples/README.md)
+    - [/while-infinite.js](./13-while/examples/README.md#while-infinitejs) - _too much iteration_ 
+    - [/while.js](./13-while/examples/README.md#whilejs) - _pass_ 
+  - [/exercises](./13-while/exercises/README.md)
+    - [/1-write-tests.js](./13-while/exercises/README.md#1-write-testsjs) - _incomplete_ 
+    - [/2-fix-the-bugs.js](./13-while/exercises/README.md#2-fix-the-bugsjs) - _error_ 
+    - [/3-pass-tests.js](./13-while/exercises/README.md#3-pass-testsjs) - _incomplete_ 
+    - [/4-pass-tests.js](./13-while/exercises/README.md#4-pass-testsjs) - _incomplete_ 
+- [/14-for](./14-for/README.md)
+  - [/examples](./14-for/examples/README.md)
+    - [/for-infinite.js](./14-for/examples/README.md#for-infinitejs) - _too much iteration_ 
+    - [/for-many-lines.js](./14-for/examples/README.md#for-many-linesjs) - _pass_ 
+    - [/for-one-line.js](./14-for/examples/README.md#for-one-linejs) - _pass_ 
+  - [/exercises](./14-for/exercises/README.md)
+    - [/1-write-tests.js](./14-for/exercises/README.md#1-write-testsjs) - _incomplete_ 
+    - [/3-refactor.js](./14-for/exercises/README.md#3-refactorjs) - _pass_ 
+    - [/4-refactor.js](./14-for/exercises/README.md#4-refactorjs) - _pass_ 
+    - [/5-fix-the-bugs.js](./14-for/exercises/README.md#5-fix-the-bugsjs) - _error_ 
+    - [/6-pass-tests.js](./14-for/exercises/README.md#6-pass-testsjs) - _incomplete_ 
+    - [/7-pass-tests.js](./14-for/exercises/README.md#7-pass-testsjs) - _incomplete_ 
