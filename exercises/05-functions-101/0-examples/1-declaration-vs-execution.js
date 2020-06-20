@@ -4,9 +4,9 @@
 
 // DECLARING a function creates it in memory
 //  without executing the code inside the curly braces
-function iExist() {
+const iExist = () => {
   console.log('I exist!');
-}
+};
 
 // EXECUTING a function will run the code in it's body
 // you can do this as many times as you like

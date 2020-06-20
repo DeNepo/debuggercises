@@ -5,9 +5,9 @@
 // functions allow you to reuse the same code with different values
 //  PARAMETERS declare variables available inside your function
 //  they are assigned a value when you EXECUTE the function
-function logTheParameter(parameter) {
+const logTheParameter = (parameter) => {
   console.log(typeof parameter, parameter);
-}
+};
 
 // ARGUMENTS assign values to parameters when functions are EXECUTED
 // you can pass arguments directly as values

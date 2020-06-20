@@ -26,10 +26,10 @@
 // this isn't how you will write tests professionally, but it's good for learning
 
 
-function findTheType(param) {
+const findTheType = (param) => {
   const result = typeof param;
   return result;
-}
+};
 
 const _1_arg = true;
 const _1_expect = 'boolean';

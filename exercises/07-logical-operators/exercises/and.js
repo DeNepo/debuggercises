@@ -1,10 +1,10 @@
 'use strict';
 
 // write a function that behaves the same as &&
-//  ... without using &&
-function and(left, right) {
-
-}
+//  ... without using &&, only using ? :
+const and = (left, right) => {
+  return _ ? _ : _;
+};
 
 const _1_expect = 0;
 const _1_actual = and(0, 0);

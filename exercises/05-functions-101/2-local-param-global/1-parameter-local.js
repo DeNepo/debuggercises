@@ -1,9 +1,9 @@
 'use strict';
 
-function funk(parameter) {
+const funk = (parameter) => {
   const local = `funky`;
   return `${local} ${parameter}`;
-}
+};
 
 const funkReturn1 = funk('hello');
 const funk1 = funkReturn1 === _;
@@ -19,10 +19,10 @@ console.assert(funk3, 'Test 3: funk');
 
 
 
-function jazz(parameter) {
+const jazz = (parameter) => {
   const local = `jazzy`;
   return `${local} ${parameter}`;
-}
+};
 
 const jazzReturn1 = jazz('hello');
 const jazz1 = jazzReturn1 === _;

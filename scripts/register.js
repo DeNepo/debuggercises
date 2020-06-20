@@ -37,24 +37,26 @@ const register = function (dirPath) {
     // is the next path a directory or a file?
     const isDirectory = fs.statSync(path.normalize(path.join(dirPath, nextPath))).isDirectory();
     // if it is a file, and not a javascript file, skip it
-    if (!isDirectory && path.extname(nextPath) !== '.js') continue;
+    if (nextPath.includes('.git') || !isDirectory && path.extname(nextPath) !== '.js') continue;
 
     if (isDirectory) {
+
       // recursively register the path if it's a directory
       //  this will create a virtual folder structure for this path
       const subDir = register(path.normalize(path.join(dirPath, nextPath)));
-      try {
-        // check if that directory has an over-riding buttons configuration
-        //   if it does, add it to the virtual directory
-        const subConfigStr = fs.readFileSync(path.normalize(path.join(EXERCISES_DIR, subDir.path, 'config.json')), 'utf-8');
-        const subConfig = JSON.parse(subConfigStr);
-        subDir.config = subConfig;
-      } catch (err) { }
       if (subDir) {
         // add the registered sub-directory to the current virtual directory
         dirs.push(subDir);
         if (isExample) subDir.isExample = isExample;
       };
+
+      const dirConfigPath = path.join(dirPath, nextPath, 'config.json');
+      if (fs.existsSync(dirConfigPath)) {
+        const subConfigStr = fs.readFileSync(dirConfigPath, 'utf-8');
+        const subConfig = JSON.parse(subConfigStr);
+        subDir.config = subConfig;
+      }
+
     } else {
       // create a file path object, and push it into the array of files in this directory
       const fileData = { path: '/' + nextPath };

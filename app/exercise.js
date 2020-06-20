@@ -48,7 +48,6 @@ export default (() => {
 
       let loopNum = 0;
       const loopDetected = code.replace(/for *\(.*\{|while *\(.*\{|do *\{/g, loopHead => {
-        console.log(loopHead)
         const id = ++loopNum;
         return `let _loop${id} = 0;\n${loopHead}\n  if (++_loop${id} > ${config.maxIterations}) { throw new Error('Loop exceeded ${config.maxIterations} iterations'); }\n`;
       });

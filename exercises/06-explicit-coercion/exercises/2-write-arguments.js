@@ -1,12 +1,12 @@
 'use strict';
 
-function mystery(x) {
+const mystery = (x) => {
   if (typeof x === 'string') { throw new TypeError('x cannot be a string'); }
 
   const stringed = String(x);
   const numbered = Number(stringed);
   return numbered;
-}
+};
 
 // find an argument to get the expected return value
 

@@ -146,7 +146,7 @@ const generateReviews = (virDir, isNested, parentPath = '') => {
     .join('/');
   const linkifiedPath = linkifiedParentPath + virDir.path
 
-  const top = `# ${virDir.title} \n\n`
+  const top = `# ${virDir.config.title} \n\n`
     + `> ${(new Date(virDir.lastEvaluation)).toLocaleString()} \n\n`
     + `## ${linkifiedPath} \n\n`;
   // + `> ${ interpret(virDir.report.status) }: ${ (new Date(virDir.lastEvaluation)).toLocaleString() } \n\n`;

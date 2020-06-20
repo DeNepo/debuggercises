@@ -2,11 +2,11 @@
 
 let global = '.';
 
-function jazz(parameter) {
+const jazz = (parameter) => {
   const local = `jazzy ${global}`;
   global = `#${global}`;
   return `${parameter} ${local} ${global}`;
-}
+};
 
 const globalTest1 = global === _;
 console.assert(globalTest1, 'Test 1: global');

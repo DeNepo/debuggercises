@@ -1,10 +1,6 @@
-# undefined 
+# Debuggercises 
 
-<<<<<<< HEAD
-> 6/19/2020, 2:42:04 AM 
-=======
-> 6/19/2020, 12:10:33 AM 
->>>>>>> 5cfc9b596b6a6c2d834f2aad7084eaaa006511ee
+> 6/20/2020, 4:47:24 PM 
 
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/2-local-param-global 
 
@@ -72,9 +68,9 @@ console.log('\n-- Parameters ---');
 //  all variables used inside this function's body are declared as parameters
 //  the variables get their value from arguments when the function is called
 
-function usesParameters(param1, param2) {
+const usesParameters = (param1, param2) => {
   return `${param1}, ${param2}`;
-}
+};
 
 const fromParams1 = usesParameters('hi', 'bye');
 console.log('fromParams1:', fromParams1);
@@ -87,11 +83,11 @@ console.log('\n-- Local Variables ---');
 //  all variables used inside this function's body are declared locally
 //  the variables get their value from a local assignmnet
 
-function usesLocals() {
+const usesLocals = () => {
   const local1 = 'town';
   const local2 = 'ship';
   return `${local1}, ${local2}`;
-}
+};
 
 const fromLocals1 = usesLocals();
 console.log('fromLocals1:', fromLocals1);
@@ -104,11 +100,11 @@ console.log('\n-- Global Variables ---');
 //  all variables used inside this function's body are declared globally
 //  the variables get their value from local and global assignments (confusing!)
 
-function usesGlobals() {
+const usesGlobals = () => {
   global1 = `${global}-`;
   global2 = '-'
   return `${global1}, ${global2}`;
-}
+};
 
 let global1 = 'a';
 let global2 = 'b';
@@ -165,10 +161,10 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-function funk(parameter) {
+const funk = (parameter) => {
   const local = `funky`;
   return `${local} ${parameter}`;
-}
+};
 
 const funkReturn1 = funk('hello');
 const funk1 = funkReturn1 === _;
@@ -184,10 +180,10 @@ console.assert(funk3, 'Test 3: funk');
 
 
 
-function jazz(parameter) {
+const jazz = (parameter) => {
   const local = `jazzy`;
   return `${local} ${parameter}`;
-}
+};
 
 const jazzReturn1 = jazz('hello');
 const jazz1 = jazzReturn1 === _;
@@ -241,10 +237,10 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 let global = '';
 
-function funk(parameter) {
+const funk = (parameter) => {
   global = `${global}funky`;
   return `${global} ${parameter}`;
-}
+};
 
 const funkReturn1 = funk('hello');
 const funk1 = funkReturn1 === _;
@@ -294,10 +290,10 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 let global = '<3';
 
-function jazz(parameter) {
+const jazz = (parameter) => {
   global = `${global} jazzy`;
   return `${global} ${parameter}`;
-}
+};
 
 const jazzReturn1 = jazz('hello');
 const jazz1 = jazzReturn1 === _;
@@ -346,11 +342,11 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 let global = 'awesome';
 
-function funk() {
+const funk = () => {
   const local = 'funky'
   global = `#${global}`;
   return `${local} ${global}`;
-}
+};
 
 const funkReturn1 = funk();
 const funkTest1 = funkReturn1 === _;
@@ -419,11 +415,11 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 let global = 'turtle';
 
-function jazz() {
+const jazz = () => {
   const local = 'jazzy'
   global = `${global}!`;
   return `${global} ${local}`;
-}
+};
 
 const jazzReturn1 = jazz();
 const jazzTest1 = jazzReturn1 === _;
@@ -492,11 +488,11 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 let global = '.';
 
-function funk(parameter) {
+const funk = (parameter) => {
   const local = `funky ${global}`;
   global = `${global} ${global}`;
   return `${parameter} ${local} ${global}`;
-}
+};
 
 const globalTest1 = global === _;
 console.assert(globalTest1, 'Test 1: global');
@@ -556,11 +552,11 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 let global = '.';
 
-function jazz(parameter) {
+const jazz = (parameter) => {
   const local = `jazzy ${global}`;
   global = `#${global}`;
   return `${parameter} ${local} ${global}`;
-}
+};
 
 const globalTest1 = global === _;
 console.assert(globalTest1, 'Test 1: global');
@@ -619,29 +615,33 @@ console.assert(globalTest5, 'Test 7: global');
 
 // which of these are pure functions?
 
-function a() {
+const a = () => {
   return x + y;
-}
+};
 
-function b(y) {
+const b = (y) => {
   result = x + y;
   return result;
-}
+};
 
-function c(y, x) {
+const c = (y, x) => {
   const m = y - x
   return x + m;
-}
+};
 
-function d(x, y) {
+const d = (x, y) => {
   const a = 'hi';
   return x + y + z;
-}
+};
 
-function e(x, y) {
+const e = (x, y) => {
   p += z;
   return z + y;
-}
+};
+
+const f = (p) => {
+  return p * 2;
+};
 
 ```
 

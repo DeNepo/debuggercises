@@ -1,12 +1,12 @@
 'use strict';
 
-function mystery(x) {
+const mystery = (x) => {
   if (typeof x === 'boolean') { throw new TypeError('x cannot be a boolean'); }
 
   const booleaned = Boolean(x);
   const numbered = Number(booleaned);
   return numbered;
-}
+};
 
 // write the expected return value
 

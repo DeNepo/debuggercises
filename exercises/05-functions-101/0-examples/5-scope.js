@@ -4,10 +4,10 @@
 
 // variables declared in a function body are SCOPED to that function
 //  this includes parameters and locally declared variables
-function findTheType(param) {
+const findTheType = (param) => {
   const result = typeof param;
   return result;
-}
+};
 
 // what happens if you uncomment the console.logs below?
 

@@ -1,10 +1,6 @@
-# undefined 
+# Debuggercises 
 
-<<<<<<< HEAD
-> 6/19/2020, 2:42:04 AM 
-=======
-> 6/19/2020, 12:10:33 AM 
->>>>>>> 5cfc9b596b6a6c2d834f2aad7084eaaa006511ee
+> 6/20/2020, 4:47:24 PM 
 
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/1-scrambles 
 
@@ -36,9 +32,9 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-function scramble(param1, param2, param3) {
+const scramble = (param1, param2, param3) => {
   return `${param3}${param1}${param2}`;
-}
+};
 
 const _1_expect = _;
 const _1_actual = scramble('a', 'c', 'b');
@@ -94,9 +90,9 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-function scramble(param1, param2, param3) {
+const scramble = (param1, param2, param3) => {
   return `${param1}${param3}${param2}`;
-}
+};
 
 
 const _1_expect = 'cab';
@@ -163,9 +159,9 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 ```js
 'use strict';
 
-function scramble() {
+const scramble = () => {
 
-}
+};
 
 const _1_expect = "yxz";
 const _1_actual = scramble('x', 'z', 'y');

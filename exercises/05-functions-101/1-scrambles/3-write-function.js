@@ -1,8 +1,8 @@
 'use strict';
 
-function scramble() {
+const scramble = () => {
 
-}
+};
 
 const _1_expect = "yxz";
 const _1_actual = scramble('x', 'z', 'y');

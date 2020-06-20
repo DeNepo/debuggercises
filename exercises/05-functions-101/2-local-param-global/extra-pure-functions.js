@@ -15,26 +15,30 @@
 
 // which of these are pure functions?
 
-function a() {
+const a = () => {
   return x + y;
-}
+};
 
-function b(y) {
+const b = (y) => {
   result = x + y;
   return result;
-}
+};
 
-function c(y, x) {
+const c = (y, x) => {
   const m = y - x
   return x + m;
-}
+};
 
-function d(x, y) {
+const d = (x, y) => {
   const a = 'hi';
   return x + y + z;
-}
+};
 
-function e(x, y) {
+const e = (x, y) => {
   p += z;
   return z + y;
-}
+};
+
+const f = (p) => {
+  return p * 2;
+};

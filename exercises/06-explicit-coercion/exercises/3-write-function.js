@@ -5,9 +5,9 @@
    Number
    ===
 */
-function mystery(x, y) {
+const mystery = (x, y) => {
 
-}
+};
 
 // all of the test cases are correct
 

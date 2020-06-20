@@ -2,10 +2,10 @@
 
 let global = '<3';
 
-function jazz(parameter) {
+const jazz = (parameter) => {
   global = `${global} jazzy`;
   return `${global} ${parameter}`;
-}
+};
 
 const jazzReturn1 = jazz('hello');
 const jazz1 = jazzReturn1 === _;

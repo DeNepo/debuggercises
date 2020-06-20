@@ -1,0 +1,16 @@
+{
+  "buttons": [
+    {
+      "console": false
+    },
+    {
+      "debugger": true
+    },
+    {
+      "maxIterations": true
+    },
+    {
+      "jsTutor": true
+    }
+  ]
+}

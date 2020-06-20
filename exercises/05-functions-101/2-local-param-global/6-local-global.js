@@ -2,11 +2,11 @@
 
 let global = 'turtle';
 
-function jazz() {
+const jazz = () => {
   const local = 'jazzy'
   global = `${global}!`;
   return `${global} ${local}`;
-}
+};
 
 const jazzReturn1 = jazz();
 const jazzTest1 = jazzReturn1 === _;

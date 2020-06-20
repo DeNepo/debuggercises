@@ -11,10 +11,10 @@
 
 let global = '';
 
-function funk(parameter) {
+const funk = (parameter) => {
   global = `${global}funky`;
   return `${global} ${parameter}`;
-}
+};
 
 const funkReturn1 = funk('hello');
 const funk1 = funkReturn1 === _;

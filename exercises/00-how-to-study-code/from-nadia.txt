@@ -1,0 +1,36 @@
+Hi Evan!
+Here's a summary of what I've got from our discussion and some personal tips to myself (I don't know if it helps somehow):
+
+What changed my perspective on hometask:
+(1) if I read this in Prep work and kept that in mind for every following exercise https://study.hackyourfuture.be/learning/learning-from-code
+(2) if I realised that we use degugging as a tool to learn the code, not yet for debugging and bug-fixing itself
+(3) examples are more crucial for beginners and require time to understand it thoroughly (rather than dive into exercises itself)
+
+Might be helpful:
+- a short notice "how this module is different from previous " or that it's absolutely different as focus of this module is inner processes and inner logic of code (rather then rules comparatively to html&css)
+- maybe for the first lesson of the new module (and minding the lack of tutors),
+  a short explanation or list of what to do (like "don't forget to fork-clone-open"),
+  what to use (VS or JS tutor) and where to navigate
+
+The learning flow (for eggy-beginners):
+It would require the understanding of what each line of code means (technically and humanly)
+and require to predict the next step and it would not require you to write the code yourself at least yet
+  - just to get the logic of the provided code.
+
+How to reach that :
+1 - open a code example with JST (https://study.hackyourfuture.be/learning/learning-from-code#use-tools-to-visualize-program-memory-browser-vsc-debugger-js-tutor)
+2 - read aloud the line of the code that pointed with red arrow in human language, or better say translate it to yourself into meaningful human language (exercise comments aloud reading or Mosh video might come as a help with that, but your personal vocabulary might take a while to appear)
+(might be skipped for Isolate/Integrate part)
+3 - before pressing button next, ask yourself "which line might be next"
+4 - press Next and check yourself if you were right or wrong
+5 - ask yourself "what this line do"  and check what JST writes you at the right side (or sometimes in print output window at the right top side)
+5 - ask again "which line is next" and "what's gonna change" (or "what is gonna change in the memory")
+5 - finish the code using these steps
+6 - try it on with the exercises
+
+How to spend time on JST with most value and profit this week:
+1 - repeat this flow above for every example (!!!) and exercise from this week
+
+Not to forget:
+1. It would take time, patience and it won't be fast.
+2. A tiny relief: the blanks that you have to fill in some exercises are already hinted to you in JS tutor (check "return value").

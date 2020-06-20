@@ -1,0 +1,13 @@
+{
+  "buttons": [
+    {
+      "console": false
+    },
+    {
+      "debugger": false
+    },
+    {
+      "esprima": true
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   Does a value cast to true or to false?
 */
 
-function classify(x) {
+const classify = (x) => {
   const castToBoolean = Boolean(x);
   const isTrue = castToBoolean === true;
   return isTrue ? 'truthy' : 'falsy';

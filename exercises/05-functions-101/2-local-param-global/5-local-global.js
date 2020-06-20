@@ -2,11 +2,11 @@
 
 let global = 'awesome';
 
-function funk() {
+const funk = () => {
   const local = 'funky'
   global = `#${global}`;
   return `${local} ${global}`;
-}
+};
 
 const funkReturn1 = funk();
 const funkTest1 = funkReturn1 === _;

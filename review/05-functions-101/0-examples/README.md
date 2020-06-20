@@ -1,10 +1,6 @@
-# undefined 
+# Debuggercises 
 
-<<<<<<< HEAD
-> 6/19/2020, 2:42:04 AM 
-=======
-> 6/19/2020, 12:10:33 AM 
->>>>>>> 5cfc9b596b6a6c2d834f2aad7084eaaa006511ee
+> 6/20/2020, 4:47:24 PM 
 
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/0-examples 
 
@@ -35,9 +31,9 @@ LOG: I exist!
 
 // DECLARING a function creates it in memory
 //  without executing the code inside the curly braces
-function iExist() {
+const iExist = () => {
   console.log('I exist!');
-}
+};
 
 // EXECUTING a function will run the code in it's body
 // you can do this as many times as you like
@@ -79,9 +75,9 @@ LOG: undefined  undefined
 // functions allow you to reuse the same code with different values
 //  PARAMETERS declare variables available inside your function
 //  they are assigned a value when you EXECUTE the function
-function logTheParameter(parameter) {
+const logTheParameter = (parameter) => {
   console.log(typeof parameter, parameter);
-}
+};
 
 // ARGUMENTS assign values to parameters when functions are EXECUTED
 // you can pass arguments directly as values
@@ -128,10 +124,10 @@ logTheParameter();
 // PS. study this in JS Tutor!
 
 // RETURN VALUES allow you to send values from functions to global scope
-function findTheType(param) {
+const findTheType = (param) => {
   return typeof param;
   console.log('nothing after a return statement is executed!');
-}
+};
 
 // to save return values for later, assign them to a variable
 const returned1 = findTheType(4.0);
@@ -176,33 +172,36 @@ console.assert(isTrue5, 'Assertion 5');
 ```js
 // PS. Study this in JS Tutor and the debugger
 
-// 0: Creation Phase, function is declared
-function flipper(param1, param2) {
-  // 2 and 9: a return value is generated
-  return param2 + param1;
-  // 3 and 10: global result variable is declared & assigned
-}
+// 1: use strict
+'use strict';
 
-// 1: flipper is executed, creating a new frame
+// 2: declare variable flipper and declare the function assigned to it
+const flipper = (param1, param2) => {
+  // 4, 11: a return value is generated
+  return param2 + param1;
+  // 5, 12: global result variable is declared & assigned
+};
+
+// 3: flipper is executed, creating a new frame
 //    parameters are assigned values using 'a' & 'b'
 const result1 = flipper('a', 'b');
-// 4: the value of result1 is compared to the expected value
+// 6: the value of result1 is compared to the expected value
 const isTrue1 = result1 === 'ba';
-// 5: the first assertion is evaluated
+// 7: the first assertion is evaluated
 console.assert(isTrue1, 'Assertion 1');
 
-// 6: variable is declared & assigned
+// 8: variable is declared & assigned
 const arg1 = 'x';
-// 7: variable is declared & assigned
+// 9: variable is declared & assigned
 const arg2 = 'y';
 
-// 8: flipper is executed, creating a new frame
+// 10: flipper is executed, creating a new frame
 //    parameters are assigned values from arg1 & arg2
 const result2 = flipper(arg1, arg2);
 
-// 11: the value of result2 is compared to the expected value
+// 13: the value of result2 is compared to the expected value
 const isTrue2 = result2 === 'yx';
-// 12: the second assertion is evaluated
+// 14: the second assertion is evaluated
 console.assert(isTrue2, 'Assertion 2');
 
 
@@ -235,10 +234,10 @@ LOG: string  object
 
 // variables declared in a function body are SCOPED to that function
 //  this includes parameters and locally declared variables
-function findTheType(param) {
+const findTheType = (param) => {
   const result = typeof param;
   return result;
-}
+};
 
 // what happens if you uncomment the console.logs below?
 
@@ -312,10 +311,10 @@ console.log(typeof returned3, returned3);
 // this isn't how you will write tests professionally, but it's good for learning
 
 
-function findTheType(param) {
+const findTheType = (param) => {
   const result = typeof param;
   return result;
-}
+};
 
 const _1_arg = true;
 const _1_expect = 'boolean';
