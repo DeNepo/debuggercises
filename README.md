@@ -12,7 +12,7 @@ Welcome to programming!
   - [`npm run start`](#npm-run-start)
   - ['localhost:3000`](#localhost3000)
 - [How to Review](#how-to-review)
-  - [`/review`](./review/README.md)
+- [`/review`](./review/README.md)
 
 ---
 
