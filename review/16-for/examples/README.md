@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/21/2020, 8:26:33 AM 
+> 6/21/2020, 9:05:10 AM 
 
 ## [exercises](../../README.md)/[16-for](../README.md)/examples 
 
@@ -92,6 +92,25 @@ console.assert(result === 6, 'Test 1');
     // ... loop body ...
   }
 
+*/
+
+/* variables analysis:
+
+  result: accumulator, number, strategy
+    this is the final result of the program
+    it accumulates all of i's values using addition
+    declared in global scope
+    reassigned in the while loop
+    read in the assertion
+  i: stepper, number, strategy
+    it's value is used to create the final result
+    it's reassigned incremental values in the for loop declaration
+    declared in for loop, not available in global scope
+    read in the for loop ...
+      to accumulate the result
+      to check if the loop has stepped enough times
+
+  this is a simple analysis, what would you want to add?
 */
 
 ```
