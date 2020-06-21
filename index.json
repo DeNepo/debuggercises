@@ -614,6 +614,24 @@
       ]
     },
     {
+      "path": "/13-roles-of-variables",
+      "files": [
+        {
+          "path": "/readme.js"
+        },
+        {
+          "path": "/0-back-tracing.js"
+        },
+        {
+          "path": "/1-examples.js",
+          "isExample": true
+        },
+        {
+          "path": "/2-exercises.js"
+        }
+      ]
+    },
+    {
       "path": "/14-increment-and-decrement",
       "dirs": [
         {
@@ -1172,5 +1190,5 @@
       }
     ]
   },
-  "lastBuild": "2020-06-21T00:59:53.443Z"
+  "lastBuild": "2020-06-21T07:15:26.193Z"
 }

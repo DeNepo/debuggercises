@@ -10,7 +10,7 @@ const typeCheck = (parameter) => {
 
   /* 5: this step will write to memory
     the local variable result will be assigned a value
-    the typeof parameter will be evaluated on the parameter
+    the typeof argument will be evaluated on the parameter
       parameter: true
       --> "boolean"
     "boolean" will be assigned to the variable result
