@@ -2,10 +2,31 @@
   "path": "/exercises",
   "dirs": [
     {
-      "path": "/00-how-to-study-code",
+      "path": "/00-how-to-study-javascript",
       "files": [
         {
-          "path": "/0-readme.js"
+          "path": "/readme.js"
+        },
+        {
+          "path": "/1-studying-in-js-tutor.js"
+        },
+        {
+          "path": "/2-studying-in-devtools.js"
+        },
+        {
+          "path": "/3-studying-in-vscode.js"
+        },
+        {
+          "path": "/4-example-variable.js",
+          "isExample": true
+        },
+        {
+          "path": "/5-example-conditional.js",
+          "isExample": true
+        },
+        {
+          "path": "/6-example-function.js",
+          "isExample": true
         }
       ]
     },
@@ -929,7 +950,7 @@
           "path": "/0-examples",
           "files": [
             {
-              "path": "/0-readme.js"
+              "path": "/readme.js"
             },
             {
               "path": "/1-literals.js"
@@ -990,7 +1011,7 @@
           "path": "/extra--syntax-trees",
           "files": [
             {
-              "path": "/0-readme.js"
+              "path": "/readme.js"
             },
             {
               "path": "/1-types-and-comparisons.js"
@@ -1023,7 +1044,7 @@
                 "console": false
               },
               {
-                "debugger": false
+                "debugger": true
               },
               {
                 "esprima": true
@@ -1134,6 +1155,11 @@
       ]
     }
   ],
+  "files": [
+    {
+      "path": "/recursetoofar.js"
+    }
+  ],
   "config": {
     "title": "Debuggercises",
     "path": "/exercises",
@@ -1151,5 +1177,5 @@
       }
     ]
   },
-  "lastBuild": "2020-06-20T14:51:17.679Z"
+  "lastBuild": "2020-06-21T00:54:28.035Z"
 }

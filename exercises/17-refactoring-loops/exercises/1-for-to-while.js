@@ -1,35 +1,44 @@
-// fill in the blanks so that both loops behave the same
-//  the tests are correct, there's no need to change them!
-const forToWhile_1_Tests = [
-  { name: 'first', args: [-60], expected: 0 },
-  { name: 'second', args: [3], expected: -3 },
-  { name: 'third', args: [-3], expected: 0 },
-  { name: 'fourth', args: [0], expected: -3 },
-  { name: 'fifth', args: [100], expected: -47.33203125 },
-  { name: 'sixth', args: [12], expected: -10.3125 },
-  { name: 'seventh', args: [67], expected: -47.33203125 },
-  { name: 'eighth', args: [-4], expected: 0 },
-  { name: 'ninth', args: [-2], expected: -3 },
-  { name: 'tenth', args: [4], expected: -3 },
-];
+'use strict';
 
-// refactor this for loop into a while loop
-function forToWhile(a) {
-  let result = 0;
-  for (let i = -3; i === 10 || i < a; i *= -1.5) {
-    result += i;
+/**
+ * repeat a string once for every character in the string
+ * @param {string} toRepeat
+ * @returns {string}
+ */
+const repeatLengthTimes = (toRepeat) => {
+  if (typeof toRepeat !== 'string') { throw new TypeError('toRepeat'); }
+
+  let result = '';
+  for (let i = 0; i < toRepeat.length; i++) {
+    result += toRepeat;
   }
+
+  if (typeof result !== 'string') { throw new TypeError('result'); }
   return result;
-}
+};
 
-forToWhile_1_Tests.forEach(function evaluateTestCase(test) {
-  try {
-    console.assert(forToWhile(...test.args) === test.expected, test.name + ' ' + forToWhile(...test.args));
-  } catch (err) {
-    if (err.message === 'Loop exceeded 1000 iterations') {
-      test.hasOwnProperty('expected')
-        ? console.assert(false, test.name + ' ---> 1000+')
-        : console.assert(true, test.name + ' ---> 1000+');
-    } else { throw err; }
-  }
-});
+
+const _1_expect = '3232';
+const _1_actual = repeatLengthTimes('32');
+console.assert(_1_actual === _1_expect, 'Test  1');
+
+const _2_expect = '';
+const _2_actual = repeatLengthTimes('');
+console.assert(_2_actual === _2_expect, 'Test  2');
+
+const _3_expect = '321321321';
+const _3_actual = repeatLengthTimes('321');
+console.assert(_3_actual === _3_expect, 'Test  3');
+
+const _4_expect = '-<>--<>--<>--<>-';
+const _4_actual = repeatLengthTimes('-<>-');
+console.assert(_4_actual === _4_expect, 'Test  4');
+
+const _5_expect = '.';
+const _5_actual = repeatLengthTimes('.');
+console.assert(_5_actual === _5_expect, 'Test  5');
+
+const _6_expect = '5432154321543215432154321';
+const _6_actual = repeatLengthTimes('54321');
+console.assert(_6_actual === _6_expect, 'Test  6');
+

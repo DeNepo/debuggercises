@@ -1,11 +1,11 @@
 # Debuggercises 
 
-> 6/20/2020, 4:47:24 PM 
+> 6/21/2020, 2:54:28 AM 
 
 ## [exercises](../README.md)/20-operator-precedence 
 
 - [/0-examples](./0-examples/README.md)
-  - [/0-readme.js](./0-examples/README.md#0-readmejs) - _pass_ 
+  - [/readme.js](./0-examples/README.md#readmejs) - _pass_ 
   - [/1-literals.js](./0-examples/README.md#1-literalsjs) - _pass_ 
   - [/2-literals.js](./0-examples/README.md#2-literalsjs) - _pass_ 
   - [/3-literals.js](./0-examples/README.md#3-literalsjs) - _pass_ 
@@ -23,7 +23,7 @@
   - [/4-all-together.js](./2-variables/README.md#4-all-togetherjs) - _pass_ 
   - [/5-all-together.js](./2-variables/README.md#5-all-togetherjs) - _pass_ 
 - [/extra--syntax-trees](./extra--syntax-trees/README.md)
-  - [/0-readme.js](./extra--syntax-trees/README.md#0-readmejs)  
+  - [/readme.js](./extra--syntax-trees/README.md#readmejs)  
   - [/1-types-and-comparisons.js](./extra--syntax-trees/README.md#1-types-and-comparisonsjs)  
   - [/2-arithmetic.js](./extra--syntax-trees/README.md#2-arithmeticjs)  
   - [/3-unary-operators.js](./extra--syntax-trees/README.md#3-unary-operatorsjs)  

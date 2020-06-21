@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/20/2020, 4:47:24 PM 
+> 6/21/2020, 2:54:28 AM 
 
 ## [exercises](../../README.md)/[16-for](../README.md)/exercises 
 
@@ -130,7 +130,7 @@ const repeatLengthTimes = (toRepeat) => {
   if (typeof toRepeat !== 'string') { throw new TypeError('toRepeat'); }
 
   let result = 0;
-  for (let i = 1; i <= toRepeat.length; i++) {
+  for (let i = 1; i < toRepeat.length; i++) {
     result = `${toRepeat}${result}`;
   }
 

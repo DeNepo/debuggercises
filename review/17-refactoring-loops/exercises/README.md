@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/20/2020, 4:47:24 PM 
+> 6/21/2020, 2:54:28 AM 
 
 ## [exercises](../../README.md)/[17-refactoring-loops](../README.md)/exercises 
 
@@ -17,54 +17,59 @@
 > [review source](../../../exercises/17-refactoring-loops/exercises/1-for-to-while.js)
 
 ```txt
-+ PASS: first 0
-+ PASS: second -3
-+ PASS: third 0
-+ PASS: fourth -3
-+ PASS: fifth -47.33203125
-+ PASS: sixth -10.3125
-+ PASS: seventh -47.33203125
-+ PASS: eighth 0
-+ PASS: ninth -3
-+ PASS: tenth -3
++ PASS: Test  1
++ PASS: Test  2
++ PASS: Test  3
++ PASS: Test  4
++ PASS: Test  5
++ PASS: Test  6
 ```
 
 ```js
-// fill in the blanks so that both loops behave the same
-//  the tests are correct, there's no need to change them!
-const forToWhile_1_Tests = [
-  { name: 'first', args: [-60], expected: 0 },
-  { name: 'second', args: [3], expected: -3 },
-  { name: 'third', args: [-3], expected: 0 },
-  { name: 'fourth', args: [0], expected: -3 },
-  { name: 'fifth', args: [100], expected: -47.33203125 },
-  { name: 'sixth', args: [12], expected: -10.3125 },
-  { name: 'seventh', args: [67], expected: -47.33203125 },
-  { name: 'eighth', args: [-4], expected: 0 },
-  { name: 'ninth', args: [-2], expected: -3 },
-  { name: 'tenth', args: [4], expected: -3 },
-];
+'use strict';
 
-// refactor this for loop into a while loop
-function forToWhile(a) {
-  let result = 0;
-  for (let i = -3; i === 10 || i < a; i *= -1.5) {
-    result += i;
+/**
+ * repeat a string once for every character in the string
+ * @param {string} toRepeat
+ * @returns {string}
+ */
+const repeatLengthTimes = (toRepeat) => {
+  if (typeof toRepeat !== 'string') { throw new TypeError('toRepeat'); }
+
+  let result = '';
+  for (let i = 0; i < toRepeat.length; i++) {
+    result += toRepeat;
   }
+
+  if (typeof result !== 'string') { throw new TypeError('result'); }
   return result;
-}
+};
 
-forToWhile_1_Tests.forEach(function evaluateTestCase(test) {
-  try {
-    console.assert(forToWhile(...test.args) === test.expected, test.name + ' ' + forToWhile(...test.args));
-  } catch (err) {
-    if (err.message === 'Loop exceeded 1000 iterations') {
-      test.hasOwnProperty('expected')
-        ? console.assert(false, test.name + ' ---> 1000+')
-        : console.assert(true, test.name + ' ---> 1000+');
-    } else { throw err; }
-  }
-});
+
+const _1_expect = '3232';
+const _1_actual = repeatLengthTimes('32');
+console.assert(_1_actual === _1_expect, 'Test  1');
+
+const _2_expect = '';
+const _2_actual = repeatLengthTimes('');
+console.assert(_2_actual === _2_expect, 'Test  2');
+
+const _3_expect = '321321321';
+const _3_actual = repeatLengthTimes('321');
+console.assert(_3_actual === _3_expect, 'Test  3');
+
+const _4_expect = '-<>--<>--<>--<>-';
+const _4_actual = repeatLengthTimes('-<>-');
+console.assert(_4_actual === _4_expect, 'Test  4');
+
+const _5_expect = '.';
+const _5_actual = repeatLengthTimes('.');
+console.assert(_5_actual === _5_expect, 'Test  5');
+
+const _6_expect = '5432154321543215432154321';
+const _6_actual = repeatLengthTimes('54321');
+console.assert(_6_actual === _6_expect, 'Test  6');
+
 
 ```
 
@@ -79,54 +84,77 @@ forToWhile_1_Tests.forEach(function evaluateTestCase(test) {
 > [review source](../../../exercises/17-refactoring-loops/exercises/2-for-to-while.js)
 
 ```txt
-+ PASS: first 10
-+ PASS: second 3
-+ PASS: third 10
-+ PASS: fourth 0
-+ PASS: fifth 10
-+ PASS: sixth 10
-+ PASS: seventh 10
-+ PASS: eighth 10
-+ PASS: ninth 10
-+ PASS: tenth 6
++ PASS: Test  1
++ PASS: Test  2
++ PASS: Test  3
++ PASS: Test  4
++ PASS: Test  5
++ PASS: Test  6
++ PASS: Test  7
++ PASS: Test  8
++ PASS: Test  9
 ```
 
 ```js
-// fill in the blanks so that both loops behave the same
-//  the tests are correct, there's no need to change them!
-const forToWhile_2_Tests = [
-  { name: 'first', args: [-60], expected: 10 },
-  { name: 'second', args: [3], expected: 3 },
-  { name: 'third', args: [-3], expected: 10 },
-  { name: 'fourth', args: [0], expected: 0 },
-  { name: 'fifth', args: [100], expected: 10 },
-  { name: 'sixth', args: [12], expected: 10 },
-  { name: 'seventh', args: [67], expected: 10 },
-  { name: 'eighth', args: [-4], expected: 10 },
-  { name: 'ninth', args: [-2], expected: 10 },
-  { name: 'tenth', args: [4], expected: 6 },
-];
+'use strict';
 
-// refactor this for loop into a while loop
-function forToWhile(a) {
+/**
+ * among the greatest mysteries in the world, no one knows!
+ * @param {number}
+ * @returns {number}
+ */
+const mystery = (x) => {
+  if (typeof x !== 'number') { throw new TypeError('x'); }
+
   let result = 0;
-  for (let i = 0, j = 10; i !== j && i !== a; i++ , j--) {
-    result += i;
+  for (let i = 0; i !== Math.abs(x); i++) {
+    if (x > 0) {
+      result += 1;
+    } else {
+      result += -1;
+    }
   }
-  return result;
-}
 
-forToWhile_2_Tests.forEach(function evaluateTestCase(test) {
-  try {
-    console.assert(forToWhile(...test.args) === test.expected, test.name + ' ' + forToWhile(...test.args));
-  } catch (err) {
-    if (err.message === 'Loop exceeded 1000 iterations') {
-      test.hasOwnProperty('expected')
-        ? console.assert(false, test.name + ' ---> 1000+')
-        : console.assert(true, test.name + ' ---> 1000+');
-    } else { throw err; }
-  }
-});
+  if (typeof result !== 'number') { throw new TypeError('result'); }
+  return result;
+};
+
+
+const _1_actual = mystery(-4);
+const _1_expect = -4;
+console.assert(_1_actual === _1_expect, 'Test  1');
+
+const _2_actual = mystery(-3);
+const _2_expect = -3;
+console.assert(_2_actual === _2_expect, 'Test  2');
+
+const _3_actual = mystery(-2);
+const _3_expect = -2;
+console.assert(_3_actual === _3_expect, 'Test  3');
+
+const _4_actual = mystery(-1);
+const _4_expect = -1;
+console.assert(_4_actual === _4_expect, 'Test  4');
+
+const _5_expect = 0;
+const _5_actual = mystery(0);
+console.assert(_5_actual === _5_expect, 'Test  5');
+
+const _6_expect = 1;
+const _6_actual = mystery(1);
+console.assert(_6_actual === _6_expect, 'Test  6');
+
+const _7_expect = 2;
+const _7_actual = mystery(2);
+console.assert(_7_actual === _7_expect, 'Test  7');
+
+const _8_expect = 3;
+const _8_actual = mystery(3);
+console.assert(_8_actual === _8_expect, 'Test  8');
+
+const _9_expect = 4;
+const _9_actual = mystery(4);
+console.assert(_9_actual === _9_expect, 'Test  9');
 
 ```
 

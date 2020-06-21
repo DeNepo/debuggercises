@@ -78,9 +78,20 @@ const register = function (dirPath) {
       .split(path.sep).join('/')
       .split('/').pop(),
   };
+
   // add the virtual files & sub-directories if they exist
-  if (files.length > 0) virDir.files = files;
-  if (dirs.length > 0) virDir.dirs = dirs;
+  if (dirs.length > 0) { virDir.dirs = dirs; }
+  if (files.length > 0) {
+    const readme = files
+      .find(fileObj => fileObj.path.toLowerCase() === '/readme.js')
+    if (readme) {
+      virDir.files = files
+        .filter(fileObj => fileObj !== readme);
+      virDir.files.unshift(readme)
+    } else {
+      virDir.files = files;
+    }
+  };
 
   // return the new virtual directory
   return virDir;

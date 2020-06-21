@@ -1,10 +1,10 @@
 # Debuggercises 
 
-> 6/20/2020, 4:47:24 PM 
+> 6/21/2020, 2:54:28 AM 
 
 ## [exercises](../../README.md)/[20-operator-precedence](../README.md)/extra--syntax-trees 
 
-- [/0-readme.js](#0-readmejs)  
+- [/readme.js](#readmejs)  
 - [/1-types-and-comparisons.js](#1-types-and-comparisonsjs)  
 - [/2-arithmetic.js](#2-arithmeticjs)  
 - [/3-unary-operators.js](#3-unary-operatorsjs)  
@@ -15,11 +15,11 @@
 - [/8-all-together.js](#8-all-togetherjs)  
 ---
 
-## /0-readme.js 
+## /readme.js 
 
 >  
 >
-> [review source](../../../exercises/20-operator-precedence/extra--syntax-trees/0-readme.js)
+> [review source](../../../exercises/20-operator-precedence/extra--syntax-trees/readme.js)
 
 ```js
 /* Syntax Trees

@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/20/2020, 4:47:24 PM 
+> 6/21/2020, 2:54:28 AM 
 
 ## [exercises](../README.md)/21-refactoring-expressions 
 
@@ -25,10 +25,10 @@
 - [/3-logical-operators](./3-logical-operators/README.md)
   - [/1.js](./3-logical-operators/README.md#1js) - _pass_ 
   - [/2.js](./3-logical-operators/README.md#2js) - _pass_ 
-  - [/3.js](./3-logical-operators/README.md#3js) - _fail_ 
+  - [/3.js](./3-logical-operators/README.md#3js) - _pass_ 
 - [/4-all-together](./4-all-together/README.md)
   - [/1.js](./4-all-together/README.md#1js) - _pass_ 
   - [/2.js](./4-all-together/README.md#2js) - _pass_ 
   - [/3.js](./4-all-together/README.md#3js) - _pass_ 
   - [/4.js](./4-all-together/README.md#4js) - _pass_ 
-  - [/5.js](./4-all-together/README.md#5js) - _fail_ 
+  - [/5.js](./4-all-together/README.md#5js) - _pass_ 

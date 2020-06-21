@@ -20,6 +20,8 @@ module.exports = (PARENT_DIR, reportMap) => {
         // Error: Loop exceeded [0-9] iterations
         // caught a possibly endless loop at evaluation
         thrownReport.status = 9;
+      } else if (thrown && thrown.stack && thrown.stack.includes('RangeError: Maximum call stack size exceeded')) {
+        thrownReport.status = 10;
       } else if (thrown.stack.includes('SyntaxError:')) {
         thrownReport.status = 7;
       } else {

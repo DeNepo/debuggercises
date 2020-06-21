@@ -14,7 +14,7 @@ const renderLogEntry = entry => {
       .map(msg => toString(msg, 4))
       .join('  ');
   }
-  if (4 <= entry.status && entry.status <= 9) {
+  if (4 <= entry.status) {
     const isAsync = entry.status === 5
       ? '(async) ' : '';
     return `${isAsync}UNCAUGHT: ${entry.stack} `;
@@ -154,11 +154,12 @@ const generateReviews = (virDir, isNested, parentPath = '') => {
   const tableOfContents = generateTableOfContents(virDir);
 
 
-  const fileSections = !virDir.report.files
-    ? ''
-    : virDir.report.files
+  const fileSections = virDir.report.files
+    ? virDir.report.files
       .map(fileReport => generateFileSectionMd(fileReport, virDir.config.title, parentPath + virDir.path))
-      .reduce((body, section) => body + section + '\n', '');
+      .reduce((body, section) => body + section + '\n', '')
+    : '';
+
 
   const newREVIEW = top
     // + title + '\n'

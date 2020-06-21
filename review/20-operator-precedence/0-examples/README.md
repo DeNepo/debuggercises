@@ -1,10 +1,10 @@
 # Debuggercises 
 
-> 6/20/2020, 4:47:24 PM 
+> 6/21/2020, 2:54:28 AM 
 
 ## [exercises](../../README.md)/[20-operator-precedence](../README.md)/0-examples 
 
-- [/0-readme.js](#0-readmejs) - _pass_ 
+- [/readme.js](#readmejs) - _pass_ 
 - [/1-literals.js](#1-literalsjs) - _pass_ 
 - [/2-literals.js](#2-literalsjs) - _pass_ 
 - [/3-literals.js](#3-literalsjs) - _pass_ 
@@ -12,11 +12,11 @@
 - [/5-variables.js](#5-variablesjs) - _pass_ 
 ---
 
-## /0-readme.js 
+## /readme.js 
 
 > pass 
 >
-> [review source](../../../exercises/20-operator-precedence/0-examples/0-readme.js)
+> [review source](../../../exercises/20-operator-precedence/0-examples/readme.js)
 
 ```txt
 + PASS: Step 0

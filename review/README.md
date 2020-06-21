@@ -1,11 +1,18 @@
 # Debuggercises 
 
-> 6/20/2020, 4:47:24 PM 
+> 6/21/2020, 2:54:28 AM 
 
 ## /exercises 
 
-- [/00-how-to-study-code](./00-how-to-study-code/README.md)
-  - [/0-readme.js](./00-how-to-study-code/README.md#0-readmejs)  
+- [/recursetoofar.js](#recursetoofarjs) - _too much recursion_ 
+- [/00-how-to-study-javascript](./00-how-to-study-javascript/README.md)
+  - [/readme.js](./00-how-to-study-javascript/README.md#readmejs)  
+  - [/1-studying-in-js-tutor.js](./00-how-to-study-javascript/README.md#1-studying-in-js-tutorjs)  
+  - [/2-studying-in-devtools.js](./00-how-to-study-javascript/README.md#2-studying-in-devtoolsjs)  
+  - [/3-studying-in-vscode.js](./00-how-to-study-javascript/README.md#3-studying-in-vscodejs)  
+  - [/4-example-variable.js](./00-how-to-study-javascript/README.md#4-example-variablejs)  
+  - [/5-example-conditional.js](./00-how-to-study-javascript/README.md#5-example-conditionaljs)  
+  - [/6-example-function.js](./00-how-to-study-javascript/README.md#6-example-functionjs)  
 - [/01-variables](./01-variables/README.md)
   - [/examples](./01-variables/examples/README.md)
     - [/1-declaration-assignment-reassignment.js](./01-variables/examples/README.md#1-declaration-assignment-reassignmentjs)  
@@ -228,7 +235,7 @@
     - [/unary-minus.js](./19-implicit-coercion/2-replicate/README.md#unary-minusjs) - _fail_ 
 - [/20-operator-precedence](./20-operator-precedence/README.md)
   - [/0-examples](./20-operator-precedence/0-examples/README.md)
-    - [/0-readme.js](./20-operator-precedence/0-examples/README.md#0-readmejs) - _pass_ 
+    - [/readme.js](./20-operator-precedence/0-examples/README.md#readmejs) - _pass_ 
     - [/1-literals.js](./20-operator-precedence/0-examples/README.md#1-literalsjs) - _pass_ 
     - [/2-literals.js](./20-operator-precedence/0-examples/README.md#2-literalsjs) - _pass_ 
     - [/3-literals.js](./20-operator-precedence/0-examples/README.md#3-literalsjs) - _pass_ 
@@ -246,7 +253,7 @@
     - [/4-all-together.js](./20-operator-precedence/2-variables/README.md#4-all-togetherjs) - _pass_ 
     - [/5-all-together.js](./20-operator-precedence/2-variables/README.md#5-all-togetherjs) - _pass_ 
   - [/extra--syntax-trees](./20-operator-precedence/extra--syntax-trees/README.md)
-    - [/0-readme.js](./20-operator-precedence/extra--syntax-trees/README.md#0-readmejs)  
+    - [/readme.js](./20-operator-precedence/extra--syntax-trees/README.md#readmejs)  
     - [/1-types-and-comparisons.js](./20-operator-precedence/extra--syntax-trees/README.md#1-types-and-comparisonsjs)  
     - [/2-arithmetic.js](./20-operator-precedence/extra--syntax-trees/README.md#2-arithmeticjs)  
     - [/3-unary-operators.js](./20-operator-precedence/extra--syntax-trees/README.md#3-unary-operatorsjs)  
@@ -277,10 +284,40 @@
   - [/3-logical-operators](./21-refactoring-expressions/3-logical-operators/README.md)
     - [/1.js](./21-refactoring-expressions/3-logical-operators/README.md#1js) - _pass_ 
     - [/2.js](./21-refactoring-expressions/3-logical-operators/README.md#2js) - _pass_ 
-    - [/3.js](./21-refactoring-expressions/3-logical-operators/README.md#3js) - _fail_ 
+    - [/3.js](./21-refactoring-expressions/3-logical-operators/README.md#3js) - _pass_ 
   - [/4-all-together](./21-refactoring-expressions/4-all-together/README.md)
     - [/1.js](./21-refactoring-expressions/4-all-together/README.md#1js) - _pass_ 
     - [/2.js](./21-refactoring-expressions/4-all-together/README.md#2js) - _pass_ 
     - [/3.js](./21-refactoring-expressions/4-all-together/README.md#3js) - _pass_ 
     - [/4.js](./21-refactoring-expressions/4-all-together/README.md#4js) - _pass_ 
-    - [/5.js](./21-refactoring-expressions/4-all-together/README.md#5js) - _fail_ 
+    - [/5.js](./21-refactoring-expressions/4-all-together/README.md#5js) - _pass_ 
+---
+
+## /recursetoofar.js 
+
+> too much recursion 
+>
+> [review source](../exercises/recursetoofar.js)
+
+```txt
+UNCAUGHT: RangeError: Maximum call stack size exceeded
+    at e (  ...  /exercises/recursetoofar.js:1:11)
+    at e (  ...  /exercises/recursetoofar.js:1:19)
+    at e (  ...  /exercises/recursetoofar.js:1:19)
+    at e (  ...  /exercises/recursetoofar.js:1:19)
+    at e (  ...  /exercises/recursetoofar.js:1:19)
+    at e (  ...  /exercises/recursetoofar.js:1:19)
+    at e (  ...  /exercises/recursetoofar.js:1:19)
+    at e (  ...  /exercises/recursetoofar.js:1:19)
+    at e (  ...  /exercises/recursetoofar.js:1:19)
+    at e (  ...  /exercises/recursetoofar.js:1:19) 
+```
+
+```js
+const e = () => { e() };
+e();
+
+```
+
+[TOP](#debuggercises)
+

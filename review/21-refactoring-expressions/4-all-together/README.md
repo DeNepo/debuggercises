@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/20/2020, 4:47:24 PM 
+> 6/21/2020, 2:54:28 AM 
 
 ## [exercises](../../README.md)/[21-refactoring-expressions](../README.md)/4-all-together 
 
@@ -8,7 +8,7 @@
 - [/2.js](#2js) - _pass_ 
 - [/3.js](#3js) - _pass_ 
 - [/4.js](#4js) - _pass_ 
-- [/5.js](#5js) - _fail_ 
+- [/5.js](#5js) - _pass_ 
 ---
 
 ## /1.js 
@@ -255,17 +255,17 @@ console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
 
 ## /5.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/21-refactoring-expressions/4-all-together/5.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
++ PASS: Test 1
++ PASS: Test 2
 + PASS: Test 3
 + PASS: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
++ PASS: Test 5
++ PASS: Test 6
 ```
 
 ```js
@@ -284,11 +284,11 @@ console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
 const mystery = (a, b) => !+(!!a + (+b) % a);
 
 
-const _1_expect = true;
+const _1_expect = false;
 const _1_actual = mystery('23', 23.0);
 console.assert(Object.is(_1_actual, _1_expect), 'Test 1');
 
-const _2_expect = false;
+const _2_expect = true;
 const _2_actual = mystery('fdsa', 'fdsa');
 console.assert(Object.is(_2_actual, _2_expect), 'Test 2');
 
@@ -300,11 +300,11 @@ const _4_expect = false;
 const _4_actual = mystery(1000, 1e3);
 console.assert(Object.is(_4_actual, _4_expect), 'Test 4');
 
-const _5_expect = true;
+const _5_expect = false;
 const _5_actual = mystery(true, 1);
 console.assert(Object.is(_5_actual, _5_expect), 'Test 5');
 
-const _6_expect = false;
+const _6_expect = true;
 const _6_actual = mystery(undefined, NaN);
 console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
 
