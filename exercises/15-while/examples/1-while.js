@@ -20,3 +20,20 @@ console.assert(a === 8, 'Test 1');
     // ... loop body ...
   }
 */
+
+/* variables analysis:
+
+  a: accumulator, number, strategy
+    a also holds the final result
+    it accumulates b/4
+    declared in global scope
+    reassigned in the while loop
+    read in the assertion
+  b: constant, number, strategy
+    it's value is used to create the final result
+    it's also read in the loop while condition
+    declared in global scope
+    read in while body
+
+  this is a simple analysis, what would you want to add?
+*/
