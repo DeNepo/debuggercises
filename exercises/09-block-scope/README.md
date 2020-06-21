@@ -1,4 +1,10 @@
+<<<<<<< HEAD:exercises/09-block-scope/README.md
 # Debuggercises 
+=======
+# undefined 
+
+> 6/19/2020, 12:47:28 AM 
+>>>>>>> d7fb31e756388e12e4e0420feb6829b6993cae4b:review/08-block-scope/README.md
 
 ## [exercises](../README.md)/08-block-scope 
 

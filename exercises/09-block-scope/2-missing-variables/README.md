@@ -1,6 +1,10 @@
 # Debuggercises 
 
+<<<<<<< HEAD:exercises/09-block-scope/2-missing-variables/README.md
 ## [exercises](../README.md)/[08-block-scope](../../README.md)/2-missing-variables 
+=======
+> 6/19/2020, 12:47:28 AM 
+>>>>>>> d7fb31e756388e12e4e0420feb6829b6993cae4b:review/08-block-scope/2-missing-variables/README.md
 
 > 6/17/2020, 2:58:31 PM 
 
