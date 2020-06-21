@@ -58,6 +58,7 @@ What is complex about these exercises is keeping track of the values in memory, 
 - Don't rush, understand!  Programming is hard.
   - The examples and exercises will still be there to study for the rest of the week.
   - It's better to fail slowly and learn from your mistakes than to pass quickly and not understand why.
+- Read through [00-how-to-study-javascript](./review/00-how-to-study-javascript/README.md)
 - Practice [Pair Programming](https://study.hackyourfuture.be/collaborating/pair-programming): two people, one computer.
 - Don't skip the examples!  Understanding and experimenting with working code is a very efficient way to learn programming.
 - Take a look through the [Learning From Code](https://study.hackyourfuture.be/learning/learning-from-code) guide for more study tips.
@@ -70,10 +71,9 @@ Think of these three steps in your learning each time you encounter a new skill 
 1. __Modify__: Learn to change the behavior of other people's code with small modifications.
 1. __Create__: Learn to write your own code from an empty page.
 
-
 Don't worry about making to _Create_ as fast as possible.  The more time you spend learning to _Read_ and _Modify_, the better you will master _Create_.
 
-The exercises in this repository focus on _Read_ and _Modify_. 
+The exercises in this repository focus on _Read_ and _Modify_.
 
 [TOP](#debuggercises)
 
