@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/21/2020, 1:03:39 AM 
+> 6/21/2020, 8:26:33 AM 
 
 ## /exercises 
 
@@ -165,6 +165,9 @@
     - [/1.js](./12-functions-301/2-fix-the-bugs/README.md#1js) - _fail_ 
     - [/2.js](./12-functions-301/2-fix-the-bugs/README.md#2js) - _error_ 
     - [/3.js](./12-functions-301/2-fix-the-bugs/README.md#3js) - _fail_ 
+- [/13-roles-of-variables](./13-roles-of-variables/README.md)
+  - [/readme.js](./13-roles-of-variables/README.md#readmejs)  
+  - [/back-tracing.js](./13-roles-of-variables/README.md#back-tracingjs)  
 - [/14-increment-and-decrement](./14-increment-and-decrement/README.md)
   - [/examples](./14-increment-and-decrement/examples/README.md)
     - [/postfix-decrement.js](./14-increment-and-decrement/examples/README.md#postfix-decrementjs)  

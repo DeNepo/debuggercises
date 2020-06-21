@@ -620,14 +620,7 @@
           "path": "/readme.js"
         },
         {
-          "path": "/0-back-tracing.js"
-        },
-        {
-          "path": "/1-examples.js",
-          "isExample": true
-        },
-        {
-          "path": "/2-exercises.js"
+          "path": "/back-tracing.js"
         }
       ]
     },
@@ -1190,9 +1183,5 @@
       }
     ]
   },
-<<<<<<< HEAD
-  "lastBuild": "2020-06-21T07:15:26.193Z"
-=======
-  "lastBuild": "2020-06-21T01:03:39.057Z"
->>>>>>> 0072fa5d70aee4b99c2f871334bcf6f72dbd4dd7
+  "lastBuild": "2020-06-21T08:26:33.469Z"
 }
