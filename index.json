@@ -1155,11 +1155,6 @@
       ]
     }
   ],
-  "files": [
-    {
-      "path": "/recursetoofar.js"
-    }
-  ],
   "config": {
     "title": "Debuggercises",
     "path": "/exercises",
@@ -1177,9 +1172,5 @@
       }
     ]
   },
-<<<<<<< HEAD
-  "lastBuild": "2020-06-21T00:54:28.035Z"
-=======
-  "lastBuild": "2020-06-19T00:47:28.936Z"
->>>>>>> d7fb31e756388e12e4e0420feb6829b6993cae4b
+  "lastBuild": "2020-06-21T00:57:18.664Z"
 }
