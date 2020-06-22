@@ -1,10 +1,6 @@
 # Debuggercises 
 
-<<<<<<< HEAD
-> 6/22/2020, 10:39:37 PM 
-=======
-> 6/22/2020, 2:59:40 PM 
->>>>>>> 3dabcadeaaf2674e66eab9d4d0dfb156b3c4bd97
+> 6/22/2020, 8:41:24 PM 
 
 ## [exercises](../../README.md)/[06-explicit-coercion](../README.md)/exercises 
 
