@@ -1,6 +1,10 @@
 # Debuggercises 
 
+<<<<<<< HEAD
 > 6/22/2020, 10:39:37 PM 
+=======
+> 6/22/2020, 2:59:40 PM 
+>>>>>>> 3dabcadeaaf2674e66eab9d4d0dfb156b3c4bd97
 
 ## [exercises](../../README.md)/[21-refactoring-expressions](../README.md)/1-coercion-and-comparing 
 
