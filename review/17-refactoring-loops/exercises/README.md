@@ -1,12 +1,12 @@
 # Debuggercises 
 
-> 6/21/2020, 8:26:33 AM 
+> 6/22/2020, 10:39:37 PM 
 
 ## [exercises](../../README.md)/[17-refactoring-loops](../README.md)/exercises 
 
 - [/1-for-to-while.js](#1-for-to-whilejs) - _pass_ 
 - [/2-for-to-while.js](#2-for-to-whilejs) - _pass_ 
-- [/3-while-to-for.js](#3-while-to-forjs) - _pass_ 
+- [/3-while-to-for.js](#3-while-to-forjs) - _too much iteration_ 
 - [/4-while-to-for.js](#4-while-to-forjs) - _pass_ 
 ---
 
@@ -164,17 +164,23 @@ console.assert(_9_actual === _9_expect, 'Test  9');
 
 ## /3-while-to-for.js 
 
-> pass 
+> too much iteration 
 >
 > [review source](../../../exercises/17-refactoring-loops/exercises/3-while-to-for.js)
 
 ```txt
 + PASS: Test  1
-+ PASS: Test  2
-+ PASS: Test  3
-+ PASS: Test  4
-+ PASS: Test  5
-+ PASS: Test  6
+UNCAUGHT: Error: Loop exceeded 20 iterations
+    at mystery (  ...  /exercises/17-refactoring-loops/exercises/3-while-to-for.js:18:54)
+    at Object.<anonymous> (  ...  /exercises/17-refactoring-loops/exercises/3-while-to-for.js:33:19)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Module.require (internal/modules/cjs/loader.js:1089:19)
+    at require (internal/modules/cjs/helpers.js:73:18)
+    at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
+    at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
 ```
 
 ```js

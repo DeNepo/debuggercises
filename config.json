@@ -2,10 +2,13 @@
   "title": "Debuggercises",
   "path": "/exercises",
   "reviewPath": "/review",
-  "maxIterations": 50,
+  "loopGuard": {
+    "active": false,
+    "max": 20
+  },
   "buttons": [
     {
-      "console": false
+      "console": true
     },
     {
       "debugger": true

@@ -215,7 +215,23 @@
               "path": "/6-test-cases.js"
             }
           ],
-          "isExample": true
+          "isExample": true,
+          "config": {
+            "buttons": [
+              {
+                "console": true
+              },
+              {
+                "debugger": true
+              },
+              {
+                "flowViz": true
+              },
+              {
+                "jsTutor": true
+              }
+            ]
+          }
         },
         {
           "path": "/1-scrambles",
@@ -248,16 +264,16 @@
               "path": "/3-parameter-global.js"
             },
             {
+              "path": "/4-local-global.js"
+            },
+            {
               "path": "/5-local-global.js"
             },
             {
-              "path": "/6-local-global.js"
+              "path": "/6-parameter-local-global.js"
             },
             {
-              "path": "/7-parameter-local-global.js"
-            },
-            {
-              "path": "/8-prameter-local-global.js"
+              "path": "/7-prameter-local-global.js"
             },
             {
               "path": "/extra-pure-functions.js"
@@ -448,7 +464,7 @@
           "config": {
             "buttons": [
               {
-                "console": false
+                "console": true
               },
               {
                 "debugger": true
@@ -676,15 +692,16 @@
           ],
           "isExample": true,
           "config": {
+            "loopGuard": {
+              "active": true,
+              "max": 10
+            },
             "buttons": [
               {
-                "console": false
+                "console": true
               },
               {
                 "debugger": true
-              },
-              {
-                "maxIterations": true
               },
               {
                 "flowViz": true
@@ -710,23 +727,7 @@
             {
               "path": "/4-pass-tests.js"
             }
-          ],
-          "config": {
-            "buttons": [
-              {
-                "console": false
-              },
-              {
-                "debugger": true
-              },
-              {
-                "maxIterations": true
-              },
-              {
-                "jsTutor": true
-              }
-            ]
-          }
+          ]
         }
       ]
     },
@@ -748,15 +749,16 @@
           ],
           "isExample": true,
           "config": {
+            "loopGuard": {
+              "active": true,
+              "max": 20
+            },
             "buttons": [
               {
-                "console": false
+                "console": true
               },
               {
                 "debugger": true
-              },
-              {
-                "maxIterations": true
               },
               {
                 "flowViz": true
@@ -782,23 +784,7 @@
             {
               "path": "/4-pass-tests.js"
             }
-          ],
-          "config": {
-            "buttons": [
-              {
-                "console": false
-              },
-              {
-                "debugger": true
-              },
-              {
-                "maxIterations": true
-              },
-              {
-                "jsTutor": true
-              }
-            ]
-          }
+          ]
         }
       ]
     },
@@ -824,15 +810,16 @@
         }
       ],
       "config": {
+        "loopGuard": {
+          "active": true,
+          "max": 20
+        },
         "buttons": [
           {
             "console": false
           },
           {
             "debugger": true
-          },
-          {
-            "maxIterations": true
           },
           {
             "jsTutor": true
@@ -1170,10 +1157,13 @@
     "title": "Debuggercises",
     "path": "/exercises",
     "reviewPath": "/review",
-    "maxIterations": 50,
+    "loopGuard": {
+      "active": false,
+      "max": 20
+    },
     "buttons": [
       {
-        "console": false
+        "console": true
       },
       {
         "debugger": true
@@ -1183,5 +1173,5 @@
       }
     ]
   },
-  "lastBuild": "2020-06-21T08:26:33.469Z"
+  "lastBuild": "2020-06-22T20:39:37.805Z"
 }

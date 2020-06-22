@@ -1,13 +1,14 @@
 {
+  "loopGuard": {
+    "active": true,
+    "max": 20
+  },
   "buttons": [
     {
-      "console": false
+      "console": true
     },
     {
       "debugger": true
-    },
-    {
-      "maxIterations": true
     },
     {
       "flowViz": true

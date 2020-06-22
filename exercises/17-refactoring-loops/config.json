@@ -1,13 +1,14 @@
 {
+  "loopGuard": {
+    "active": true,
+    "max": 20
+  },
   "buttons": [
     {
       "console": false
     },
     {
       "debugger": true
-    },
-    {
-      "maxIterations": true
     },
     {
       "jsTutor": true

@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/21/2020, 8:26:33 AM 
+> 6/22/2020, 10:39:37 PM 
 
 ## /exercises 
 
@@ -73,10 +73,10 @@
     - [/1-parameter-local.js](./05-functions-101/2-local-param-global/README.md#1-parameter-localjs) - _incomplete_ 
     - [/2-parameter-global.js](./05-functions-101/2-local-param-global/README.md#2-parameter-globaljs) - _incomplete_ 
     - [/3-parameter-global.js](./05-functions-101/2-local-param-global/README.md#3-parameter-globaljs) - _incomplete_ 
+    - [/4-local-global.js](./05-functions-101/2-local-param-global/README.md#4-local-globaljs) - _incomplete_ 
     - [/5-local-global.js](./05-functions-101/2-local-param-global/README.md#5-local-globaljs) - _incomplete_ 
-    - [/6-local-global.js](./05-functions-101/2-local-param-global/README.md#6-local-globaljs) - _incomplete_ 
-    - [/7-parameter-local-global.js](./05-functions-101/2-local-param-global/README.md#7-parameter-local-globaljs) - _incomplete_ 
-    - [/8-prameter-local-global.js](./05-functions-101/2-local-param-global/README.md#8-prameter-local-globaljs) - _incomplete_ 
+    - [/6-parameter-local-global.js](./05-functions-101/2-local-param-global/README.md#6-parameter-local-globaljs) - _incomplete_ 
+    - [/7-prameter-local-global.js](./05-functions-101/2-local-param-global/README.md#7-prameter-local-globaljs) - _incomplete_ 
     - [/extra-pure-functions.js](./05-functions-101/2-local-param-global/README.md#extra-pure-functionsjs)  
 - [/06-explicit-coercion](./06-explicit-coercion/README.md)
   - [/examples](./06-explicit-coercion/examples/README.md)
@@ -201,7 +201,7 @@
   - [/exercises](./17-refactoring-loops/exercises/README.md)
     - [/1-for-to-while.js](./17-refactoring-loops/exercises/README.md#1-for-to-whilejs) - _pass_ 
     - [/2-for-to-while.js](./17-refactoring-loops/exercises/README.md#2-for-to-whilejs) - _pass_ 
-    - [/3-while-to-for.js](./17-refactoring-loops/exercises/README.md#3-while-to-forjs) - _pass_ 
+    - [/3-while-to-for.js](./17-refactoring-loops/exercises/README.md#3-while-to-forjs) - _too much iteration_ 
     - [/4-while-to-for.js](./17-refactoring-loops/exercises/README.md#4-while-to-forjs) - _pass_ 
 - [/18-functions-401](./18-functions-401/README.md)
   - [/0-examples](./18-functions-401/0-examples/README.md)

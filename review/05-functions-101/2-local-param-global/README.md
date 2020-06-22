@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/21/2020, 8:26:33 AM 
+> 6/22/2020, 10:39:37 PM 
 
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/2-local-param-global 
 
@@ -8,10 +8,10 @@
 - [/1-parameter-local.js](#1-parameter-localjs) - _incomplete_ 
 - [/2-parameter-global.js](#2-parameter-globaljs) - _incomplete_ 
 - [/3-parameter-global.js](#3-parameter-globaljs) - _incomplete_ 
+- [/4-local-global.js](#4-local-globaljs) - _incomplete_ 
 - [/5-local-global.js](#5-local-globaljs) - _incomplete_ 
-- [/6-local-global.js](#6-local-globaljs) - _incomplete_ 
-- [/7-parameter-local-global.js](#7-parameter-local-globaljs) - _incomplete_ 
-- [/8-prameter-local-global.js](#8-prameter-local-globaljs) - _incomplete_ 
+- [/6-parameter-local-global.js](#6-parameter-local-globaljs) - _incomplete_ 
+- [/7-prameter-local-global.js](#7-prameter-local-globaljs) - _incomplete_ 
 - [/extra-pure-functions.js](#extra-pure-functionsjs)  
 ---
 
@@ -317,15 +317,15 @@ console.assert(jazz3, 'Test 3: jazz');
 
 ---
 
-## /5-local-global.js 
+## /4-local-global.js 
 
 > incomplete 
 >
-> [review source](../../../exercises/05-functions-101/2-local-param-global/5-local-global.js)
+> [review source](../../../exercises/05-functions-101/2-local-param-global/4-local-global.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/5-local-global.js:12:35)
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/4-local-global.js:12:35)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -390,15 +390,15 @@ console.assert(globalTest6, 'Test 9: global');
 
 ---
 
-## /6-local-global.js 
+## /5-local-global.js 
 
 > incomplete 
 >
-> [review source](../../../exercises/05-functions-101/2-local-param-global/6-local-global.js)
+> [review source](../../../exercises/05-functions-101/2-local-param-global/5-local-global.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/6-local-global.js:12:35)
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/5-local-global.js:12:35)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -463,15 +463,15 @@ console.assert(globalTest6, 'Test 9: global');
 
 ---
 
-## /7-parameter-local-global.js 
+## /6-parameter-local-global.js 
 
 > incomplete 
 >
-> [review source](../../../exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js)
+> [review source](../../../exercises/05-functions-101/2-local-param-global/6-parameter-local-global.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/7-parameter-local-global.js:11:32)
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/6-parameter-local-global.js:11:32)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -527,15 +527,15 @@ console.assert(globalTest5, 'Test 7: global');
 
 ---
 
-## /8-prameter-local-global.js 
+## /7-prameter-local-global.js 
 
 > incomplete 
 >
-> [review source](../../../exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js)
+> [review source](../../../exercises/05-functions-101/2-local-param-global/7-prameter-local-global.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/8-prameter-local-global.js:11:32)
+    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/7-prameter-local-global.js:11:32)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)

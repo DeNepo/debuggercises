@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/21/2020, 8:26:33 AM 
+> 6/22/2020, 10:39:37 PM 
 
 ## [exercises](../../README.md)/[16-for](../README.md)/examples 
 
@@ -94,6 +94,25 @@ console.assert(result === 6, 'Test 1');
 
 */
 
+/* variables analysis:
+
+  result: accumulator, number, strategy
+    this is the final result of the program
+    it accumulates all of i's values using addition
+    declared in global scope
+    reassigned in the while loop
+    read in the assertion
+  i: stepper, number, strategy
+    it's value is used to create the final result
+    it's reassigned incremental values in the for loop declaration
+    declared in for loop, not available in global scope
+    read in the for loop ...
+      to accumulate the result
+      to check if the loop has stepped enough times
+
+  this is a simple analysis, what would you want to add?
+*/
+
 ```
 
 [TOP](#debuggercises)
@@ -127,37 +146,7 @@ LOG: C  16
 LOG: C  17
 LOG: C  18
 LOG: C  19
-LOG: C  20
-LOG: C  21
-LOG: C  22
-LOG: C  23
-LOG: C  24
-LOG: C  25
-LOG: C  26
-LOG: C  27
-LOG: C  28
-LOG: C  29
-LOG: C  30
-LOG: C  31
-LOG: C  32
-LOG: C  33
-LOG: C  34
-LOG: C  35
-LOG: C  36
-LOG: C  37
-LOG: C  38
-LOG: C  39
-LOG: C  40
-LOG: C  41
-LOG: C  42
-LOG: C  43
-LOG: C  44
-LOG: C  45
-LOG: C  46
-LOG: C  47
-LOG: C  48
-LOG: C  49
-UNCAUGHT: Error: Loop exceeded 50 iterations
+UNCAUGHT: Error: Loop exceeded 20 iterations
     at Object.<anonymous> (  ...  /exercises/16-for/examples/3-for-infinite.js:18:65)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
@@ -200,13 +189,13 @@ for (let i = 0; -1 < i; i++) {
 
   however, this repository has some protections against infinite loops
   - when studying in the browser using localhost:3000, the loop exercises have an extra button
-    "maxIterations: X" - click this button to see a simple way to avoid infinite loops
+    "loopGuard: X" - click this button to see a simple way to avoid infinite loops
     the LiveStudy app uses regular expressions to inject guards into your loops
     if the loop exceeds the allowed iterations it will throw an error: "Loop exceeded X iterations"
     this is a custom error, it's not part of JavaScript so googling it won't help to understand it
   - when `npm run review` is executed, the script will use the same technique to try preventing infinite loops
     the only difference is that it will inject it all on one line like this:
-      let loop1 = 0; while (true) { if (maxIterations < ++loop1) { throw new Error('Loop exceeded X iterations); }
+      let loop1 = 0; while (true) { if (loopGuard < ++loop1) { throw new Error('Loop exceeded X iterations); }
     when you read the callstacks in your review files, the line numbers should be correct
     but the character numbers will be too high.  now you know why :)
 

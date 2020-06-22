@@ -116,7 +116,7 @@ index.lastEvaluation = (new Date()).toJSON();
 
 // actually evaluate the exercises
 //  check out /lib/evaluate.js for more details
-evaluate(reportMap, PARENT_DIR, reportThrown, config.maxIterations);
+evaluate(reportMap, PARENT_DIR, reportThrown, config.loopGuard.max);
 
 
 
