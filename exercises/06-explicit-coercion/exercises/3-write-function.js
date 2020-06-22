@@ -6,8 +6,17 @@
    ===
 */
 const mystery = (x, y) => {
-
-};
+  if(typeof x && typeof y === "number"){
+    const numbers = number(x, y);
+    const strings = string(x, y);
+    const booleans = boolean(x, y);
+    return numbers;
+  }else{
+    return true;
+  }
+  
+  };
+  
 
 // all of the test cases are correct
 
@@ -46,4 +55,3 @@ console.assert(_8_actual === _8_expect, 'Test 8');
 const _9_expect = false;
 const _9_actual = mystery(undefined, undefined);
 console.assert(_9_actual === _9_expect, 'Test 9');
-
