@@ -145,19 +145,10 @@
       "path": "/04-value-swaps",
       "dirs": [
         {
-          "path": "/example-swap-in-steps",
+          "path": "/example",
           "files": [
             {
-              "path": "/0-setup.js"
-            },
-            {
-              "path": "/1-store-y.js"
-            },
-            {
-              "path": "/2-reassign-a.js"
-            },
-            {
-              "path": "/3-use-stored-y.js"
+              "path": "/double-swap.js"
             }
           ],
           "isExample": true
@@ -1173,5 +1164,5 @@
       }
     ]
   },
-  "lastBuild": "2020-06-22T20:55:16.782Z"
+  "lastBuild": "2020-06-23T06:01:40.343Z"
 }

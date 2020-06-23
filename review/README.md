@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/22/2020, 8:55:16 PM 
+> 6/23/2020, 6:01:40 AM 
 
 ## /exercises 
 
@@ -43,11 +43,8 @@
     - [/1.js](./03-comparing-and-asserting/exercises/README.md#1js) - _incomplete_ 
     - [/2.js](./03-comparing-and-asserting/exercises/README.md#2js) - _incomplete_ 
 - [/04-value-swaps](./04-value-swaps/README.md)
-  - [/example-swap-in-steps](./04-value-swaps/example-swap-in-steps/README.md)
-    - [/0-setup.js](./04-value-swaps/example-swap-in-steps/README.md#0-setupjs) - _fail_ 
-    - [/1-store-y.js](./04-value-swaps/example-swap-in-steps/README.md#1-store-yjs) - _fail_ 
-    - [/2-reassign-a.js](./04-value-swaps/example-swap-in-steps/README.md#2-reassign-ajs) - _fail_ 
-    - [/3-use-stored-y.js](./04-value-swaps/example-swap-in-steps/README.md#3-use-stored-yjs) - _pass_ 
+  - [/example](./04-value-swaps/example/README.md)
+    - [/double-swap.js](./04-value-swaps/example/README.md#double-swapjs) - _pass_ 
   - [/exercises](./04-value-swaps/exercises/README.md)
     - [/1-double-swap.js](./04-value-swaps/exercises/README.md#1-double-swapjs) - _incomplete_ 
     - [/2-triple-swap.js](./04-value-swaps/exercises/README.md#2-triple-swapjs) - _incomplete_ 
