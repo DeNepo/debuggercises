@@ -4,28 +4,29 @@
 // fill in the blanks for d and temp
 
 // leave this code as it is
-let a = 2;
-let b = 3;
-let c = 1;
+let a = 'y';
+let b = 'z';
+let c = 'x';
 let temp = null;
 
 temp = a;
 a = b;
 const d = a;
-// write your code below here
+
+// write some code, be sure to use temp!
 
 
 
 
 // fill in in the _'s to pass the final assertions
 
-const isTrue1 = a === 1;
+const isTrue1 = a === 'x';
 console.assert(isTrue1, 'Test 1');
 
-const isTrue2 = b === 2;
+const isTrue2 = b === 'y';
 console.assert(isTrue2, 'Test 2');
 
-const isTrue3 = c === 3;
+const isTrue3 = c === 'z';
 console.assert(isTrue3, 'Test 3');
 
 const isTrue4 = d === _;
