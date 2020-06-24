@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/24/2020, 4:32:05 PM 
+> 6/24/2020, 4:38:36 PM 
 
 ## [exercises](../../README.md)/[03-comparing-and-asserting](../README.md)/exercises 
 
