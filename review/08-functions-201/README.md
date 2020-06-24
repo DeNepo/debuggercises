@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/24/2020, 4:30:14 PM 
+> 6/24/2020, 4:32:05 PM 
 
 ## [exercises](../README.md)/08-functions-201 
 
@@ -202,7 +202,7 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 // write two different implementations with the same behaviOrNot
 // you can pass these using only ! and ||
-//  hint: demOrNotgan
+//  hint: demorgan
 
 const notOrNotA = (x, y) => {
   return _;
