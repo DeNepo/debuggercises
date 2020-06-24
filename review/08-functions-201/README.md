@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/24/2020, 4:32:05 PM 
+> 6/24/2020, 4:38:36 PM 
 
 ## [exercises](../README.md)/08-functions-201 
 
@@ -98,8 +98,8 @@ console.assert(_3_actualLoop === _3_expect, 'Test 3 Loop');
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at notAndNotA (  ...  /exercises/08-functions-201/1-exercise.js:8:3)
-    at Object.<anonymous> (  ...  /exercises/08-functions-201/1-exercise.js:35:20)
+    at notAndNotA (  ...  /exercises/08-functions-201/1-exercise.js:12:3)
+    at Object.<anonymous> (  ...  /exercises/08-functions-201/1-exercise.js:39:20)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -115,7 +115,11 @@ UNCAUGHT: ReferenceError: _ is not defined
 
 // write two different implementations with the same behavior
 // you can pass these using only ! and &&
-//  hint: demorgan
+/*  hint: demorgan
+  https://erikmhsiao.github.io/de-morgans-laws/
+  https://www.freecodecamp.org/news/a-definitive-guide-to-conditional-logic-in-javascript-23fa234d2ca3/
+  https://www.cross-browser.com/talk/demorgan.html
+*/
 
 const notAndNotA = (x, y) => {
   return _;
@@ -127,21 +131,21 @@ const notAndNotB = (x, y) => {
 };
 
 
-const _1_arg1 = false;
-const _1_arg2 = false;
-const _1_expect = true;
+const _1_arg1 = 0;
+const _1_arg2 = 0;
+const _1_expect = 1;
 
-const _2_arg1 = true;
-const _2_arg2 = false;
-const _2_expect = false;
+const _2_arg1 = 1;
+const _2_arg2 = 0;
+const _2_expect = 0;
 
-const _3_arg1 = false;
-const _3_arg2 = true;
-const _3_expect = false;
+const _3_arg1 = 0;
+const _3_arg2 = 1;
+const _3_expect = 0;
 
-const _4_arg1 = true;
-const _4_arg2 = true;
-const _4_expect = false;
+const _4_arg1 = 1;
+const _4_arg2 = 1;
+const _4_expect = 0;
 
 
 // testing notAndNotA
@@ -185,8 +189,8 @@ console.assert(_4_actualB === _4_expect, 'Test 4 B');
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at notOrNotA (  ...  /exercises/08-functions-201/2-exercise.js:8:3)
-    at Object.<anonymous> (  ...  /exercises/08-functions-201/2-exercise.js:34:20)
+    at notOrNotA (  ...  /exercises/08-functions-201/2-exercise.js:12:3)
+    at Object.<anonymous> (  ...  /exercises/08-functions-201/2-exercise.js:38:20)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -200,9 +204,13 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-// write two different implementations with the same behaviOrNot
+// write two different implementations with the same behavior
 // you can pass these using only ! and ||
-//  hint: demorgan
+/*  hint: demorgan
+  https://erikmhsiao.github.io/de-morgans-laws/
+  https://www.freecodecamp.org/news/a-definitive-guide-to-conditional-logic-in-javascript-23fa234d2ca3/
+  https://www.cross-browser.com/talk/demorgan.html
+*/
 
 const notOrNotA = (x, y) => {
   return _;
@@ -213,21 +221,21 @@ const notOrNotB = (x, y) => {
 };
 
 
-const _1_arg1 = false;
-const _1_arg2 = false;
-const _1_expect = true;
+const _1_arg1 = 0;
+const _1_arg2 = 0;
+const _1_expect = 1;
 
-const _2_arg1 = true;
-const _2_arg2 = false;
-const _2_expect = true;
+const _2_arg1 = 1;
+const _2_arg2 = 0;
+const _2_expect = 1;
 
-const _3_arg1 = false;
-const _3_arg2 = true;
-const _3_expect = true;
+const _3_arg1 = 0;
+const _3_arg2 = 1;
+const _3_expect = 1;
 
-const _4_arg1 = true;
-const _4_arg2 = true;
-const _4_expect = false;
+const _4_arg1 = 1;
+const _4_arg2 = 1;
+const _4_expect = 0;
 
 
 // testing notOrNotA
