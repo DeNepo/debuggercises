@@ -48,7 +48,7 @@ const _7_expect = _;
 const _7_native = greaterThan(_7_a, _7_b);
 console.assert(_7_expect === _7_native, 'Test 7');
 
-const _8_a = 'aa';
+const _8_a = 'bc';
 const _8_b = 'ab';
 const _8_expect = _;
 const _8_native = greaterThan(_8_a, _8_b);
