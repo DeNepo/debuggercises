@@ -2,7 +2,7 @@
 
 // write two different implementations with the same behaviOrNot
 // you can pass these using only ! and ||
-//  hint: demOrNotgan
+//  hint: demorgan
 
 const notOrNotA = (x, y) => {
   return _;
