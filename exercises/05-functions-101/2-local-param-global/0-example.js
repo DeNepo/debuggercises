@@ -51,7 +51,7 @@ console.log('\n-- Global Variables ---');
 //  the variables get their value from local and global assignments (confusing!)
 
 const usesGlobals = () => {
-  global1 = `${global}-`;
+  global1 = `${global1}-`;
   global2 = '-'
   return `${global1}, ${global2}`;
 };
@@ -65,7 +65,7 @@ console.log('global1:', global1);
 console.log('global2:', global2, '\n');
 
 global1 = '|';
-global2 = `${global}|`;
+global2 = `${global2}|`;
 
 console.log('global1:', global1);
 console.log('global2:', global2, '\n');
@@ -76,8 +76,8 @@ console.log('global1:', global1);
 console.log('global2:', global2, '\n');
 
 
-global1 = `${global}|`;
-global2 = `${global}|`;
+global1 = `${global1}|`;
+global2 = `${global2}|`;
 
 console.log('global1:', global1);
 console.log('global2:', global2);
