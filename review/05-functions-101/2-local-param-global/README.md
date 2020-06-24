@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/24/2020, 4:44:36 PM 
+> 6/24/2020, 5:04:07 PM 
 
 ## [exercises](../../README.md)/[05-functions-101](../README.md)/2-local-param-global 
 
@@ -32,19 +32,19 @@ LOG: fromLocals1:  town, ship
 LOG: fromLocals2:  town, ship
 LOG: 
 -- Global Variables ---
-LOG: fromGlobals1:  [object global]-, -
-LOG: global1:  [object global]-
+LOG: fromGlobals1:  a-, -
+LOG: global1:  a-
 LOG: global2:  -  
 
 LOG: global1:  |
-LOG: global2:  [object global]|  
+LOG: global2:  -|  
 
-LOG: fromGlobals2:  [object global]-, -
-LOG: global1:  [object global]-
+LOG: fromGlobals2:  |-, -
+LOG: global1:  |-
 LOG: global2:  -  
 
-LOG: global1:  [object global]|
-LOG: global2:  [object global]|
+LOG: global1:  |-|
+LOG: global2:  -|
 ```
 
 ```js
@@ -101,7 +101,7 @@ console.log('\n-- Global Variables ---');
 //  the variables get their value from local and global assignments (confusing!)
 
 const usesGlobals = () => {
-  global1 = `${global}-`;
+  global1 = `${global1}-`;
   global2 = '-'
   return `${global1}, ${global2}`;
 };
@@ -115,7 +115,7 @@ console.log('global1:', global1);
 console.log('global2:', global2, '\n');
 
 global1 = '|';
-global2 = `${global}|`;
+global2 = `${global2}|`;
 
 console.log('global1:', global1);
 console.log('global2:', global2, '\n');
@@ -126,8 +126,8 @@ console.log('global1:', global1);
 console.log('global2:', global2, '\n');
 
 
-global1 = `${global}|`;
-global2 = `${global}|`;
+global1 = `${global1}|`;
+global2 = `${global2}|`;
 
 console.log('global1:', global1);
 console.log('global2:', global2);
