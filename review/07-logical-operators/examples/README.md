@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/24/2020, 8:01:34 AM 
+> 6/24/2020, 4:30:14 PM 
 
 ## [exercises](../../README.md)/[07-logical-operators](../README.md)/examples 
 
@@ -109,7 +109,7 @@ LOG: 5  string  asdf
 LOG: 6  string  asdf
 LOG: 7  boolean  true
 LOG: 8  undefined  undefined
-LOG: 9  number  Infinity
+LOG: 9  string  poiu
 ```
 
 ```js
@@ -146,7 +146,7 @@ console.log(7, typeof or7, or7);
 const or8 = NaN || undefined;
 console.log(8, typeof or8, or8);
 
-const or9 = Infinity || 'asdf';
+const or9 = 'poiu' || 'asdf';
 console.log(9, typeof or9, or9);
 
 ```
@@ -181,6 +181,7 @@ LOG: 9  string  asdf
   it returns the left value or the right value
   - if the left is falsy, it returns the left value
   - if the left is truthy, it returns the right value
+  https://javascript.info/logical-operators
 */
 
 const and1 = 0 && 0;
@@ -207,7 +208,7 @@ console.log(7, typeof and7, and7);
 const and8 = NaN && undefined;
 console.log(8, typeof and8, and8);
 
-const and9 = Infinity && 'asdf';
+const and9 = 'poiu' && 'asdf';
 console.log(9, typeof and9, and9);
 
 ```

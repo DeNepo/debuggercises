@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/24/2020, 8:01:34 AM 
+> 6/24/2020, 4:30:14 PM 
 
 ## [exercises](../README.md)/08-functions-201 
 
@@ -98,8 +98,8 @@ console.assert(_3_actualLoop === _3_expect, 'Test 3 Loop');
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at notAndA (  ...  /exercises/08-functions-201/1-exercise.js:7:3)
-    at Object.<anonymous> (  ...  /exercises/08-functions-201/1-exercise.js:19:20)
+    at notAndNotA (  ...  /exercises/08-functions-201/1-exercise.js:8:3)
+    at Object.<anonymous> (  ...  /exercises/08-functions-201/1-exercise.js:35:20)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -114,14 +114,15 @@ UNCAUGHT: ReferenceError: _ is not defined
 'use strict';
 
 // write two different implementations with the same behavior
+// you can pass these using only ! and &&
 //  hint: demorgan
 
-const notAndA = (x, y) => {
+const notAndNotA = (x, y) => {
   return _;
 };
 
 
-const notAndB = (x, y) => {
+const notAndNotB = (x, y) => {
   return _;
 };
 
@@ -129,33 +130,45 @@ const notAndB = (x, y) => {
 const _1_arg1 = false;
 const _1_arg2 = false;
 const _1_expect = true;
-const _1_actualA = notAndA(_1_arg1, _1_arg2);
-const _1_actualB = notAndB(_1_arg1, _1_arg2);
-console.assert(_1_actualA === _1_expect, 'Test 1 A');
-console.assert(_1_actualB === _1_expect, 'Test 1 B');
 
 const _2_arg1 = true;
 const _2_arg2 = false;
 const _2_expect = false;
-const _2_actualA = notAndA(_2_arg1, _2_arg2);
-const _2_actualB = notAndB(_2_arg1, _2_arg2);
-console.assert(_2_actualA === _2_expect, 'Test 2 A');
-console.assert(_2_actualB === _2_expect, 'Test 2 B');
 
 const _3_arg1 = false;
 const _3_arg2 = true;
 const _3_expect = false;
-const _3_actualA = notAndA(_3_arg1, _3_arg2);
-const _3_actualB = notAndB(_3_arg1, _3_arg2);
-console.assert(_3_actualA === _3_expect, 'Test 3 A');
-console.assert(_3_actualB === _3_expect, 'Test 3 B');
 
 const _4_arg1 = true;
 const _4_arg2 = true;
 const _4_expect = false;
-const _4_actualA = notAndA(_4_arg1, _4_arg2);
-const _4_actualB = notAndB(_4_arg1, _4_arg2);
+
+
+// testing notAndNotA
+const _1_actualA = notAndNotA(_1_arg1, _1_arg2);
+console.assert(_1_actualA === _1_expect, 'Test 1 A');
+
+const _2_actualA = notAndNotA(_2_arg1, _2_arg2);
+console.assert(_2_actualA === _2_expect, 'Test 2 A');
+
+const _3_actualA = notAndNotA(_3_arg1, _3_arg2);
+console.assert(_3_actualA === _3_expect, 'Test 3 A');
+
+const _4_actualA = notAndNotA(_4_arg1, _4_arg2);
 console.assert(_4_actualA === _4_expect, 'Test 4 A');
+
+
+// testing notAndNotB
+const _1_actualB = notAndNotB(_1_arg1, _1_arg2);
+console.assert(_1_actualB === _1_expect, 'Test 1 B');
+
+const _2_actualB = notAndNotB(_2_arg1, _2_arg2);
+console.assert(_2_actualB === _2_expect, 'Test 2 B');
+
+const _3_actualB = notAndNotB(_3_arg1, _3_arg2);
+console.assert(_3_actualB === _3_expect, 'Test 3 B');
+
+const _4_actualB = notAndNotB(_4_arg1, _4_arg2);
 console.assert(_4_actualB === _4_expect, 'Test 4 B');
 
 ```
@@ -172,8 +185,8 @@ console.assert(_4_actualB === _4_expect, 'Test 4 B');
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at notAndA (  ...  /exercises/08-functions-201/2-exercise.js:7:3)
-    at Object.<anonymous> (  ...  /exercises/08-functions-201/2-exercise.js:18:20)
+    at notOrNotA (  ...  /exercises/08-functions-201/2-exercise.js:8:3)
+    at Object.<anonymous> (  ...  /exercises/08-functions-201/2-exercise.js:34:20)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -187,14 +200,15 @@ UNCAUGHT: ReferenceError: _ is not defined
 ```js
 'use strict';
 
-// write two different implementations with the same behavior
-//  hint: demorgan
+// write two different implementations with the same behaviOrNot
+// you can pass these using only ! and ||
+//  hint: demOrNotgan
 
-const notAndA = (x, y) => {
+const notOrNotA = (x, y) => {
   return _;
 };
 
-const notAndB = (x, y) => {
+const notOrNotB = (x, y) => {
   return _;
 };
 
@@ -202,33 +216,45 @@ const notAndB = (x, y) => {
 const _1_arg1 = false;
 const _1_arg2 = false;
 const _1_expect = true;
-const _1_actualA = notAndA(_1_arg1, _1_arg2);
-const _1_actualB = notAndB(_1_arg1, _1_arg2);
-console.assert(_1_actualA === _1_expect, 'Test 1 A');
-console.assert(_1_actualB === _1_expect, 'Test 1 B');
 
 const _2_arg1 = true;
 const _2_arg2 = false;
 const _2_expect = true;
-const _2_actualA = notAndA(_2_arg1, _2_arg2);
-const _2_actualB = notAndB(_2_arg1, _2_arg2);
-console.assert(_2_actualA === _2_expect, 'Test 2 A');
-console.assert(_2_actualB === _2_expect, 'Test 2 B');
 
 const _3_arg1 = false;
 const _3_arg2 = true;
 const _3_expect = true;
-const _3_actualA = notAndA(_3_arg1, _3_arg2);
-const _3_actualB = notAndB(_3_arg1, _3_arg2);
-console.assert(_3_actualA === _3_expect, 'Test 3 A');
-console.assert(_3_actualB === _3_expect, 'Test 3 B');
 
 const _4_arg1 = true;
 const _4_arg2 = true;
 const _4_expect = false;
-const _4_actualA = notAndA(_4_arg1, _4_arg2);
-const _4_actualB = notAndB(_4_arg1, _4_arg2);
+
+
+// testing notOrNotA
+const _1_actualA = notOrNotA(_1_arg1, _1_arg2);
+console.assert(_1_actualA === _1_expect, 'Test 1 A');
+
+const _2_actualA = notOrNotA(_2_arg1, _2_arg2);
+console.assert(_2_actualA === _2_expect, 'Test 2 A');
+
+const _3_actualA = notOrNotA(_3_arg1, _3_arg2);
+console.assert(_3_actualA === _3_expect, 'Test 3 A');
+
+const _4_actualA = notOrNotA(_4_arg1, _4_arg2);
 console.assert(_4_actualA === _4_expect, 'Test 4 A');
+
+
+// testing notOrNotB
+const _1_actualB = notOrNotB(_1_arg1, _1_arg2);
+console.assert(_1_actualB === _1_expect, 'Test 1 B');
+
+const _2_actualB = notOrNotB(_2_arg1, _2_arg2);
+console.assert(_2_actualB === _2_expect, 'Test 2 B');
+
+const _3_actualB = notOrNotB(_3_arg1, _3_arg2);
+console.assert(_3_actualB === _3_expect, 'Test 3 B');
+
+const _4_actualB = notOrNotB(_4_arg1, _4_arg2);
 console.assert(_4_actualB === _4_expect, 'Test 4 B');
 
 ```
