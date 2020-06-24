@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/23/2020, 9:49:56 AM 
+> 6/24/2020, 7:32:31 AM 
 
 ## /exercises 
 
@@ -223,15 +223,15 @@
     - [/subtraction.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#subtractionjs) - _incomplete_ 
     - [/unary-minus.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#unary-minusjs) - _incomplete_ 
     - [/unary-plus.js](./19-implicit-coercion/1-write-tests-arithmetic/README.md#unary-plusjs) - _incomplete_ 
-  - [/1-write-tests-relational](./19-implicit-coercion/1-write-tests-relational/README.md)
-    - [/greater-than-or-equal-to.js](./19-implicit-coercion/1-write-tests-relational/README.md#greater-than-or-equal-tojs) - _incomplete_ 
-    - [/greater-than.js](./19-implicit-coercion/1-write-tests-relational/README.md#greater-thanjs) - _incomplete_ 
-    - [/less-than-or-equal-to.js](./19-implicit-coercion/1-write-tests-relational/README.md#less-than-or-equal-tojs) - _incomplete_ 
-    - [/less-than.js](./19-implicit-coercion/1-write-tests-relational/README.md#less-thanjs) - _incomplete_ 
-  - [/2-replicate](./19-implicit-coercion/2-replicate/README.md)
-    - [/loose-inequality.js](./19-implicit-coercion/2-replicate/README.md#loose-inequalityjs) - _fail_ 
-    - [/remainder.js](./19-implicit-coercion/2-replicate/README.md#remainderjs) - _error_ 
-    - [/unary-minus.js](./19-implicit-coercion/2-replicate/README.md#unary-minusjs) - _fail_ 
+  - [/2-write-tests-relational](./19-implicit-coercion/2-write-tests-relational/README.md)
+    - [/greater-than-or-equal-to.js](./19-implicit-coercion/2-write-tests-relational/README.md#greater-than-or-equal-tojs) - _incomplete_ 
+    - [/greater-than.js](./19-implicit-coercion/2-write-tests-relational/README.md#greater-thanjs) - _incomplete_ 
+    - [/less-than-or-equal-to.js](./19-implicit-coercion/2-write-tests-relational/README.md#less-than-or-equal-tojs) - _incomplete_ 
+    - [/less-than.js](./19-implicit-coercion/2-write-tests-relational/README.md#less-thanjs) - _incomplete_ 
+  - [/3-replicate](./19-implicit-coercion/3-replicate/README.md)
+    - [/loose-inequality.js](./19-implicit-coercion/3-replicate/README.md#loose-inequalityjs) - _fail_ 
+    - [/remainder.js](./19-implicit-coercion/3-replicate/README.md#remainderjs) - _fail_ 
+    - [/unary-minus.js](./19-implicit-coercion/3-replicate/README.md#unary-minusjs) - _fail_ 
 - [/20-operator-precedence](./20-operator-precedence/README.md)
   - [/0-examples](./20-operator-precedence/0-examples/README.md)
     - [/readme.js](./20-operator-precedence/0-examples/README.md#readmejs) - _pass_ 

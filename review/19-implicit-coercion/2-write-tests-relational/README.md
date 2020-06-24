@@ -1,8 +1,8 @@
 # Debuggercises 
 
-> 6/23/2020, 9:49:56 AM 
+> 6/24/2020, 7:32:31 AM 
 
-## [exercises](../../README.md)/[19-implicit-coercion](../README.md)/1-write-tests-relational 
+## [exercises](../../README.md)/[19-implicit-coercion](../README.md)/2-write-tests-relational 
 
 - [/greater-than-or-equal-to.js](#greater-than-or-equal-tojs) - _incomplete_ 
 - [/greater-than.js](#greater-thanjs) - _incomplete_ 
@@ -14,11 +14,11 @@
 
 > incomplete 
 >
-> [review source](../../../exercises/19-implicit-coercion/1-write-tests-relational/greater-than-or-equal-to.js)
+> [review source](../../../exercises/19-implicit-coercion/2-write-tests-relational/greater-than-or-equal-to.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/19-implicit-coercion/1-write-tests-relational/greater-than-or-equal-to.js:11:19)
+    at Object.<anonymous> (  ...  /exercises/19-implicit-coercion/2-write-tests-relational/greater-than-or-equal-to.js:11:19)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -103,11 +103,11 @@ console.assert(_9_expect === _9_native, 'Test 9');
 
 > incomplete 
 >
-> [review source](../../../exercises/19-implicit-coercion/1-write-tests-relational/greater-than.js)
+> [review source](../../../exercises/19-implicit-coercion/2-write-tests-relational/greater-than.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/19-implicit-coercion/1-write-tests-relational/greater-than.js:11:19)
+    at Object.<anonymous> (  ...  /exercises/19-implicit-coercion/2-write-tests-relational/greater-than.js:11:19)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -170,7 +170,7 @@ const _7_expect = _;
 const _7_native = greaterThan(_7_a, _7_b);
 console.assert(_7_expect === _7_native, 'Test 7');
 
-const _8_a = 'aa';
+const _8_a = 'bc';
 const _8_b = 'ab';
 const _8_expect = _;
 const _8_native = greaterThan(_8_a, _8_b);
@@ -192,11 +192,11 @@ console.assert(_9_expect === _9_native, 'Test 9');
 
 > incomplete 
 >
-> [review source](../../../exercises/19-implicit-coercion/1-write-tests-relational/less-than-or-equal-to.js)
+> [review source](../../../exercises/19-implicit-coercion/2-write-tests-relational/less-than-or-equal-to.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/19-implicit-coercion/1-write-tests-relational/less-than-or-equal-to.js:11:19)
+    at Object.<anonymous> (  ...  /exercises/19-implicit-coercion/2-write-tests-relational/less-than-or-equal-to.js:11:19)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)
@@ -281,11 +281,11 @@ console.assert(_9_expect === _9_native, 'Test 9');
 
 > incomplete 
 >
-> [review source](../../../exercises/19-implicit-coercion/1-write-tests-relational/less-than.js)
+> [review source](../../../exercises/19-implicit-coercion/2-write-tests-relational/less-than.js)
 
 ```txt
 UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/19-implicit-coercion/1-write-tests-relational/less-than.js:11:19)
+    at Object.<anonymous> (  ...  /exercises/19-implicit-coercion/2-write-tests-relational/less-than.js:11:19)
     at Module._compile (internal/modules/cjs/loader.js:1200:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
     at Module.load (internal/modules/cjs/loader.js:1049:32)

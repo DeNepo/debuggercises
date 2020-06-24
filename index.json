@@ -900,7 +900,7 @@
           ]
         },
         {
-          "path": "/1-write-tests-relational",
+          "path": "/2-write-tests-relational",
           "files": [
             {
               "path": "/greater-than-or-equal-to.js"
@@ -917,7 +917,7 @@
           ]
         },
         {
-          "path": "/2-replicate",
+          "path": "/3-replicate",
           "files": [
             {
               "path": "/loose-inequality.js"
@@ -1164,5 +1164,5 @@
       }
     ]
   },
-  "lastBuild": "2020-06-23T09:49:56.204Z"
+  "lastBuild": "2020-06-24T07:32:31.901Z"
 }
