@@ -5,6 +5,7 @@
   it returns the left value or the right value
   - if the left is falsy, it returns the left value
   - if the left is truthy, it returns the right value
+  https://javascript.info/logical-operators
 */
 
 const and1 = 0 && 0;
@@ -31,5 +32,5 @@ console.log(7, typeof and7, and7);
 const and8 = NaN && undefined;
 console.log(8, typeof and8, and8);
 
-const and9 = Infinity && 'asdf';
+const and9 = 'poiu' && 'asdf';
 console.log(9, typeof and9, and9);

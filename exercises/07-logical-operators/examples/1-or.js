@@ -31,5 +31,5 @@ console.log(7, typeof or7, or7);
 const or8 = NaN || undefined;
 console.log(8, typeof or8, or8);
 
-const or9 = Infinity || 'asdf';
+const or9 = 'poiu' || 'asdf';
 console.log(9, typeof or9, or9);

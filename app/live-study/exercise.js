@@ -95,7 +95,7 @@ export default (() => {
         "indent_size": "2",
         "indent_char": " ",
         "brace_style": "collapse,preserve-inline",
-      });;
+      });
     }
     studyIn[vizTool](code);
 
