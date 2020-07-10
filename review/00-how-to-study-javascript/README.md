@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 7/10/2020, 8:55:38 AM 
+> 7/10/2020, 8:57:17 AM 
 
 ## [exercises](../README.md)/00-how-to-study-javascript 
 
@@ -102,9 +102,11 @@
 /* A suggested workflow for studying code in JS Tutor
 
   Getting Ready
-  0 - start up the study site
-    A - open this repo in your terminal and enter `npm run start`
-    B - open `localhost:3000` in your browser
+    if you are studying locally in your computer
+        A - open this repo in your terminal and enter `npm run start`
+        B - open `localhost:3000` in your browser
+    if you are studying online
+        you're good to go! no more steps
 
   Studying
   1 - find the file you want to study and click the "jsTutor" button
