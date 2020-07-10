@@ -7,7 +7,6 @@
   1 - open and configure your DevTools (this will take some searching and practice)
     - move it to the right or left of your browser
     - open the "sources" tab
-    - set your devtools to pause on exceptions
     - hide the navigator (the menu on the left with this page's scripts)
     - in the right panel, collapse the section called "threads" (if it's there)
     - open the console in the drawer (that part down at the bottom)
