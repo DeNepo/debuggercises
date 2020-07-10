@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/24/2020, 5:04:07 PM 
+> 7/10/2020, 8:55:38 AM 
 
 ## [exercises](../README.md)/00-how-to-study-javascript 
 
@@ -153,7 +153,6 @@
   1 - open and configure your DevTools (this will take some searching and practice)
     - move it to the right or left of your browser
     - open the "sources" tab
-    - set your devtools to pause on exceptions
     - hide the navigator (the menu on the left with this page's scripts)
     - in the right panel, collapse the section called "threads" (if it's there)
     - open the console in the drawer (that part down at the bottom)
