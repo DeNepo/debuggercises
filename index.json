@@ -111,7 +111,7 @@
               "path": "/1-strict-equality.js"
             },
             {
-              "path": "/2-extra-assignment-vs-comparison.js"
+              "path": "/2-assignment-vs-comparison.js"
             },
             {
               "path": "/3-console-assert.js"
@@ -1148,6 +1148,7 @@
     "title": "Debuggercises",
     "path": "/exercises",
     "reviewPath": "/review",
+    "permalink": "https://hackyourfuture.be/debuggercises",
     "loopGuard": {
       "active": false,
       "max": 20
@@ -1164,5 +1165,5 @@
       }
     ]
   },
-  "lastBuild": "2020-06-24T16:44:36.098Z"
+  "lastBuild": "2020-07-29T08:51:28.300Z"
 }

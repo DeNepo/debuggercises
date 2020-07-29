@@ -2,6 +2,7 @@
   "title": "Debuggercises",
   "path": "/exercises",
   "reviewPath": "/review",
+  "permalink": "https://hackyourfuture.be/debuggercises",
   "loopGuard": {
     "active": false,
     "max": 20

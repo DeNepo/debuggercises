@@ -1,4 +1,4 @@
-import Exercise from './exercise.js';
+import ExerciseJS from './javascript/exercise.js';
 
 export default class LiveStudy {
 
@@ -8,10 +8,16 @@ export default class LiveStudy {
   active = null;
   editor = null;
   buttonsContainer = null;
+  language = '';
   loopGuard = {
     active: false,
     max: 20
   }
+  clearAll = {
+    intervals: false,
+    timeouts: false
+  }
+  permalinkInput = null;
 
   constructor(index, editor, buttonsContainer) {
     this.virDir = index;
@@ -22,9 +28,15 @@ export default class LiveStudy {
     if (index.config.loopGuard) {
       this.loopGuard = index.config.loopGuard;
     }
+
+    if (index.config.permalink) {
+      this.permalink = index.config.permalink;
+    }
   }
 
+
   static populate(data, path, config) {
+    const Exercise = ExerciseJS;
     const copy = Object.assign({}, data);
     if (data.files) {
       copy.populated = data.files
@@ -54,13 +66,22 @@ export default class LiveStudy {
         exerciseEl.innerHTML = exercise.path.rel;
         exerciseEl.onclick = () => {
           history.replaceState(null, "", `?path=${encodeURIComponent(exercise.path.abs)}`);
-          document.getElementById('current-path').innerHTML = exercise.path.abs.split('/').slice(2).join('/');
+          document.getElementById('current-path').innerHTML = exercise.path.abs;
           editor.setModel(exercise.monacoModel);
+
           if (exercise.code === null) {
             exercise.load((err, code) => {
               exercise.monacoModel.setValue(code);
-              this.renderStudyButtons(exercise)
+              this.renderStudyButtons(exercise);
+              if (exercise.language === 'html') {
+                document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
+              }
             });
+          } else {
+            this.renderStudyButtons(exercise);
+            if (exercise.language === 'html') {
+              document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(exercise.code);
+            }
           }
           this.active = exercise;
         }
@@ -72,8 +93,12 @@ export default class LiveStudy {
             exercise.monacoModel.setValue(code);
             editor.setModel(exercise.monacoModel);
             this.renderStudyButtons(exercise);
+            if (exercise.language === 'html') {
+              document.getElementById('output').src = "data:text/html;charset=utf-8," + encodeURIComponent(code);
+            }
           });
         }
+
         const exerciseContainer = document.createElement('div');
         exerciseContainer.style = 'margin-top: 0.5em; margin-bottom: 0.5em;';
         exerciseContainer.appendChild(exerciseEl);
@@ -117,12 +142,61 @@ export default class LiveStudy {
   renderStudyButtons(exercise) {
     const container = document.createElement('div');
 
+
+
     const formatButton = document.createElement('button');
     formatButton.innerHTML = 'format code';
-    formatButton.onclick = () => editor.trigger('anyString', 'editor.action.formatDocument');;
+    formatButton.onclick = () => editor.trigger('anyString', 'editor.action.formatDocument');
     container.appendChild(formatButton);
 
-    container.appendChild(this.renderLoopGuardEl(exercise.config.loopGuard || this.loopGuard));
+    if (this.permalink) {
+      const permalinkButton = document.createElement('button');
+      permalinkButton.innerHTML = 'generate permalink';
+      permalinkButton.onclick = () => {
+        const text = this.permalink + '?code=' + encodeURIComponent(this.editor.getValue())
+          .replace(/\(/g, '%28')
+          .replace(/\)/g, '%29')
+          .replace(/%09/g, '%20%20');
+
+        if (!navigator.clipboard) {
+          fallbackCopyTextToClipboard(text);
+          return;
+        }
+        navigator.clipboard.writeText(text).then(function () {
+          // console.log('Async: Copying to clipboard was successful!');
+        }, function (err) {
+          // console.error('Async: Could not copy text: ', err);
+          fallbackCopyTextToClipboard(text);
+        });
+
+        function fallbackCopyTextToClipboard(text) {
+          var textArea = document.createElement("textarea");
+          textArea.value = text;
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+
+          try {
+            var successful = document.execCommand('copy');
+            var msg = successful ? 'successful' : 'unsuccessful';
+            // console.log('Fallback: Copying text command was ' + msg);
+          } catch (err) {
+            console.error('Fallback: Oops, unable to copy', err);
+          }
+
+          document.body.removeChild(textArea);
+          window.scrollTo(0, 0);
+        };
+
+        alert("copied permalink");
+
+      }
+      container.appendChild(permalinkButton);
+    }
+
+
+    container.appendChild(document.createElement('br'));
+
 
     container.appendChild(document.createElement('br'));
 
@@ -142,6 +216,10 @@ export default class LiveStudy {
 
     this.buttonsContainer.innerHTML = '';
     this.buttonsContainer.appendChild(container);
+
+    if (this.virDir.config.language !== 'html') {
+      container.appendChild(this.renderLoopGuardEl(exercise.config.loopGuard || this.loopGuard));
+    }
   }
 
   render(exercise = this.active) {
