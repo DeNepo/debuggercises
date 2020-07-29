@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 6/24/2020, 4:44:36 PM 
+> 7/10/2020, 8:57:17 AM 
 
 ## [exercises](../README.md)/00-how-to-study-javascript 
 
@@ -102,9 +102,11 @@
 /* A suggested workflow for studying code in JS Tutor
 
   Getting Ready
-  0 - start up the study site
-    A - open this repo in your terminal and enter `npm run start`
-    B - open `localhost:3000` in your browser
+    if you are studying locally in your computer
+        A - open this repo in your terminal and enter `npm run start`
+        B - open `localhost:3000` in your browser
+    if you are studying online
+        you're good to go! no more steps
 
   Studying
   1 - find the file you want to study and click the "jsTutor" button
@@ -153,7 +155,6 @@
   1 - open and configure your DevTools (this will take some searching and practice)
     - move it to the right or left of your browser
     - open the "sources" tab
-    - set your devtools to pause on exceptions
     - hide the navigator (the menu on the left with this page's scripts)
     - in the right panel, collapse the section called "threads" (if it's there)
     - open the console in the drawer (that part down at the bottom)

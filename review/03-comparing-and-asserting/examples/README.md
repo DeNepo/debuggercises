@@ -1,11 +1,11 @@
 # Debuggercises 
 
-> 6/24/2020, 4:44:36 PM 
+> 7/10/2020, 8:57:17 AM 
 
 ## [exercises](../../README.md)/[03-comparing-and-asserting](../README.md)/examples 
 
 - [/1-strict-equality.js](#1-strict-equalityjs)  
-- [/2-extra-assignment-vs-comparison.js](#2-extra-assignment-vs-comparisonjs) - _error (syntax)_ 
+- [/2-assignment-vs-comparison.js](#2-assignment-vs-comparisonjs) - _error (syntax)_ 
 - [/3-console-assert.js](#3-console-assertjs) - _fail_ 
 - [/4-testing-with-assert.js](#4-testing-with-assertjs) - _pass_ 
 - [/object-is.js](#object-isjs)  
@@ -80,14 +80,14 @@ console.log(typeof huh, huh);
 
 ---
 
-## /2-extra-assignment-vs-comparison.js 
+## /2-assignment-vs-comparison.js 
 
 > error (syntax) 
 >
-> [review source](../../../exercises/03-comparing-and-asserting/examples/2-extra-assignment-vs-comparison.js)
+> [review source](../../../exercises/03-comparing-and-asserting/examples/2-assignment-vs-comparison.js)
 
 ```txt
-UNCAUGHT:   ...  /exercises/03-comparing-and-asserting/examples/2-extra-assignment-vs-comparison.js:29
+UNCAUGHT:   ...  /exercises/03-comparing-and-asserting/examples/2-assignment-vs-comparison.js:29
 'value 2' = variable; // uncomment this line for an error
 ^^^^^^^^^
 
