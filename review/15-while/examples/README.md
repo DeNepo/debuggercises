@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 7/10/2020, 8:57:17 AM 
+> 7/29/2020, 9:06:21 AM 
 
 ## [exercises](../../README.md)/[15-while](../README.md)/examples 
 
@@ -94,15 +94,15 @@ LOG: C.  19
 LOG: C.  20
 UNCAUGHT: Error: Loop exceeded 20 iterations
     at Object.<anonymous> (  ...  /exercises/15-while/examples/2-while-infinite.js:22:51)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+    at Module._compile (internal/modules/cjs/loader.js:1201:30) 
 ```
 
 ```js

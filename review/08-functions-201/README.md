@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 7/10/2020, 8:57:17 AM 
+> 7/29/2020, 9:06:21 AM 
 
 ## [exercises](../README.md)/08-functions-201 
 
@@ -100,12 +100,12 @@ console.assert(_3_actualLoop === _3_expect, 'Test 3 Loop');
 UNCAUGHT: ReferenceError: _ is not defined
     at withAnd (  ...  /exercises/08-functions-201/1-exercise.js:12:3)
     at Object.<anonymous> (  ...  /exercises/08-functions-201/1-exercise.js:39:20)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
 ```
@@ -191,12 +191,12 @@ console.assert(_4_actualB === _4_expect, 'Test 4 B');
 UNCAUGHT: ReferenceError: _ is not defined
     at withAnd (  ...  /exercises/08-functions-201/2-exercise.js:12:3)
     at Object.<anonymous> (  ...  /exercises/08-functions-201/2-exercise.js:38:20)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1) 
 ```

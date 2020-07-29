@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 7/10/2020, 8:57:17 AM 
+> 7/29/2020, 9:06:21 AM 
 
 ## [exercises](../../README.md)/[04-value-swaps](../README.md)/exercises 
 
@@ -24,15 +24,15 @@
 - FAIL: Test 2
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/1-double-swap.js:19:26)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+    at Module._compile (internal/modules/cjs/loader.js:1201:30) 
 ```
 
 ```js
@@ -76,15 +76,15 @@ console.assert(isTrue3, 'Test 3');
 - FAIL: Test 3
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/2-triple-swap.js:23:26)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+    at Module._compile (internal/modules/cjs/loader.js:1201:30) 
 ```
 
 ```js
@@ -132,15 +132,15 @@ console.assert(isTrue4, 'Test 4');
 - FAIL: Test 3
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/3-triple-swap.js:23:26)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+    at Module._compile (internal/modules/cjs/loader.js:1201:30) 
 ```
 
 ```js
@@ -189,15 +189,15 @@ console.assert(isTrue4, 'Test 4');
 - FAIL: Test 4
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/4-quadruple-swap.js:28:26)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+    at Module._compile (internal/modules/cjs/loader.js:1201:30) 
 ```
 
 ```js
@@ -251,15 +251,15 @@ console.assert(isTrue5, 'Test 5');
 - FAIL: Test 4
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/5-quadruple-swap.js:28:26)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+    at Module._compile (internal/modules/cjs/loader.js:1201:30) 
 ```
 
 ```js
@@ -311,15 +311,15 @@ console.assert(isTrue5, 'Test 5');
 - FAIL: Test 2
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/6-let-and-const.js:27:23)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+    at Module._compile (internal/modules/cjs/loader.js:1201:30) 
 ```
 
 ```js
@@ -374,15 +374,15 @@ console.assert(isTrue4, "Test 4");
 - FAIL: Test 3
 UNCAUGHT: ReferenceError: _ is not defined
     at Object.<anonymous> (  ...  /exercises/04-value-swaps/exercises/7-let-and-const.js:32:23)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
-    at Module.load (internal/modules/cjs/loader.js:1049:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
-    at Module.require (internal/modules/cjs/loader.js:1089:19)
-    at require (internal/modules/cjs/helpers.js:73:18)
+    at Module._compile (internal/modules/cjs/loader.js:1201:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
+    at Module.load (internal/modules/cjs/loader.js:1050:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
+    at Module.require (internal/modules/cjs/loader.js:1090:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1200:30) 
+    at Module._compile (internal/modules/cjs/loader.js:1201:30) 
 ```
 
 ```js
