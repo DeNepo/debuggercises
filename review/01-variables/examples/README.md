@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 7/29/2020, 9:06:21 AM 
+> 7/19/2022, 6:25:55 PM 
 
 ## [exercises](../../README.md)/[01-variables](../README.md)/examples 
 
@@ -98,15 +98,15 @@ console.log(furniture);
 ```txt
 UNCAUGHT: TypeError: Assignment to constant variable.
     at Object.<anonymous> (  ...  /exercises/01-variables/examples/3-const-vs-let.js:19:19)
-    at Module._compile (internal/modules/cjs/loader.js:1201:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1221:10)
-    at Module.load (internal/modules/cjs/loader.js:1050:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:938:14)
-    at Module.require (internal/modules/cjs/loader.js:1090:19)
-    at require (internal/modules/cjs/helpers.js:75:18)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:12)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:101:18)
     at evaluate (  ...  /scripts/lib/evaluate.js:28:7)
     at Object.<anonymous> (  ...  /scripts/review.js:119:1)
-    at Module._compile (internal/modules/cjs/loader.js:1201:30) 
+    at Module._compile (internal/modules/cjs/loader.js:1085:14) 
 ```
 
 ```js

@@ -1,6 +1,6 @@
 # Debuggercises 
 
-> 7/29/2020, 9:06:21 AM 
+> 7/19/2022, 6:25:55 PM 
 
 ## [exercises](../../README.md)/[18-functions-401](../README.md)/0-examples 
 
